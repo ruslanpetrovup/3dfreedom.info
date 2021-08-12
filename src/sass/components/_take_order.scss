@@ -1,0 +1,6 @@
+.take_order {
+  &__title {
+    @include font-source-sans(24px, 30px, 700);
+    color: $secondary-text;
+  }
+}
