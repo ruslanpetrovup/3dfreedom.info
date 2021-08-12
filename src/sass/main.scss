@@ -1,6 +1,6 @@
 @import './utils/module';
 @import './vendors/normalize';
-// Order of import matters
+// WARN: import order matters
 @import './base/glob';
 @import './components/module';
 @import './layout/module';
