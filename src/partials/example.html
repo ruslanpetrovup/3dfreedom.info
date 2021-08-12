@@ -1,33 +1,46 @@
 <article class="example">
-  <h1>HTML-фрагменты</h1>
+  <h1 style="font-family: Caviar Dreams; font-style: normal; font-weight: 700">Я є Ґрут</h1>
+  <h2
+    style="
+      font-family: Caviar Dreams;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 56px;
+    "
+  >
+    Інженерна, конструкторська та дизайнерська робота
+  </h2>
+  <h3
+    style="
+      font-family: IBM Plex Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 60px;
 
-  <!-- Путь к изображениям из HTML-фрагмента такой, как из файла index.html -->
-  <img src="images/demo.jpg" alt="" width="320" />
-  <p>
-    Плагин
-    <a
-      href="https://github.com/posthtml/posthtml-include"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      posthtml-include
-    </a>
-    позволяет добавлять в HTML-файлы страниц код из других HTML-файлов (фрагментов). Фрагменты
-    хранятся в папке
-    <code>src/partials</code>. Добавление происходит при компиляции файлов страниц, например
-    <code>index.html</code>.
+      color: #487996;
+    "
+  >
+    Способи створення моделі:
+  </h3>
+  <p
+    style="
+      font-family: IBM Plex Sans;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 23px;
+
+      color: #2b2b2b;
+    "
+  >
+    Сфера 3D графіки може надати широкий спектр послуг. Але якщо спроектована модель буде
+    створюватися шляхом 3D друку, обробки заготовки на ЧПУ станках або іншими виробничими методами,
+    то до моделі преставляеться ряд інженерних вимог які повинен враховувати дизайнер при розробці
+    моделі
+    <svg class="wink">
+      <use href="./images/svg/sprites.svg#wink"></use>
+    </svg>
   </p>
-
-  <p>
-    Этот файл <code>example.html</code> &mdash; пример такого фрагмента, с разметкой определённой
-    части главной страницы. Это очень удобно при командной разработке на студенческих проектах,
-    когда в одном HTML-файле пишет несколько человек сразу.
-  </p>
-
-  <p>
-    Синтаксис добавление фрагмента в главный файл:
-    <code> &lt;include src="./partials/имя-файла.html"&gt;&lt;/include&gt; </code>
-  </p>
-
-  <div class="background"></div>
 </article>
