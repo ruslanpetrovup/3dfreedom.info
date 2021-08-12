@@ -1,0 +1,54 @@
+// Caviar Dreams
+// Menu font; weight 400
+@font-face {
+  font-family: 'caviar_dreamsregular';
+  src: url('../fonts/caviardreams-webfont.woff2') format('woff2'),
+    url('../fonts/caviardreams-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+// Lang menu: weight 700
+@font-face {
+  font-family: 'caviar_dreamsbold';
+  src: url('../fonts/caviardreams_bold-webfont.woff2') format('woff2'),
+    url('../fonts/caviardreams_bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// IBM Plex
+// Primary font; weight 300
+@font-face {
+  font-family: 'ibm_plex_sanslight';
+  src: url('../fonts/ibmplexsans-light-webfont.woff2') format('woff2'),
+    url('../fonts/ibmplexsans-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// secondary font; weight 400
+@font-face {
+  font-family: 'ibm_plex_sansregular';
+  src: url('../fonts/ibmplexsans-regular-webfont.woff2') format('woff2'),
+    url('../fonts/ibmplexsans-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// mobile menu; weight 500
+@font-face {
+  font-family: 'ibm_plex_sansmedium';
+  src: url('../fonts/ibmplexsans-medium-webfont.woff2') format('woff2'),
+    url('../fonts/ibmplexsans-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// title font; weight 700
+@font-face {
+  font-family: 'ibm_plex_sansbold';
+  src: url('../fonts/ibmplexsans-bold-webfont.woff2') format('woff2'),
+    url('../fonts/ibmplexsans-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
