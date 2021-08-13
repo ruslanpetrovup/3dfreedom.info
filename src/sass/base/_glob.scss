@@ -74,7 +74,11 @@ img {
   }
 
   &__title-subsection {
-    @include font-source-sans(24px, 30px, 700);
+    @include font-source-sans(18px, 23px, 700);
+
+    @media screen and (min-width: 768px) {
+      @include font-source-sans(24px, 30px);
+    }
 
     @media screen and (min-width: 1440px) {
       @include font-source-sans(36px, 45px);
