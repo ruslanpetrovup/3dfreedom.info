@@ -1,0 +1,48 @@
+.scanning-hero {
+  margin-bottom: 24px;
+  //   background: $secondary-bg;
+  //   background-repeat: no-repeat;
+  //   background-position: bottom;
+
+  &__title {
+    color: $secondary-text;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.25;
+    text-transform: uppercase;
+    margin-top: 36px;
+    margin-bottom: 16px;
+  }
+  &__text {
+    color: $primary-text;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.25;
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+// scan-process
+.scan-process {
+  &__title {
+    color: $secondary-text;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.27;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  &__subtitle {
+    color: $secondary-text;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28;
+  }
+}
+
+//order-form
+.button__scanning {
+  margin: 0 auto;
+}
