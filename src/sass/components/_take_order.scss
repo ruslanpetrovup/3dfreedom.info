@@ -1,4 +1,9 @@
 .take_order {
+  padding-top: 12px;
+  padding-bottom: 76px;
+}
+
+.take_order_hero {
   &__title {
     @include font-source-sans(24px, 30px, 700);
     color: $secondary-text;
