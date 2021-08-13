@@ -1,3 +1,73 @@
-.modelling-hero {
-  background-color: red;
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.modelling-hero__title {
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1.26;
+  text-transform: uppercase;
+  color: #487996;
+  //   додати потім змінну
+}
+.modelling-text,
+.modelling-methods__item {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.26;
+  color: #2b2b2b;
+}
+.modelling-hero__content {
+  margin-bottom: 52px;
+}
+.modelling-hero__text:not(:last-child) {
+  margin-bottom: 16px;
+}
+.modelling-title {
+  margin-bottom: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #487996;
+}
+.modelling-methods__title {
+  font-size: 18px;
+  line-height: 1.28;
+}
+.modelling-create__title {
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.modeling-methods__list {
+  margin-bottom: 32px;
+}
+.modelling-methods__item {
+  margin-bottom: 16px;
+}
+.modelling-create__list {
+  margin-bottom: 52px;
+}
+
+// кнопка
+.order-button {
+  display: block;
+  width: 280px;
+  height: 56px;
+  margin-bottom: 76px;
+  padding: 16px 32px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #487996;
+  background-color: #f5f5fa;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 31px;
+  box-shadow: -5px -5px 10px 0px #ffffff, 5px 5px 10px 0px #48799640, 10px 10px 20px 0px #4879961a,
+    -10px -10px 20px 0px #ffffff;
 }
