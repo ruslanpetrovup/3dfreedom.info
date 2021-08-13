@@ -22,9 +22,17 @@
 
   @media screen and (min-width: 768px) {
     width: 277px;
-    &--form {
+    &__form {
       width: 177px;
     }
+
+    &__form--position {
+      margin-top: 44px;
+    }
+  }
+
+  &__form--position {
+    margin-top: 24px;
   }
 
   transition: background-color $var-animation-duration $var-animation-cubic,

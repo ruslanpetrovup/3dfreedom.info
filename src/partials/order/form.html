@@ -1,23 +1,27 @@
-<form class="take-order-form take-order__section">
+<form class="form take-order__section">
     <h3 class="section__title-subsection">ЗВ’ЯЖІТЬСЯ З НАМИ</h3>
 
-    <label class="take-order-form__label" for="name">Ім’я</label>
-    <input id="name" name="name" type="text" />
+    <label class="form__label form__label--position-first" for="name">Ім’я</label>
+    <input class="form__input" id="name" name="name" type="text" />
 
-    <label class="take-order-form__label" for="fild_mail">Email</label>
-    <input id="fild_mail" type="email" />
+    <label class="form__label form__label--position" for="fild_mail">Email</label>
+    <input class="form__input" id="fild_mail" type="email" />
 
-    <label class="take-order-form__label" for="type_of_plastic">Види пластика</label>
-    <select id="type_of_plastic" name="type_of_plastic">
+    <label class="form__label form__label--position-sel" for="type_of_plastic">Види пластика</label>
+    <select class="form__select" id="type_of_plastic" name="type_of_plastic"></select>
 
-    <label class="take-order-form__label" for="print_quality">Якість друку</label>
-    <select id="print_quality" name="print_quality">
+    <label class="form__label form__label--position-sel" for="print_quality">Якість друку</label>
+    <select class="form__select" id="print_quality" name="print_quality"></select>
 
-    <label class="take-order-form__label" for="print_color">Колір</label>
-    <select id="print_color" name="print_color">
+    <label class="form__label form__label--position-sel" for="print_color">Колір</label>
+    <select class="form__select" id="print_color" name="print_color"></select>
 
-    <label class="take-order-form__label" for="comment"></label>
-    <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
-
-    <button class="button button--form" type="submit">ВІДПРАВИТИ</button>
+    <label class="form__label form__label--position-tarea" for="comment">Повідомлення</label>
+    <div class="cont">
+        <textarea class="form__textarea" name="comment" id="comment" cols="30" rows="10"></textarea>
+    </div>
+    <p class="form__note section__text">
+        *Прикріпіть зображення / креслення / STL / Obj / CAD-модель
+    </p>
+    <button class="button button__form button__form--position" type="submit">ВІДПРАВИТИ</button>
 </form>
