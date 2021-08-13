@@ -1,4 +1,4 @@
-.take_order {
+.take-order {
   padding-top: 12px;
   padding-bottom: 76px;
 
@@ -10,13 +10,43 @@
     padding-bottom: 52px;
   }
 
-  &__section-address {
-    padding-bottom: 76px;
-  }
+  // &__section-address {
+  //   // padding-bottom: 76px;
+  // }
 }
 
-.take_order_hero {
+.take-order-hero {
   &__text--position {
     width: 100%;
   }
+
+  &__image {
+    margin-top: 16px;
+  }
+}
+
+.take-order-address__title-subsection {
+  text-transform: unset;
+}
+
+.take-order-address__link {
+  display: inline-flex;
+}
+
+.address-tel,
+.work-time {
+  margin-top: 8px;
+}
+
+.address-tel__item:not(:first-child),
+.work-time__item:not(:first-child) {
+  margin-top: 8px;
+}
+
+.take-order-address__item:not(:first-child) {
+  margin-top: 24px;
+}
+
+.take-order-address__link {
+  margin-top: 8px;
 }
