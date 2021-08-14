@@ -1,0 +1,22 @@
+.take_order {
+  padding-top: 12px;
+  padding-bottom: 76px;
+
+  &__title {
+    letter-spacing: -0.04em;
+  }
+
+  &__section {
+    padding-bottom: 52px;
+  }
+
+  &__section-address {
+    padding-bottom: 76px;
+  }
+}
+
+.take_order_hero {
+  &__text--position {
+    width: 100%;
+  }
+}

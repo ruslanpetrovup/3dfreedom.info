@@ -1,0 +1,35 @@
+.gallery-title {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+  color: #487996;
+  margin-bottom: 16px;
+}
+
+.gallery-list {
+  display: block;
+}
+
+.gallery-list-item {
+  margin-bottom: 8px;
+}
+.gallery-list-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery-description {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #487996;
+  margin-bottom: 24px;
+}
+.gallery-description:not(:last-child) {
+  margin-bottom: 24px;
+}

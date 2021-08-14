@@ -1,6 +1,7 @@
 @import './emoji';
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Cera Pro', sans-serif;
+  background-color: $primary-bg;
 }
 h1,
 h2,
@@ -17,4 +18,107 @@ p {
 }
 img {
   display: block;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    width: 320px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    width: 768px;
+
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 1440px;
+    padding-left: 189px;
+    padding-right: 189px;
+  }
+
+  margin: 0px auto;
+}
+
+.section {
+  &__title {
+    @include font-source-sans(24px, 30px, 700);
+
+    @media screen and (min-width: 768px) {
+      @include font-source-sans(36px, 45px);
+    }
+
+    @media screen and (min-width: 1440px) {
+      @include font-source-sans(48px, 60px);
+    }
+
+    color: $secondary-text;
+    text-transform: uppercase;
+  }
+
+  &__title-subsection {
+    @include font-source-sans(18px, 23px, 700);
+
+    @media screen and (min-width: 768px) {
+      @include font-source-sans(24px, 30px);
+    }
+
+    @media screen and (min-width: 1440px) {
+      @include font-source-sans(36px, 45px);
+    }
+
+    color: $secondary-text;
+    text-transform: uppercase;
+  }
+
+  @media screen and (max-width: 767px) {
+    &__title--position {
+      margin-top: 12px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &__title--position {
+      margin-top: 24px;
+    }
+  }
+
+  &__text {
+    @include font-source-sans(16px, 20px, 300);
+
+    @media screen and (min-width: 1440px) {
+      @include font-source-sans(18px, 23px);
+    }
+
+    color: $primary-text;
+  }
+
+  @media screen and (min-width: 1440px) {
+    &__text--position_dekstop {
+      margin-top: 24px;
+    }
+  }
+
+  @media screen and (max-width: 1439px) {
+    &__text--position {
+      margin-top: 16px;
+    }
+  }
 }

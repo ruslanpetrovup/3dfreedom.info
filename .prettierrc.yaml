@@ -1,8 +1,16 @@
-printWidth: 100
+printWidth: 79
 useTabs: false
+tabWidth: 2
 semi: true
 singleQuote: true
-trailingComma: 'all'
 bracketSpacing: true
+trailingComma: 'all'
 arrowParens: 'avoid'
 proseWrap: 'always'
+overrides:
+  - files:
+      - '*.html'
+    options:
+      tabWidth: 4
+      singleQuote: false
+      printWidth: 100
