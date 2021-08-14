@@ -9,13 +9,17 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 1.26;
-  color: #2b2b2b;
+  color: $primary-text;
+
+  @media screen and (min-width: 768px) {
+    line-height: 1.25;
+  }
 }
 .modelling-title {
   margin-bottom: 16px;
   font-weight: bold;
   text-transform: uppercase;
-  color: #487996;
+  color: $secondary-text;
 }
 
 // Hero
@@ -27,9 +31,19 @@
   line-height: 1.26;
   text-transform: uppercase;
   color: #487996;
+
+  @media screen and (min-width: 768px) {
+    font-size: 36px;
+    line-height: 1.26;
+  }
 }
 .modelling-hero__content {
   padding-bottom: 52px;
+}
+.modelling-hero__text {
+  @media screen and (min-width: 768px) {
+    max-width: 515px;
+  }
 }
 .modelling-hero__text:not(:last-child) {
   margin-bottom: 16px;
@@ -51,7 +65,7 @@
   width: 7px;
   height: 7px;
   margin-right: 10px;
-  background-color: #487996;
+  background-color: $secondary-text;
   border-radius: 3px 0px;
 }
 
