@@ -11,6 +11,5 @@ overrides:
   - files:
       - '*.html'
     options:
-      tabWidth: 4
       singleQuote: false
       printWidth: 100
