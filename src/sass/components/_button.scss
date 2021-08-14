@@ -35,8 +35,8 @@
     margin-top: 24px;
   }
 
-  transition: background-color $var-animation-duration $var-animation-cubic,
-    color $var-animation-duration $var-animation-cubic;
+  transition: background-color $animation-duration $animation-cubic,
+    color $animation-duration $animation-cubic;
 
   &:hover,
   &:focus {
