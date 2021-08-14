@@ -1,17 +1,42 @@
 .more-photos {
   padding-bottom: 76px;
+
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 52px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 100px;
+  }
 }
 
 .more-photos__title {
-  margin-bottom: 32px;
+  margin-bottom: 16px;
+  font-family: $secondary-font;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 52px;
+  }
 }
 
 .masonry {
+  margin-bottom: 32px;
+
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
     margin-top: -20px;
     margin-left: -20px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-top: -32px;
+    margin-left: -32px;
+    margin-bottom: 56px;
   }
 }
 
@@ -21,7 +46,7 @@
       display: none;
     }
 
-    &:not(:last-child) {
+    &:nth-child(-n + 2) {
       margin-bottom: 16px;
     }
   }
@@ -42,4 +67,16 @@
 .masonry__img {
   max-width: 100%;
   height: auto;
+}
+
+.load-more-button {
+  width: 45px;
+  height: 45px;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  line-height: 0;
+  cursor: pointer;
 }
