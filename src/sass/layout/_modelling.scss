@@ -1,9 +1,9 @@
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
+// .container {
+//   margin-left: auto;
+//   margin-right: auto;
+//   padding-left: 20px;
+//   padding-right: 20px;
+// }
 .modelling-text,
 .modelling-methods__item {
   font-weight: 300;
@@ -46,7 +46,6 @@
   font-size: 16px;
   line-height: 1.26;
   color: var(--primary-text);
-
 }
 .modelling-hero__content {
   padding-bottom: 52px;
@@ -71,8 +70,13 @@
 .modelling-methods__item:not(:last-child) {
   margin-bottom: 16px;
 }
+.modelling-methods__item {
+  display: flex;
+  align-items: center;
+}
 .modelling-methods__item::before {
-  content: '.';
+  content: '';
+  display: flex;
   width: 7px;
   height: 7px;
   margin-right: 10px;
