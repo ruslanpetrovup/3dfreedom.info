@@ -19,6 +19,10 @@ p {
 img {
   display: block;
 }
+form {
+  margin-top: 0;
+  margin-block-end: 0;
+}
 
 .visually-hidden {
   position: absolute !important;
@@ -111,7 +115,7 @@ img {
   }
 
   @media screen and (min-width: 1440px) {
-    &__text--position_dekstop {
+    &__text--position-dekstop {
       margin-top: 24px;
     }
   }

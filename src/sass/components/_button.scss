@@ -1,0 +1,46 @@
+.button {
+  font-family: inherit;
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  cursor: pointer;
+
+  border: 0px;
+  border-radius: 30.5px;
+
+  box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1),
+    5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
+
+  background-color: $secondary-bg;
+
+  @include font-source-sans(16px, 24px, 700);
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  color: $secondary-text;
+
+  @media screen and (min-width: 768px) {
+    width: 277px;
+    &__form {
+      width: 177px;
+    }
+
+    &__form--position {
+      margin-top: 44px;
+    }
+  }
+
+  &__form--position {
+    margin-top: 24px;
+  }
+
+  transition: background-color $var-animation-duration $var-animation-cubic,
+    color $var-animation-duration $var-animation-cubic;
+
+  &:hover,
+  &:focus {
+    color: $secondary-bg;
+    background-color: $secondary-text;
+  }
+}
