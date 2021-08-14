@@ -46,6 +46,15 @@
 .modelling-methods__item:not(:last-child) {
   margin-bottom: 16px;
 }
+.modelling-methods__item::before {
+  content: '.';
+  width: 7px;
+  height: 7px;
+  margin-right: 10px;
+  background-color: #487996;
+  border-radius: 3px 0px;
+}
+
 // Backround picture
 .modelling-methods__picture {
   min-height: 164px;
