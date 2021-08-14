@@ -29,7 +29,7 @@
   color: #487996;
 }
 .modelling-hero__content {
-  margin-bottom: 52px;
+  padding-bottom: 52px;
 }
 .modelling-hero__text:not(:last-child) {
   margin-bottom: 16px;
@@ -40,14 +40,26 @@
   font-size: 18px;
   line-height: 1.28;
 }
-.modeling-methods__list {
-  margin-bottom: 32px;
+.modelling-methods__list {
+  padding-bottom: 32px;
 }
-.modelling-methods__item {
+.modelling-methods__item:not(:last-child) {
   margin-bottom: 16px;
 }
 
+.modelling-methods__picture {
+  min-height: 164px;
+  margin-bottom: 52px;
+  background-image: url(../images/modeling/gear.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 // We Create
+.modelling-create__container {
+  padding-bottom: 76px;
+}
 .modelling-create__title {
   font-size: 16px;
   line-height: 1.25;
@@ -56,6 +68,7 @@
   margin-bottom: 52px;
 }
 // We Create pictures
+
 .modelling-create__list {
   display: flex;
   @media screen and (max-width: 767px) {
@@ -79,7 +92,6 @@
   display: block;
   width: 280px;
   height: 56px;
-  margin-bottom: 76px;
   padding: 16px 32px;
   font-weight: 700;
   font-size: 16px;
