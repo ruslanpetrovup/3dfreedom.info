@@ -16,10 +16,34 @@
   margin-top: 8px;
 }
 
-.contacts__item:not(:first-child) {
-  margin-top: 24px;
+@media screen and (max-width: 767px) {
+  .contacts__item:not(:first-child) {
+    margin-top: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .contacts__item:first-child {
+    width: 247px;
+  }
+  .contacts__item:nth-child(2) {
+    position: relative;
+    transform: translateX(-12px);
+  }
 }
 
 .contacts__link {
   margin-top: 8px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .work-time__text {
+    text-align: right;
+  }
 }
