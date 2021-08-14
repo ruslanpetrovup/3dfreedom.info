@@ -30,12 +30,23 @@
   font-size: 24px;
   line-height: 1.26;
   text-transform: uppercase;
+
   color: #487996;
 
   @media screen and (min-width: 768px) {
     font-size: 36px;
     line-height: 1.26;
   }
+
+  color: var(--secondary-text);
+}
+.modelling-text,
+.modelling-methods__item {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.26;
+  color: var(--primary-text);
+
 }
 .modelling-hero__content {
   padding-bottom: 52px;

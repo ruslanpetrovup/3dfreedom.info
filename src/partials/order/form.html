@@ -1,25 +1,44 @@
 <form class="form take-order__section">
     <h3 class="section__title-subsection">ЗВ’ЯЖІТЬСЯ З НАМИ</h3>
 
-    <label class="form__label form__label--position-first" for="name">Ім’я</label>
-    <input class="form__input" id="name" name="name" type="text" />
+    <label class="form__field form__field--position-first">
+        <input class="form__input" name="name" type="text" />
+        <span class="form__label form__label--position">Ім’я</span>
+    </label>
 
-    <label class="form__label form__label--position" for="fild_mail">Email</label>
-    <input class="form__input" id="fild_mail" type="email" />
+    <label class="form__field form__field--position">
+        <input class="form__input" name="fild_mail" type="email" />
+        <span class="form__label form__label--position">Email</span>
+    </label>
 
-    <label class="form__label form__label--position-sel" for="type_of_plastic">Види пластика</label>
-    <select class="form__select" id="type_of_plastic" name="type_of_plastic"></select>
+    <label class="form__field form__field--position">
+        <select class="form__select" name="type_of_plastic"></select>
 
-    <label class="form__label form__label--position-sel" for="print_quality">Якість друку</label>
-    <select class="form__select" id="print_quality" name="print_quality"></select>
+        <span class="form__label form__label--position">Види пластика</span>
+    </label>
 
-    <label class="form__label form__label--position-sel" for="print_color">Колір</label>
-    <select class="form__select" id="print_color" name="print_color"></select>
+    <label class="form__field form__field--position">
+        <select class="form__select" name="print_quality">
+            <option hidden value=""></option>
+            <option value="300">300 мікрон</option>
+            <option value="200">200 мікрон</option>
+            <option value="100">100 мікрон</option>
+            <option value="0">Труднощі у виборі - ми допоможемо</option>
+        </select>
 
-    <label class="form__label form__label--position-tarea" for="comment">Повідомлення</label>
-    <div class="cont">
-        <textarea class="form__textarea" name="comment" id="comment" cols="30" rows="10"></textarea>
-    </div>
+        <span class="form__label form__label--position">Якість друку</span>
+    </label>
+
+    <label class="form__field form__field--position">
+        <select class="form__select" name="print_color"></select>
+        <span class="form__label form__label--position">Колір</span>
+    </label>
+
+    <label class="form__field form__field--position-textatea">
+        <textarea class="form__textarea" name="comment" cols="30" rows="10"></textarea>
+        <span class="form__label form__label--position-textarea">Повідомлення</span>
+    </label>
+
     <p class="form__note section__text">
         *Прикріпіть зображення / креслення / STL / Obj / CAD-модель
     </p>
