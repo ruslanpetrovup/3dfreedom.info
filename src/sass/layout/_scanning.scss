@@ -1,9 +1,9 @@
 .scanning-hero {
   margin-bottom: 24px;
   //   background-image: url(../../images/scanning/scanning-mob.jpg);
-  //   background: $secondary-bg;
-  //   background-repeat: no-repeat;
-  //   background-position: bottom;
+  // background: $secondary-bg;
+  // background-repeat: no-repeat;
+  // background-position: bottom;
 
   &__title {
     color: $secondary-text;
@@ -38,6 +38,7 @@
     text-transform: uppercase;
     margin-bottom: 16px;
   }
+
   &__subtitle {
     color: $secondary-text;
     font-weight: 400;
@@ -45,13 +46,13 @@
     line-height: 1.28;
   }
 }
-.scan-process__subtitle::before {
+.scan-process__item::before {
   content: '';
   display: inline-block;
   width: 133px;
   height: 183px;
   background: #ffffff;
-
+  opacity: 0.8;
   box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8),
     inset -1px -1px 16px #ffffff;
   border-radius: 50px 0px;
