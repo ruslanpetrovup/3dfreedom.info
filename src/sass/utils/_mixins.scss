@@ -16,6 +16,7 @@
   }
 }
 
+// TODO: @Serhii-P79 поясни навіщо стільки первірок
 // Миксин для шрифта (font-size, line-height, font-weight)
 @mixin font-source-sans($size: false, $lh: false, $weight: false) {
   @if $size {
