@@ -1,9 +1,3 @@
-// .container {
-//   margin-left: auto;
-//   margin-right: auto;
-//   padding-left: 20px;
-//   padding-right: 20px;
-// }
 .modelling-text,
 .modelling-methods__item {
   font-weight: 300;
@@ -71,17 +65,20 @@
   margin-bottom: 16px;
 }
 .modelling-methods__item {
+  position: relative;
   display: flex;
   align-items: center;
 }
 .modelling-methods__item::before {
   content: '';
-  display: flex;
-  width: 7px;
+  min-width: 7px;
   height: 7px;
-  margin-right: 10px;
+  margin-right: 11px;
   background-color: $secondary-text;
   border-radius: 3px 0px;
+  &:last-child {
+    position: absolute;
+  }
 }
 
 // Backround picture
