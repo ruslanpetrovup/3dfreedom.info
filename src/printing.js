@@ -1,1 +1,1 @@
-import './sass/main.scss';
+import './sass/printing.scss';
