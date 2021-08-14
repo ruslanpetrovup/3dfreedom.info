@@ -1,4 +1,4 @@
-.take_order {
+.take-order {
   padding-top: 12px;
   padding-bottom: 76px;
 
@@ -10,13 +10,19 @@
     padding-bottom: 52px;
   }
 
-  &__section-address {
-    padding-bottom: 76px;
-  }
+  // &__section-address {
+  //   // padding-bottom: 76px;
+  // }
 }
 
-.take_order_hero {
+.take-order-hero {
   &__text--position {
     width: 100%;
   }
+
+  &__image {
+    margin-top: 16px;
+  }
 }
+
+

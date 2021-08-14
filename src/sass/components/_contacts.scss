@@ -1,0 +1,26 @@
+.contacts__title-subsection {
+  text-transform: unset;
+}
+
+.contacts__link {
+  display: inline-flex;
+}
+
+.address-tel,
+.work-time {
+  margin-top: 8px;
+}
+
+
+.address-tel__item:not(:first-child),
+.work-time__item:not(:first-child) {
+  margin-top: 8px;
+}
+
+.contacts__item:not(:first-child) {
+  margin-top: 24px;
+}
+
+.contacts__link {
+  margin-top: 8px;
+}
