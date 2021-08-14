@@ -46,14 +46,40 @@
 .modelling-methods__item:not(:last-child) {
   margin-bottom: 16px;
 }
-
+// Backround picture
 .modelling-methods__picture {
   min-height: 164px;
   margin-bottom: 52px;
-  background-image: url(../images/modeling/gear.jpg);
+  background-image: url(../images/modeling/gear-mob.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 280px),
+    screen and (min-resolution: 192dpi) and (min-width: 280px),
+    screen and (min-resolution: 2dppx) and (min-width: 280px) {
+    background-image: url(../images/modeling/gear-mob@2x.jpg);
+  }
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/modeling/gear-tab.jpg);
+    background-size: cover;
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    background-image: url(../images/modeling/gear-tab@2x.jpg);
+    background-size: cover;
+  }
+  @media screen and (min-width: 1440px) {
+    background-image: url(../images/modeling/gear.jpg);
+    background-size: cover;
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1440px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    background-image: url(../images/modeling/gear@2x.jpg);
+    background-size: cover;
+  }
 }
 
 // We Create
