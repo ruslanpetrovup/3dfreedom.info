@@ -3,7 +3,7 @@
   padding-bottom: 52px;
 }
 .gallery__title {
-  font-family: 'Caviar Dreams';
+  font-family: $secondary-font;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -21,7 +21,7 @@
   margin-right: auto;
 }
 .gallery__description {
-  font-family: 'Caviar Dreams';
+  font-family: $secondary-font;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
