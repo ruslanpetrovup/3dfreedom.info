@@ -4,7 +4,25 @@
   padding-left: 20px;
   padding-right: 20px;
 }
+.modelling-text,
+.modelling-methods__item {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.26;
+  color: $primary-text;
 
+  @media screen and (min-width: 768px) {
+    line-height: 1.25;
+  }
+}
+.modelling-title {
+  margin-bottom: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $secondary-text;
+}
+
+// Hero
 .modelling-hero__title {
   margin-bottom: 16px;
   font-weight: 700;
@@ -12,6 +30,14 @@
   font-size: 24px;
   line-height: 1.26;
   text-transform: uppercase;
+
+  color: #487996;
+
+  @media screen and (min-width: 768px) {
+    font-size: 36px;
+    line-height: 1.26;
+  }
+
   color: var(--secondary-text);
 }
 .modelling-text,
@@ -20,44 +46,112 @@
   font-size: 16px;
   line-height: 1.26;
   color: var(--primary-text);
+
 }
 .modelling-hero__content {
-  margin-bottom: 52px;
+  padding-bottom: 52px;
+}
+.modelling-hero__text {
+  @media screen and (min-width: 768px) {
+    max-width: 515px;
+  }
 }
 .modelling-hero__text:not(:last-child) {
   margin-bottom: 16px;
 }
-.modelling-title {
-  margin-bottom: 16px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #487996;
-}
+
+// Methods
 .modelling-methods__title {
   font-size: 18px;
   line-height: 1.28;
+}
+.modelling-methods__list {
+  padding-bottom: 32px;
+}
+.modelling-methods__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+.modelling-methods__item::before {
+  content: '.';
+  width: 7px;
+  height: 7px;
+  margin-right: 10px;
+  background-color: $secondary-text;
+  border-radius: 3px 0px;
+}
+
+// Backround picture
+.modelling-methods__picture {
+  min-height: 164px;
+  margin-bottom: 52px;
+  background-image: url(../images/modeling/gear-mob.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 280px),
+    screen and (min-resolution: 192dpi) and (min-width: 280px),
+    screen and (min-resolution: 2dppx) and (min-width: 280px) {
+    background-image: url(../images/modeling/gear-mob@2x.jpg);
+  }
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/modeling/gear-tab.jpg);
+    background-size: cover;
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    background-image: url(../images/modeling/gear-tab@2x.jpg);
+    background-size: cover;
+  }
+  @media screen and (min-width: 1440px) {
+    background-image: url(../images/modeling/gear.jpg);
+    background-size: cover;
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1440px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    background-image: url(../images/modeling/gear@2x.jpg);
+    background-size: cover;
+  }
+}
+
+// We Create
+.modelling-create__container {
+  padding-bottom: 76px;
 }
 .modelling-create__title {
   font-size: 16px;
   line-height: 1.25;
 }
-
-.modeling-methods__list {
-  margin-bottom: 32px;
-}
-.modelling-methods__item {
-  margin-bottom: 16px;
-}
 .modelling-create__list {
   margin-bottom: 52px;
 }
+// We Create pictures
 
-// кнопка
+.modelling-create__list {
+  display: flex;
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+  }
+}
+.modelling-create__item {
+  @media screen and (max-width: 767px) {
+    width: calc((100% - 10px) / 2);
+    &:nth-child(odd) {
+      margin-right: 10px;
+    }
+    &:nth-child(-n + 2) {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+// Button
 .order-button {
   display: block;
   width: 280px;
   height: 56px;
-  margin-bottom: 76px;
   padding: 16px 32px;
   font-weight: 700;
   font-size: 16px;
