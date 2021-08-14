@@ -57,7 +57,18 @@
     inset -1px -1px 16px #ffffff;
   border-radius: 50px 0px;
 }
-
+.scan-process__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -16px;
+  margin-top: -16px;
+}
+.scan-process__item {
+  flex-basis: calc((100% - 32px) / 2);
+  margin-left: 16px;
+  margin-top: 16px;
+  flex-direction: column;
+}
 //order-form
 
 .button__scanning {
