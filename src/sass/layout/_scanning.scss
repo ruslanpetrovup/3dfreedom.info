@@ -1,5 +1,6 @@
 .scanning-hero {
   margin-bottom: 24px;
+  //   background-image: url(../../images/scanning/scanning-mob.jpg);
   //   background: $secondary-bg;
   //   background-repeat: no-repeat;
   //   background-position: bottom;
@@ -23,7 +24,10 @@
     }
   }
 }
-
+// @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+//     .scanning-hero {
+//       background-image: url(../../images/scanning/scanning-mob@2x.jpg);
+//     }
 // scan-process
 .scan-process {
   &__title {
@@ -40,6 +44,17 @@
     font-size: 14px;
     line-height: 1.28;
   }
+}
+.scan-process__subtitle::before {
+  content: '';
+  display: inline-block;
+  width: 133px;
+  height: 183px;
+  background: #ffffff;
+
+  box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8),
+    inset -1px -1px 16px #ffffff;
+  border-radius: 50px 0px;
 }
 
 //order-form
