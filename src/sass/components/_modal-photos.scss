@@ -15,11 +15,25 @@
   pointer-events: auto;
 }
 .modal-window {
+  display: flex;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.modal-img {
-  width: 100%;
+.modal-window__back {
+  margin-right: 36px;
+  display: flex;
+  align-items: center;
+  fill: white;
+}
+.modal-window__next {
+  margin-left: 36px;
+  display: flex;
+  align-items: center;
+  fill: white;
+}
+.modal-window__icon {
+  width: 42px;
+  height: 42px;
 }
