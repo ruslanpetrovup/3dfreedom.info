@@ -1,15 +1,17 @@
-const btn = document.getElementById('btn-modal');
+const btn = document.querySelector('.masonry');
 const backdrop = document.querySelector('.backdrop')
+const imgSrc = document.querySelector('.modal-window__img')
 
 
-const modalOpen = () => {
-    if (backdrop.classList.contains('backdrop')) {
-        backdrop.classList.add('is-active');
-        backdrop.addEventListener('click', modalClose)
+const modalOpen = (even) => {
+    if (even.target.nodeName !== "IMG") {
         return
     }
-    
+    imgSrc.innerHTML = even.target.parentElement.innerHTML
+    backdrop.classList.add('is-active');
+    backdrop.addEventListener('click', modalClose)
 }
+    
 const modalClose = (even) => {
     if (even.target.className !== "backdrop is-active") {
         return

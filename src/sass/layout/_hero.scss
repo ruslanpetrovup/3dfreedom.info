@@ -1,0 +1,35 @@
+.list {
+  list-style-type: none;
+}
+.hero {
+    padding-top: 38px;
+    padding-bottom: 52px;
+}
+.hero__title {
+ font-family: 'Caviar Dreams';
+ font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.16;
+  color: ($primary-text);
+  text-align: center;
+  margin-bottom: 69px;
+}
+ 
+.hero-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.hero-desc {
+    margin-top: 64px;
+}
+.hero-desc__text {
+font-family: 'Caviar Dreams';
+font-style: normal;
+font-size: 18px;
+line-height: 1.16px;
+text-align: center;
+color: ($primary-text)
+}
+
