@@ -1,9 +1,9 @@
 .list {
   list-style-type: none;
 }
-.hero {
-    padding-bottom: 76px;
-}
+// .hero {
+//     padding-bottom: 76px;
+// }
 
 .hero__title {
  font-family: $secondary-font;
@@ -64,16 +64,16 @@ color: ($primary-text);
 
 .img-radius--around {
   border-radius: 100px;
-  filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.3));
+  
 }
 .img-radius--left {
   border-top-right-radius: 25%;
-  filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.3));
+  
 }
 .img-radius--right {
   border-top-right-radius: 25%;
   border-bottom-left-radius: 25%;
-  filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.3));
+  
 }
 /* .box {
   min-height: 100vh;
