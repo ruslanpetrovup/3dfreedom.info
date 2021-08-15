@@ -46,14 +46,14 @@
   }
   @media screen and (min-width: 1440px) {
     background-image: url(../images/scanning/scanning.jpg);
-    background-position: 50% 50%;
+    background-position: 100% 100%;
     min-height: 368px;
   }
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1440px),
     screen and (min-resolution: 192dpi) and (min-width: 768px),
     screen and (min-resolution: 2dppx) and (min-width: 768px) {
     background-image: url(../images/scanning/scanning@2x.jpg);
-    // background-position: 100% 100%;
+    background-position: 100% 100%;
     min-height: 368px;
   }
 }
@@ -177,6 +177,9 @@
       align-items: flex-start;
       width: 475px;
     }
+  }
+  .scanning__picture {
+    height: 0;
   }
   .scan-process {
     &__title {
