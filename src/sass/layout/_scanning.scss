@@ -35,26 +35,26 @@
   }
   @media screen and (min-width: 768px) {
     background-image: url(../images/scanning/scanning-tab.jpg);
-    background-position: 100% 100%;
+    background-position: 100% 90%;
     min-height: 172px;
   }
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
     screen and (min-resolution: 192dpi) and (min-width: 768px),
     screen and (min-resolution: 2dppx) and (min-width: 768px) {
     background-image: url(../images/scanning/scanning-tab@2x.jpg);
-    background-position: 100% 100%;
+    background-position: 100% 90%;
     min-height: 172px;
   }
   @media screen and (min-width: 1440px) {
     background-image: url(../images/scanning/scanning.jpg);
-    background-position: 100% 100%;
+    background-position: 84% 100%;
     min-height: 368px;
   }
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1440px),
     screen and (min-resolution: 192dpi) and (min-width: 1440px),
     screen and (min-resolution: 2dppx) and (min-width: 1440px) {
     background-image: url(../images/scanning/scanning@2x.jpg);
-    background-position: 100% 100%;
+    background-position: 84% 100%;
     min-height: 368px;
   }
 }
@@ -227,15 +227,10 @@
   border-color: transparent;
 }
 
-// .scanning-hero__block {
-//   @media screen and (min-width: 768px) and (max-width: 1439px) {
-//     display: flex;
-//   }
-// }
-
 // Tablet
 @media screen and (min-width: 767px) {
   .scanning-hero {
+    margin-bottom: 52px;
     &__title {
       font-size: 36px;
     }
@@ -281,6 +276,9 @@
 // Desktop
 @media screen and (min-width: 1440px) {
   .scanning-hero {
+    margin-bottom: 0;
+    padding-bottom: 100px;
+
     &__title {
       font-size: 48px;
       margin-bottom: 24px;
@@ -288,6 +286,8 @@
     &__text {
       font-size: 18px;
       line-height: 1.28;
+      width: 515px;
+      margin-left: 32px;
     }
     &__desc {
       display: flex;
