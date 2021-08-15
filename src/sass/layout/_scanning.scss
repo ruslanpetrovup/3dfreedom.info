@@ -80,6 +80,12 @@
     padding-top: 114px;
   }
 }
+.scan-process__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -16px;
+  margin-top: -16px;
+}
 .scan-process__frame {
   display: inline-block;
   width: 133px;
@@ -96,22 +102,16 @@
   position: relative;
 }
 
-.scan-process__list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -16px;
-  margin-top: -16px;
-}
 .scan-process__frame::before {
   content: '';
   display: block;
   position: absolute;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   width: 94px;
   height: 82px;
   background-image: url(../images/scanning/process/01-scan-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 //order-form
