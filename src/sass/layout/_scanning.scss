@@ -227,11 +227,11 @@
   border-color: transparent;
 }
 
-.scanning-hero__block {
-  @media screen and (min-width: 768px) and (max-width: 1439px) {
-    display: flex;
-  }
-}
+// .scanning-hero__block {
+//   @media screen and (min-width: 768px) and (max-width: 1439px) {
+//     display: flex;
+//   }
+// }
 
 // Tablet
 @media screen and (min-width: 767px) {
@@ -240,12 +240,16 @@
       font-size: 36px;
     }
     &__desc {
-      width: 515px;
+      width: 545px;
     }
   }
   .scan-process__frame::before {
     top: 30%;
   }
+  .scanning__picture {
+    height: 0;
+  }
+
   .scan-process {
     &__title {
       font-size: 24px;
