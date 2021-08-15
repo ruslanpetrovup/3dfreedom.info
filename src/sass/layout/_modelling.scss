@@ -16,10 +16,13 @@
   color: $secondary-text;
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 24px;
+    font-size: 24px;
+    line-height: 1.26;
+    // margin-bottom: 24px;
   }
   @media screen and (min-width: 1440px) {
-    margin-bottom: 52px;
+    font-size: 36px;
+    // margin-bottom: 52px;
   }
 }
 
@@ -47,6 +50,9 @@
 }
 .modelling-hero__content {
   padding-bottom: 52px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 50px;
+  }
 }
 .modelling-hero__text {
   @media screen and (min-width: 768px) {
@@ -59,17 +65,22 @@
 
 // Methods
 .modelling-methods__title {
-  font-size: 18px;
-  line-height: 1.28;
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
+    line-height: 1.28;
+  }
 }
 .modelling-methods__list {
   padding-bottom: 32px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 52px;
+  }
 }
 .modelling-methods__item:not(:last-child) {
   margin-bottom: 16px;
 }
 .modelling-methods__item {
-  position: relative;
+  // position: relative;
   display: flex;
   align-items: center;
 }
@@ -80,14 +91,18 @@
   margin-right: 11px;
   background-color: $secondary-text;
   border-radius: 3px 0px;
-  &:last-child {
-    position: absolute;
-  }
+  // &:last-child {
+  // position: absolute;
+  // }
 }
 
 // Backround picture
+.modelling-methods__container {
+  position: relative;
+}
+
 .modelling-methods__picture {
-  min-height: 164px;
+  height: 164px;
   margin-bottom: 52px;
   background-image: url(../images/modeling/gear-mob.jpg);
   background-position: center;
@@ -101,8 +116,12 @@
   }
   @media screen and (min-width: 768px) {
     background-image: url(../images/modeling/gear-tab.jpg);
-    width: ;
-    background-size: cover;
+    width: 246px;
+    height: 144px;
+    background-size: contain;
+    position: absolute;
+    right: 60px;
+    top: 31px;
   }
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
     screen and (min-resolution: 192dpi) and (min-width: 768px),
@@ -127,8 +146,14 @@
   padding-bottom: 76px;
 }
 .modelling-create__title {
-  font-size: 16px;
-  line-height: 1.25;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 24px;
+  }
 }
 .modelling-create__list {
   margin-bottom: 52px;
