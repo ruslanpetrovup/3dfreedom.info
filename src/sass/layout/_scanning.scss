@@ -12,8 +12,9 @@
     font-weight: 300;
     font-size: 16px;
     line-height: 1.25;
-    &:not(:last-child) {
-      margin-bottom: 16px;
+    margin-bottom: 16px;
+    &--last {
+      margin-bottom: 0;
     }
   }
 }
