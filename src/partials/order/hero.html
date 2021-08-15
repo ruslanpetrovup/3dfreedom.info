@@ -1,25 +1,66 @@
-<div class="take_order_hero .take_order__section">
-    <h2 class="section__title take_order__title">ЗРОБИТИ ЗАМОВЛЕННЯ</h2>
-    <img
-        class="take_order_hero__image"
-        src="./images/order/order-galery-image-mob.jpg"
-        alt="графическое оформление"
-    />
-    <p class="section__text section__text--position">
-        На цій сторінці ви можете зробити замовлення заповнивши форму і ми зв'яжемося з вами.
-    </p>
-    <p class="section__text section__text--position section__text--position_dekstop">
-        Наші фахівці допоможуть підібрати оптимальні для вас параметри і дадуть відповідь на всі
-        ваші запитання.
-    </p>
+<div class="take-order-hero take-order__section">
+    <h2 class="section__title take-order__title">ЗРОБИТИ ЗАМОВЛЕННЯ</h2>
+    <div class="take-order-hero__content">
+        <div class="take-order-hero__image">
+            <picture>
+                <source
+                    srcset="
+                        ./images/order/order-galery-image.webp    1x,
+                        ./images/order/order-galery-image@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                />
+                <source
+                    srcset="
+                        ./images/order/order-galery-image.jpg    1x,
+                        ./images/order/order-galery-image@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                />
+                <source
+                    srcset="
+                        ./images/order/half-order-galery-image-tab.webp    1x,
+                        ./images/order/half-order-galery-image-tab@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                />
+                <source
+                    srcset="
+                        ./images/order/half-order-galery-image-tab.jpg    1x,
+                        ./images/order/half-order-galery-image-tab@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/jpeg"
+                />
+                <source
+                    srcset="
+                        ./images/order/order-galery-image-mob.webp    1x,
+                        ./images/order/order-galery-image-mob@2x.webp 2x
+                    "
+                    type="image/webp"
+                />
+                <source
+                    srcset="
+                        ./images/order/order-galery-image-mob.jpg    1x,
+                        ./images/order/order-galery-image-mob@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                />
+                <img src="./images/order/order-galery-image-mob.jpg" alt="3-Д печать" />
+            </picture>
+        </div>
+        <div class="take-order-hero__text">
+            <p class="section__text take-order-hero__sub-text">
+                На цій сторінці ви можете зробити замовлення заповнивши форму і ми зв'яжемося з
+                вами.
+            </p>
+            <p class="section__text section__text--position section__text--position-dekstop">
+                Наші фахівці допоможуть підібрати оптимальні для вас параметри і дадуть відповідь на
+                всі ваші запитання.
+            </p>
+        </div>
+    </div>
 </div>
-
-<form class="take_order_form .take_order__section">
-    <h2 class="section__title-subsection">ЗВ’ЯЖІТЬСЯ З НАМИ</h2>
-</form>
-
-<ul class="take_order_address .take_order__section-address">
-    <li></li>
-    <li></li>
-    <li></li>
-</ul>

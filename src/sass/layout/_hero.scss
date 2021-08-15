@@ -1,0 +1,122 @@
+.list {
+  list-style-type: none;
+}
+// .hero {
+//     padding-bottom: 76px;
+// }
+
+.hero__title {
+ font-family: $secondary-font;
+ font-style: normal;
+ font-weight: 400;
+  font-size: 18px;
+  line-height: 1.16;
+  color: ($primary-text);
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.hero-list {
+    display: flex;
+    justify-content: center; 
+}
+.hero-list__item:not(:last-child) {
+  margin-right: 20px;
+}
+.hero-desc {
+  margin-top: 32px;
+}
+.hero-desc__text {
+font-family: $secondary-font;
+font-style: normal;
+font-weight: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.16px;
+text-align: center;
+color: ($primary-text);
+}
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .hero__title {
+    font-size: 24px;
+    margin-bottom: 65px;
+  }
+
+  .hero-desc__text {
+    font-size: 18px;
+  }
+  .hero-desc {
+    margin-top: 65px;
+}
+}
+@media screen and (min-width: 1440px) {
+  .hero__title {
+  font-size: 48px;
+   margin-bottom: 69px;
+  }
+  .hero-desc__text {
+    font-size: 36px;
+  }
+  .hero-desc {
+    margin-top: 100px;
+}
+}
+
+.img-radius--around {
+  border-radius: 100px;
+  
+}
+.img-radius--left {
+  border-top-right-radius: 25%;
+  
+}
+.img-radius--right {
+  border-top-right-radius: 25%;
+  border-bottom-left-radius: 25%;
+  
+}
+/* .box {
+  min-height: 100vh;
+  position: relative;
+}
+.box__figure {
+  position: absolute;
+  width: 144px;
+  height: 144px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  font-size: 64px;
+  color: #fff;
+
+ background: turquoise;
+border-radius: 0px 0px 72px 0px;
+}
+.box__figure:nth-child(1) {
+  left: 32px;
+  top: 151px;
+  background-color: #1789fc;
+
+  z-index: 2;
+}
+.box__figure:nth-child(2) {
+  top: 30px;
+  left: 230px;
+  background-color: #ef233c;
+
+  z-index: 2;
+}
+
+.box__figure:nth-child(3) {
+  top: 140px;
+  left: 220px;
+  background-color: #ffd07b;
+  z-index: 1;
+}
+
+.box__figure:nth-child(4) {
+  top: 120px;
+  left: 120px;
+  background-color: #4caf50;
+} */
