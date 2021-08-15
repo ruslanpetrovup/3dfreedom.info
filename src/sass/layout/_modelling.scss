@@ -14,6 +14,13 @@
   font-weight: bold;
   text-transform: uppercase;
   color: $secondary-text;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 24px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 52px;
+  }
 }
 
 // Hero
@@ -24,22 +31,19 @@
   font-size: 24px;
   line-height: 1.26;
   text-transform: uppercase;
-
-  color: #487996;
+  color: $secondary-text;
 
   @media screen and (min-width: 768px) {
     font-size: 36px;
     line-height: 1.26;
   }
-
-  color: var(--secondary-text);
 }
 .modelling-text,
 .modelling-methods__item {
   font-weight: 300;
   font-size: 16px;
   line-height: 1.26;
-  color: var(--primary-text);
+  color: $primary-text;
 }
 .modelling-hero__content {
   padding-bottom: 52px;
@@ -97,6 +101,7 @@
   }
   @media screen and (min-width: 768px) {
     background-image: url(../images/modeling/gear-tab.jpg);
+    width: ;
     background-size: cover;
   }
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
@@ -127,6 +132,9 @@
 }
 .modelling-create__list {
   margin-bottom: 52px;
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 100px;
+  }
 }
 // We Create pictures
 
@@ -134,6 +142,9 @@
   display: flex;
   @media screen and (max-width: 767px) {
     flex-wrap: wrap;
+  }
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
   }
 }
 .modelling-create__item {
@@ -157,11 +168,17 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
-  color: #487996;
-  background-color: #f5f5fa;
+  color: $secondary-text;
+  background-color: $secondary-bg;
   text-align: center;
   text-transform: uppercase;
   border-radius: 31px;
   box-shadow: -5px -5px 10px 0px #ffffff, 5px 5px 10px 0px #48799640,
     10px 10px 20px 0px #4879961a, -10px -10px 20px 0px #ffffff;
+
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 277px;
+  }
 }
