@@ -1,52 +1,55 @@
-<form class="form take-order__section">
-    <h3 class="section__title-subsection form__title">ЗВ’ЯЖІТЬСЯ З НАМИ</h3>
+<form class="form take-order__section-form">
+  <h3 class="section__title-subsection form__title">ЗВ’ЯЖІТЬСЯ З НАМИ</h3>
 
-    <label class="form__field form__field--position-first">
-        <input class="form__input" name="name" type="text" placeholder=" " />
-        <span class="form__label form__label--position">Ім’я</span>
-    </label>
+  <label class="form__field form__field--position-first">
+    <input class="form__input" name="name" type="text" placeholder=" " />
+    <span class="form__label form__label--position">Ім’я</span>
+  </label>
 
-    <label class="form__field form__field--position">
-        <input class="form__input" name="fild_mail" type="email" placeholder=" " />
-        <span class="form__label form__label--position">Email</span>
-    </label>
+  <label class="form__field form__field--position">
+    <input class="form__input" name="fild_mail" type="email" placeholder=" " />
+    <span class="form__label form__label--position">Email</span>
+  </label>
 
-    <label class="form__field form__field--position">
-        <select class="form__select" name="type_of_plastic" placeholder=" "></select>
+  <label class="form__field form__field--position">
+    <select class="form__select" name="type_of_plastic" placeholder=" "></select>
 
-        <span class="form__label form__label--position">Види пластика</span>
-    </label>
+    <span class="form__label form__label--position">Види пластика</span>
+  </label>
 
-    <label class="form__field form__field--position">
-        <select class="form__select" name="print_quality" placeholder="fgdfgdfg">
-            <option hidden value=""></option>
-            <option value="300">300 мікрон</option>
-            <option value="200">200 мікрон</option>
-            <option value="100">100 мікрон</option>
-            <option value="0">Труднощі у виборі - ми допоможемо</option>
-        </select>
+  <label class="form__field form__field--position">
+    <select class="form__select" name="print_quality" placeholder="fgdfgdfg">
+      <option hidden value=""></option>
+      <option value="300">300 мікрон</option>
+      <option value="200">200 мікрон</option>
+      <option value="100">100 мікрон</option>
+      <option value="0">Труднощі у виборі - ми допоможемо</option>
+    </select>
 
-        <span class="form__label form__label--position">Якість друку</span>
-    </label>
+    <span class="form__label form__label--position">Якість друку</span>
+  </label>
 
-    <label class="form__field form__field--position">
-        <select class="form__select" name="print_color" placeholder=" "></select>
-        <span class="form__label form__label--position">Колір</span>
-    </label>
+  <label class="form__field form__field--position">
+    <select class="form__select" name="print_color" placeholder=" "></select>
+    <span class="form__label form__label--position">Колір</span>
+  </label>
 
-    <label class="form__field form__field--position-textatea">
-        <textarea
-            class="form__textarea"
-            name="comment"
-            cols="30"
-            rows="10"
-            placeholder="Залишіть своє повідомлення"
-        ></textarea>
-        <span class="form__label form__label--position-textarea">Повідомлення</span>
-    </label>
+  <label class="form__field form__field--position-textatea">
+    <textarea
+      class="form__textarea"
+      name="comment"
+      cols="30"
+      rows="10"
+      placeholder="Залишіть своє повідомлення"
+    ></textarea>
+    <span class="form__label form__label--position-textarea">Повідомлення</span>
+    <svg class="form__paperclip">
+      <use href="./images/svg/sprites.svg#paperclip"></use>
+    </svg>
+  </label>
 
-    <p class="form__note section__text">
-        * Прикріпіть зображення / креслення / STL / Obj / CAD-модель
-    </p>
-    <button class="button button__form button__form--position" type="submit">ВІДПРАВИТИ</button>
+  <p class="form__note section__text">
+    * Прикріпіть зображення / креслення / STL / Obj / CAD-модель
+  </p>
+  <button class="button button__form button__form--position" type="submit">ВІДПРАВИТИ</button>
 </form>

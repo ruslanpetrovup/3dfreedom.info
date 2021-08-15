@@ -37,7 +37,7 @@ form {
 
 .container {
   width: 100%;
-  
+
   @media screen and (max-width: 767px) {
     padding-left: 20px;
     padding-right: 20px;
@@ -92,6 +92,12 @@ form {
 
     color: $secondary-text;
     text-transform: uppercase;
+  }
+
+  @include respond-from-min($desktop) {
+    &__title-subsection--position {
+      margin-top: 30px;
+    }
   }
 
   &__title--position {
