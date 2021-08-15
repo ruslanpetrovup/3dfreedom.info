@@ -223,7 +223,7 @@
   .header-menu-close{
     position: relative;
     top: 7px;
-    right: -160px;
+    right: -165px;
     border: none;
     box-sizing: border-box;
     border-radius: 50%;
@@ -245,7 +245,7 @@
 @media screen and (min-width: 1440px) {
   .header {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-between;
     padding-top: 40px;
     padding-bottom: 36px;
@@ -269,6 +269,7 @@
 
     &__mobile-lang {
       display: flex;
+      align-items: stretch;
     }
 
     &__link {
@@ -316,4 +317,17 @@
     display: none;
   }
 
+  .header-form-expand{
+    position: relative;
+    top: -20px;
+    left: 90px;
+    width: 0px;
+    border: none;
+    background-color: inherit;
+    fill: #008CEF;
+  }
+
+  .header-service{
+    margin-top: 8px;
+  }
 }
