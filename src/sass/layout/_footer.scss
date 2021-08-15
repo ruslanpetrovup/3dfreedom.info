@@ -37,7 +37,10 @@
   color: $primary-text;
   cursor: pointer;
 }
-
+.footer__nav-link:hover,
+.footer__nav-link:focus {
+  color: #6d6565;
+}
 .footer-network__list {
   display: block;
 }
@@ -59,7 +62,10 @@
   color: $primary-text;
   cursor: pointer;
 }
-
+.footer-network__link:hover,
+.footer-network__link:focus {
+  color: #6d6565;
+}
 .footer-contacts__list {
   display: block;
 }
@@ -88,7 +94,7 @@
 }
 .footer-contacts__link:hover,
 .footer-contacts__link:focus {
-  color: #1c75a8;
+  color: #10415e;
 }
 .footer-contacts__text {
   margin-top: 24px;
