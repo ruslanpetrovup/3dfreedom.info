@@ -1,17 +1,10 @@
 .scanning-hero {
-  margin-bottom: 24px;
-  //   background-image: url(../../images/scanning/scanning-mob.jpg);
-  // background: $secondary-bg;
-  // background-repeat: no-repeat;
-  // background-position: bottom;
-
   &__title {
     color: $secondary-text;
     font-weight: 700;
     font-size: 24px;
     line-height: 1.25;
     text-transform: uppercase;
-    margin-top: 36px;
     margin-bottom: 16px;
   }
   &__text {
@@ -24,11 +17,38 @@
     }
   }
 }
-// @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-//     .scanning-hero {
-//       background-image: url(../../images/scanning/scanning-mob@2x.jpg);
-//     }
-// scan-process
+.scanning__picture {
+  margin-bottom: 24px;
+  min-height: 200px;
+  background-image: url(../images/scanning/scanning-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 280px),
+    screen and (min-resolution: 192dpi) and (min-width: 280px),
+    screen and (min-resolution: 2dppx) and (min-width: 280px) {
+    background-image: url(../images/scanning/scanning-mob@2x.jpg);
+  }
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/scanning/scanning-tab.jpg);
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    background-image: url(../images/scanning/scanning-tab@2x.jpg);
+    background-size: cover;
+  }
+  @media screen and (min-width: 1440px) {
+    background-image: url(../images/scanning/scanning.jpg);
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1440px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    background-image: url(../images/scanning/scanning@2x.jpg);
+  }
+}
+
 .scan-process {
   &__title {
     color: $secondary-text;
