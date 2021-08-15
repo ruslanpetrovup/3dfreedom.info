@@ -59,22 +59,18 @@
     &:nth-child(-n + 3),
     &:nth-last-child(-n + 3) {
       height: 158px;
-      outline: 3px solid red;
     }
 
     &:nth-child(n + 4):nth-child(-n + 6) {
       height: 165px;
-      outline: 3px solid blue;
     }
 
     &:nth-child(n + 7):nth-child(-n + 8) {
       height: 124px;
-      outline: 3px solid green;
     }
 
     &:nth-child(9) {
       height: 124px;
-      outline: 3px solid green;
       width: 112px;
     }
   }
@@ -86,23 +82,14 @@
     &:nth-child(-n + 3),
     &:nth-last-child(-n + 3) {
       height: 260px;
-      outline: 3px solid red;
     }
 
     &:nth-child(n + 4):nth-child(-n + 6) {
       height: 271px;
-      outline: 3px solid blue;
     }
 
-    &:nth-child(n + 7):nth-child(-n + 8) {
+    &:nth-child(n + 7):nth-child(-n + 9) {
       height: 203px;
-      outline: 3px solid green;
-    }
-
-    &:nth-child(9) {
-      height: 124px;
-      outline: 3px solid green;
-      width: 185px;
     }
   }
 }
