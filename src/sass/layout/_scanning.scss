@@ -51,8 +51,8 @@
     min-height: 368px;
   }
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1440px),
-    screen and (min-resolution: 192dpi) and (min-width: 768px),
-    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    screen and (min-resolution: 192dpi) and (min-width: 1440px),
+    screen and (min-resolution: 2dppx) and (min-width: 1440px) {
     background-image: url(../images/scanning/scanning@2x.jpg);
     background-position: 100% 100%;
     min-height: 368px;
@@ -77,7 +77,9 @@
     font-size: 14px;
     line-height: 1.28;
     text-align: center;
-    padding-top: 114px;
+    margin-top: 114px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 .scan-process__list {
@@ -100,18 +102,120 @@
   margin-top: 16px;
   flex-direction: column;
   position: relative;
-}
+  &--preparation::before {
+    background-image: url(../images/scanning/process/01-scan-mob.jpg);
 
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 280px),
+      screen and (min-resolution: 192dpi) and (min-width: 280px),
+      screen and (min-resolution: 2dppx) and (min-width: 280px) {
+      background-image: url(../images/scanning/process/01-scan-mob@2x.jpg);
+    }
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/scanning/process/01-scan-tab.jpg);
+    }
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+      screen and (min-resolution: 192dpi) and (min-width: 768px),
+      screen and (min-resolution: 2dppx) and (min-width: 768px) {
+      background-image: url(../images/scanning/process/01-scan-tab@2x.jpg);
+    }
+    @media screen and (min-width: 1440px) {
+      background-image: url(../images/scanning/process/01-scan.jpg);
+    }
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1440px),
+      screen and (min-resolution: 192dpi) and (min-width: 1440px),
+      screen and (min-resolution: 2dppx) and (min-width: 1440px) {
+      background-image: url(../images/scanning/process/01-scan@2x.jpg);
+    }
+  }
+  &--creation::before {
+    background-image: url(../images/scanning/process/02-scan-mob.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 280px),
+      screen and (min-resolution: 192dpi) and (min-width: 280px),
+      screen and (min-resolution: 2dppx) and (min-width: 280px) {
+      background-image: url(../images/scanning/process/02-scan-mob@2x.jpg);
+    }
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/scanning/process/02-scan-tab.jpg);
+    }
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+      screen and (min-resolution: 192dpi) and (min-width: 768px),
+      screen and (min-resolution: 2dppx) and (min-width: 768px) {
+      background-image: url(../images/scanning/process/02-scan-tab@2x.jpg);
+    }
+    @media screen and (min-width: 1440px) {
+      background-image: url(../images/scanning/process/02-scan.jpg);
+    }
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1440px),
+      screen and (min-resolution: 192dpi) and (min-width: 1440px),
+      screen and (min-resolution: 2dppx) and (min-width: 1440px) {
+      background-image: url(../images/scanning/process/02-scan@2x.jpg);
+    }
+  }
+  &--transformation::before {
+    background-image: url(../images/scanning/process/03-scan-mob.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 280px),
+      screen and (min-resolution: 192dpi) and (min-width: 280px),
+      screen and (min-resolution: 2dppx) and (min-width: 280px) {
+      background-image: url(../images/scanning/process/03-scan-mob@2x.jpg);
+    }
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/scanning/process/03-scan-tab.jpg);
+    }
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+      screen and (min-resolution: 192dpi) and (min-width: 768px),
+      screen and (min-resolution: 2dppx) and (min-width: 768px) {
+      background-image: url(../images/scanning/process/03-scan-tab@2x.jpg);
+    }
+    @media screen and (min-width: 1440px) {
+      background-image: url(../images/scanning/process/03-scan.jpg);
+    }
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1440px),
+      screen and (min-resolution: 192dpi) and (min-width: 1440px),
+      screen and (min-resolution: 2dppx) and (min-width: 1440px) {
+      background-image: url(../images/scanning/process/03-scan@2x.jpg);
+    }
+  }
+  &--print::before {
+    background-image: url(../images/scanning/process/04-scan-mob.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 280px),
+      screen and (min-resolution: 192dpi) and (min-width: 280px),
+      screen and (min-resolution: 2dppx) and (min-width: 280px) {
+      background-image: url(../images/scanning/process/04-scan-mob@2x.jpg);
+    }
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/scanning/process/04-scan-tab.jpg);
+    }
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+      screen and (min-resolution: 192dpi) and (min-width: 768px),
+      screen and (min-resolution: 2dppx) and (min-width: 768px) {
+      background-image: url(../images/scanning/process/04-scan-tab@2x.jpg);
+    }
+    @media screen and (min-width: 1440px) {
+      background-image: url(../images/scanning/process/04-scan.jpg);
+    }
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1440px),
+      screen and (min-resolution: 192dpi) and (min-width: 1440px),
+      screen and (min-resolution: 2dppx) and (min-width: 1440px) {
+      background-image: url(../images/scanning/process/04-scan@2x.jpg);
+    }
+  }
+}
 .scan-process__frame::before {
   content: '';
   display: block;
   position: absolute;
   width: 94px;
   height: 82px;
-  background-image: url(../images/scanning/process/01-scan-mob.jpg);
+  // background-image: url(../images/scanning/process/01-scan-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 //order-form
@@ -139,6 +243,9 @@
       width: 515px;
     }
   }
+  .scan-process__frame::before {
+    top: 30%;
+  }
   .scan-process {
     &__title {
       font-size: 24px;
@@ -148,9 +255,11 @@
     }
 
     &__subtitle {
-      color: $secondary-text;
       font-weight: 400;
       font-size: 14px;
+      margin-top: 130px;
+      padding-right: 35px;
+      padding-left: 35px;
     }
   }
   .scan-process__frame {
@@ -196,6 +305,9 @@
       font-weight: 300;
       font-size: 18px;
       line-height: 1.22;
+      margin-top: 230px;
+      padding-right: 35px;
+      padding-left: 35px;
     }
   }
   .scan-process__frame {
@@ -204,5 +316,8 @@
     &:not(:last-child) {
       margin-left: 24px;
     }
+  }
+  .scan-process__frame::before {
+    top: 50%;
   }
 }
