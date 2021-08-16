@@ -40,7 +40,6 @@
   }
   @media screen and (min-width: 768px) {
     background-image: url(../images/scanning/scanning-tab.jpg);
-    // background-position: 103% 95%;
     width: 241px;
     height: 172px;
     position: absolute;
@@ -56,7 +55,6 @@
   }
   @media screen and (min-width: 1444px) {
     background-image: url(../images/scanning/scanning.jpg);
-    // background-position: 80% 150%;
     width: 515px;
     height: 368px;
     top: 34%;
@@ -294,9 +292,6 @@
   .scan-process__frame::before {
     top: 30%;
   }
-  // .scanning__picture {
-  //   height: 0;
-  // }
 
   .scan-process {
     &__title {
@@ -348,9 +343,7 @@
       // width: 475px;
     }
   }
-  // .scanning__picture {
-  //   height: 0;
-  // }
+
   .scan-process {
     &__title {
       font-size: 36px;
