@@ -68,7 +68,12 @@
     justify-content: flex-end;
   }
 
+  .work-time__item :first-child {
+    margin-right: 6px;
+  }
+
   .image-decor {
+    margin-top: 92px;
     line-height: 0;
     position: relative;
 

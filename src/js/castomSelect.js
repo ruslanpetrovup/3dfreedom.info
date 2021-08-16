@@ -35,7 +35,7 @@ let select = function () {
         if (text != "") {
             select.parentElement.querySelector('.form__label').classList.add('no_empti');
         }
-        // console.log(currentText);
+        console.log(currentText);
     }
 
 
