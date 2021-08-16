@@ -1,1 +1,1 @@
-import './sass/mai.scss'
+import './sass/main.scss'
