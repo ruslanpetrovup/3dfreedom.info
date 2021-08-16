@@ -1,3 +1,10 @@
-@import './printing';
-@import './footer';
+@import './layout/header';
 
+@import './footer';
+@import './more-photos';
+
+// PAGES
+@import './modelling';
+@import './scanning';
+@import './printing';
+@import './contact-page';

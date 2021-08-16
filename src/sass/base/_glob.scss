@@ -1,6 +1,6 @@
 @import './emoji';
 body {
-  font-family: 'Cera Pro', sans-serif;
+  font-family: $primary-font;
   background-color: $primary-bg;
 }
 h1,
@@ -38,21 +38,23 @@ form {
 .container {
   width: 100%;
 
-  padding-left: 20px;
-  padding-right: 20px;
+  @media screen and (max-width: 767px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
-  @media screen and (min-width: 320px) and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     width: 320px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1439px) {
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
     width: 768px;
 
     padding-left: 60px;
     padding-right: 60px;
   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: $desktop) {
     width: 1440px;
     padding-left: 189px;
     padding-right: 189px;
@@ -65,11 +67,11 @@ form {
   &__title {
     @include font-source-sans(24px, 30px, 700);
 
-    @media screen and (min-width: 768px) {
+    @include respond-from-min($tablet) {
       @include font-source-sans(36px, 45px);
     }
 
-    @media screen and (min-width: 1440px) {
+    @include respond-from-min($desktop) {
       @include font-source-sans(48px, 60px);
     }
 
@@ -80,11 +82,11 @@ form {
   &__title-subsection {
     @include font-source-sans(18px, 23px, 700);
 
-    @media screen and (min-width: 768px) {
+    @include respond-from-min($tablet) {
       @include font-source-sans(24px, 30px);
     }
 
-    @media screen and (min-width: 1440px) {
+    @include respond-from-min($desktop) {
       @include font-source-sans(36px, 45px);
     }
 
@@ -92,14 +94,12 @@ form {
     text-transform: uppercase;
   }
 
-  @media screen and (max-width: 767px) {
-    &__title--position {
+  &__title--position {
+    @include respond-to-max($tablet) {
       margin-top: 12px;
     }
-  }
 
-  @media screen and (min-width: 768px) {
-    &__title--position {
+    @include respond-from-min($tablet) {
       margin-top: 24px;
     }
   }
@@ -107,22 +107,22 @@ form {
   &__text {
     @include font-source-sans(16px, 20px, 300);
 
-    @media screen and (min-width: 1440px) {
+    @include respond-from-min($desktop) {
       @include font-source-sans(18px, 23px);
     }
 
     color: $primary-text;
   }
 
-  @media screen and (min-width: 1440px) {
-    &__text--position-dekstop {
-      margin-top: 24px;
+  @include respond-to-max($desktop) {
+    &__text--position {
+      margin-top: 16px;
     }
   }
 
-  @media screen and (max-width: 1439px) {
-    &__text--position {
-      margin-top: 16px;
+  @include respond-from-min($desktop) {
+    &__text--position-dekstop {
+      margin-top: 24px;
     }
   }
 }

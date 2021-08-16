@@ -31,8 +31,10 @@
     }
   }
 
-  &__form--position {
-    margin-top: 24px;
+  @media screen and (max-width: 767px) {
+    &__form--position {
+      margin-top: 24px;
+    }
   }
 
   transition: background-color $var-animation-duration $var-animation-cubic,

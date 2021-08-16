@@ -2,17 +2,26 @@
   padding-top: 12px;
   padding-bottom: 76px;
 
-  &__title {
-    letter-spacing: -0.04em;
+  @media screen and (min-width: 768px) {
+    padding-top: 24px;
   }
 
-  &__section {
-    padding-bottom: 52px;
+  @media screen and (max-width: 767px) {
+    &__title {
+      letter-spacing: -0.04em;
+    }
   }
 
-  // &__section-address {
-  //   // padding-bottom: 76px;
-  // }
+  @media screen and (max-width: 767px) {
+    &__section {
+      padding-bottom: 52px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    &__section {
+      padding-bottom: 76px;
+    }
+  }
 }
 
 .take-order-hero {
@@ -20,10 +29,32 @@
     width: 100%;
   }
 
-  &__image {
-    margin-top: 16px;
+  @media screen and (max-width: 767px) {
+    &__content {
+      margin-top: 16px;
+    }
+
+    &__sub-text {
+      margin-top: 16px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &__content {
+      display: flex;
+      margin-top: 24px;
+    }
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-left: 20px;
+    }
+
+    // &__sub-text {
+    // }
   }
 }
 
-@import './contacts';
-@import './form';
+
