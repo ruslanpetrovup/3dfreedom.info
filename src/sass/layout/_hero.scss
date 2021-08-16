@@ -1,5 +1,5 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 .list {
   list-style-type: none;
@@ -72,25 +72,21 @@ html {
     }
   }
 }
-.img-radius--left {
-  border-radius: 0px 35px 0px 0px;
+.hero-img {
   filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.3));
-}
-
-.img-radius--around {
-  border-radius: 100px;
-  filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.3));
-
-  @include respond-from-min($tablet) {  
+  
+  &--left {
+    border-radius: 0px 35px 0px 0px; 
   }
-  @include respond-from-min($desktop) { 
+  
+  &--around {
+    border-radius: 100px;
+  }
+
+  &--right {
+    border-radius: 0px 25px;
   }
 }
-.img-radius--right {
-  border-radius: 0px 25px;
-  filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.3));
-}
-
 /* .arrow__gallery {
   position: relative;
   border-radius: 0px 0px 35px 0px;
