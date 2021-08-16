@@ -2,6 +2,10 @@
   padding-top: 12px;
   padding-bottom: 76px;
 
+  @media screen and (min-width: 1440px) {
+    padding-bottom: 100px;
+  }
+
   @media screen and (min-width: 768px) {
     padding-top: 24px;
   }
@@ -13,13 +17,21 @@
   }
 
   @media screen and (max-width: 767px) {
-    &__section {
+    &__section,
+    &__section-form {
       padding-bottom: 52px;
     }
   }
-  @media screen and (min-width: 768px) {
-    &__section {
+
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    &__section,
+    &__section-form {
       padding-bottom: 76px;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    &__section {
+      padding-bottom: 100px;
     }
   }
 }
@@ -55,6 +67,55 @@
     // &__sub-text {
     // }
   }
+  @media screen and (min-width: 1440px) {
+    &__text {
+      margin-left: 32px;
+    }
+  }
 }
 
+@media screen and (max-width: 1439px) {
+  .take-order-hero__text-image {
+    display: none;
+  }
 
+  .image-decor {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .take-order-hero__text-image {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .take-order-hero__image-1 {
+    overflow: hidden;
+    border-bottom-right-radius: 72px;
+    border-top-right-radius: 72px;
+    box-shadow: (20px 20px 80px rgba(0, 0, 0, 0.25));
+  }
+
+  .take-order-hero__image-2 {
+    overflow: hidden;
+    border-bottom-right-radius: 72px;
+    border-top-left-radius: 72px;
+    box-shadow: (20px 20px 80px rgba(0, 0, 0, 0.25));
+  }
+
+  .take-order-hero__image-3 {
+    overflow: hidden;
+    border-bottom-right-radius: 72px;
+    box-shadow: (20px 20px 80px rgba(0, 0, 0, 0.25));
+  }
+
+  .take-order__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .take-order__container--position {
+    flex-direction: column;
+  }
+}

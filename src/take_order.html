@@ -1,36 +1,38 @@
 <html lang="uk">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-            rel="stylesheet"
-        />
-        <title>3DFREEDOM — Замовити</title>
-    </head>
-    <body>
-        <!-- Header -->
-        <include src="./partials/header.html"></include>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>3DFREEDOM — Замовити</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <include src="./partials/header.html"></include>
 
-        <section class="take-order section">
-            <div class="container">
-                <!-- Hero-->
-                <include src="./partials/order/hero.html"></include>
+    <section class="take-order section">
+      <div class="container">
+        <!-- Hero-->
+        <include src="./partials/order/hero.html"></include>
+        <div class="take-order__container">
+          <!-- Form-->
+          <include src="./partials/order/form.html"></include>
 
-                <!-- Form-->
-                <include src="./partials/order/form.html"></include>
+          <!-- Contacts-->
+          <include src="./partials/order/contacts.html"></include>
+        </div>
+      </div>
+    </section>
 
-                <!-- Contacts-->
-                <include src="./partials/order/contacts.html"></include>
-            </div>
-        </section>
+    <!-- Footer -->
+    <include src="./partials/footer.html"></include>
 
-        <!-- Footer -->
-        <include src="./partials/footer.html"></include>
-
-        <!-- Main SASS File in Script -->
-        <script src="./take_order.js"></script>
-    </body>
+    <!-- Main SASS File in Script -->
+    <script src="./take_order.js"></script>
+    <script src="./js/castomSelect.js"></script>
+  </body>
 </html>

@@ -12,10 +12,25 @@
     }
   }
 
+  @media screen and (min-width: 1440px) {
+    margin: 0;
+    width: 515px;
+  }
+
+  &__paperclip {
+    cursor: pointer;
+    right: 21px;
+    bottom: 18px;
+    position: absolute;
+    fill: #cdcdcd;
+    width: 22px;
+    height: 20px;
+  }
+
   &__note {
     margin-top: 4px;
     font-weight: 400;
-    color: #cdcdcd;
+    color: $placeholder-form-color;
   }
 
   &__label {
@@ -29,26 +44,38 @@
 
   &__label {
     @include font-source-sans(16px, 20px, 400);
+
+    @media screen and (min-width: 1440px) {
+      @include font-source-sans(18px, 20px);
+    }
+
     text-transform: capitalize;
   }
 
   &__field--position {
-    margin-top: 39px;
+    margin-top: 35px;
   }
 
   @media screen and (max-width: 767px) {
     &__field--position-first {
-      margin-top: 23px;
+      margin-top: 19px;
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
     &__field--position-first {
-      margin-top: 30px;
+      margin-top: 26px;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    &__field--position-first {
+      margin-top: 35px;
     }
   }
 
   &__field--position-textatea {
+    position: relative;
     margin-top: 68px;
   }
 
@@ -72,15 +99,23 @@
     transform: translateY(-38px);
   }
 
+  &__label--position.no_empti {
+    transform: translateY(-38px);
+  }
+
   &__input {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   &__input,
   &__select {
-    padding-top: 4px;
-    padding-bottom: 4px;
+    // padding-top: 4px;
+    // padding-bottom: 4px;
+
+    padding-top: 5px;
+    padding-bottom: 7px;
+
     width: 100%;
     @include font-source-sans(16px, 20px, 400);
     border-top: none;
@@ -115,10 +150,87 @@
   font-family: Cera Pro;
   // text-transform: uppercase;
   @include font-source-sans(16px, 20px);
+
+  @media screen and (min-width: 1440px) {
+    @include font-source-sans(18px, 20px);
+  }
+
   color: $placeholder-form-color;
 }
 @media screen and (min-width: 768px) {
   .button__form--position {
     align-self: flex-end;
+  }
+}
+
+.select {
+  &.is-active &__boody {
+    display: block;
+  }
+
+  position: relative;
+  &__heder {
+    // height: 32px;
+    display: flex;
+    cursor: pointer;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #487996;
+    padding-left: 8px;
+    padding-right: 3px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+  }
+  &__current {
+    @include font-source-sans(16px, 20px, 400);
+  }
+
+  &__icon {
+    align-items: center;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    margin-left: auto;
+  }
+  &__icon-expand {
+    width: 19px;
+    height: 13px;
+  }
+
+  &__icon-collapse {
+    width: 19px;
+    height: 13px;
+  }
+
+  &__icon-none {
+    display: none;
+  }
+
+  &__boody {
+    z-index: 2;
+    display: none;
+    position: absolute;
+    border-top: 0;
+    border-bottom: 1px solid #487996;
+    background-color: $primary-bg;
+    left: 0;
+    right: 0;
+    top: 100%;
+  }
+
+  &__item {
+    // @media screen and (min-width: 768px) {
+    //   height: 32px;
+    // }
+    cursor: pointer;
+    @include font-source-sans(16px, 20px, 400);
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+  }
+  &__item:hover {
+    background-color: rgba(72, 121, 150, 0.5);
   }
 }

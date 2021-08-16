@@ -10,25 +10,40 @@
       rel="stylesheet"
     />
     <title>3DFREEDOM — Головна</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="icon" type="image/png" href="./images/favicon/favicon-16x16.png" sizes="16x16" />
+    <!-- <link rel="icon" type="image/png" href="./images/favicon/favicon-32x32.png" sizes="32x32" /> -->
+    <link rel="icon" type="image/png" href="./images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="./images/favicon/favicon-152x152.png" sizes="152x152" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/touch-icon-iphone.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="./images/favicon/touch-icon-ipad.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./images/favicon/touch-icon-iphone-retina.png"
+    />
+    <link rel="manifest" href="./images/favicon/manifest.json" />
   </head>
   <body>
     <!-- Header -->
     <include src="./partials/header.html"></include>
-    <h1>Hello world</h1>
-    <svg>
-      <use href="./images/svg/sprites.svg#wink"></use>
-    </svg>
-    <!-- TODO: Hero -->
-    <include src="./partials/main/hero.html"></include>
 
-    <!-- TODO: Gallery -->
-    <include src="./partials/main/gallery.html"></include>
-    <!-- TODO: More photo -->
-    <include src="./partials/main/more-photos.html"></include>
+    <main>
+      <!-- Hero -->
+      <include src="./partials/main/hero.html"></include>
 
-    <!-- Footer -->
-    <include src="./partials/footer.html"></include>
-    <include src="./partials/main/modal-photos.html"></include>
+      <!-- Gallery -->
+      <include src="./partials/main/gallery.html"></include>
+
+      <!-- More photo -->
+      <include src="./partials/main/more-photos.html"></include>
+    </main>
+
+    <footer>
+      <!-- Footer -->
+      <include src="./partials/footer.html"></include>
+      <include src="./partials/main/modal-photos.html"></include>
+    </footer>
 
     <!-- Main SASS File in Script -->
     <script src="./index.js"></script>

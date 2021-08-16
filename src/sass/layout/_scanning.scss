@@ -23,10 +23,15 @@
 }
 .scanning-hero {
   margin-bottom: 24px;
-  min-height: 200px;
+}
+.scanning-hero_container {
+  position: relative;
+}
+.scanning__picture {
+  height: 200px;
   background-image: url(../images/scanning/scanning-mob.jpg);
   background-repeat: no-repeat;
-  background-position: 50% 100%;
+  background-size: cover;
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 280px),
     screen and (min-resolution: 192dpi) and (min-width: 280px),
@@ -35,27 +40,30 @@
   }
   @media screen and (min-width: 768px) {
     background-image: url(../images/scanning/scanning-tab.jpg);
-    background-position: 100% 90%;
-    min-height: 172px;
+    width: 241px;
+    height: 172px;
+    position: absolute;
+    background-size: contain;
+    top: 50%;
+    left: 72%;
+    z-index: -1;
   }
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
     screen and (min-resolution: 192dpi) and (min-width: 768px),
     screen and (min-resolution: 2dppx) and (min-width: 768px) {
     background-image: url(../images/scanning/scanning-tab@2x.jpg);
-    background-position: 100% 90%;
-    min-height: 172px;
   }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1444px) {
     background-image: url(../images/scanning/scanning.jpg);
-    background-position: 84% 100%;
-    min-height: 368px;
+    width: 515px;
+    height: 368px;
+    top: 34%;
+    left: 52%;
   }
-  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1440px),
-    screen and (min-resolution: 192dpi) and (min-width: 1440px),
-    screen and (min-resolution: 2dppx) and (min-width: 1440px) {
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1444px),
+    screen and (min-resolution: 192dpi) and (min-width: 1444px),
+    screen and (min-resolution: 2dppx) and (min-width: 1444px) {
     background-image: url(../images/scanning/scanning@2x.jpg);
-    background-position: 84% 100%;
-    min-height: 368px;
   }
 }
 
@@ -104,31 +112,45 @@
   position: relative;
   &--preparation::before {
     background-image: url(../images/scanning/process/01-scan-mob.jpg);
+    width: 94px;
+    height: 82px;
 
     @media screen and (min-device-pixel-ratio: 2) and (min-width: 280px),
       screen and (min-resolution: 192dpi) and (min-width: 280px),
       screen and (min-resolution: 2dppx) and (min-width: 280px) {
       background-image: url(../images/scanning/process/01-scan-mob@2x.jpg);
+      width: 94px;
+      height: 82px;
     }
     @media screen and (min-width: 768px) {
       background-image: url(../images/scanning/process/01-scan-tab.jpg);
+      width: 108px;
+      height: 94px;
     }
     @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
       screen and (min-resolution: 192dpi) and (min-width: 768px),
       screen and (min-resolution: 2dppx) and (min-width: 768px) {
       background-image: url(../images/scanning/process/01-scan-tab@2x.jpg);
+      width: 108px;
+      height: 94px;
     }
     @media screen and (min-width: 1440px) {
       background-image: url(../images/scanning/process/01-scan.jpg);
+      width: 177px;
+      height: 154px;
     }
-    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1440px),
-      screen and (min-resolution: 192dpi) and (min-width: 1440px),
-      screen and (min-resolution: 2dppx) and (min-width: 1440px) {
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1444px),
+      screen and (min-resolution: 192dpi) and (min-width: 1444px),
+      screen and (min-resolution: 2dppx) and (min-width: 1444px) {
       background-image: url(../images/scanning/process/01-scan@2x.jpg);
+      width: 177px;
+      height: 154px;
     }
   }
   &--creation::before {
     background-image: url(../images/scanning/process/02-scan-mob.jpg);
+    width: 93px;
+    height: 83px;
 
     @media screen and (min-device-pixel-ratio: 2) and (min-width: 280px),
       screen and (min-resolution: 192dpi) and (min-width: 280px),
@@ -137,69 +159,101 @@
     }
     @media screen and (min-width: 768px) {
       background-image: url(../images/scanning/process/02-scan-tab.jpg);
+      width: 107px;
+      height: 95px;
     }
     @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
       screen and (min-resolution: 192dpi) and (min-width: 768px),
       screen and (min-resolution: 2dppx) and (min-width: 768px) {
       background-image: url(../images/scanning/process/02-scan-tab@2x.jpg);
+      width: 107px;
+      height: 95px;
     }
     @media screen and (min-width: 1440px) {
       background-image: url(../images/scanning/process/02-scan.jpg);
+      width: 176px;
+      height: 156px;
     }
-    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1440px),
-      screen and (min-resolution: 192dpi) and (min-width: 1440px),
-      screen and (min-resolution: 2dppx) and (min-width: 1440px) {
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1444px),
+      screen and (min-resolution: 192dpi) and (min-width: 1444px),
+      screen and (min-resolution: 2dppx) and (min-width: 1444px) {
       background-image: url(../images/scanning/process/02-scan@2x.jpg);
+      width: 176px;
+      height: 156px;
     }
   }
   &--transformation::before {
     background-image: url(../images/scanning/process/03-scan-mob.jpg);
+    width: 94px;
+    height: 81px;
 
     @media screen and (min-device-pixel-ratio: 2) and (min-width: 280px),
       screen and (min-resolution: 192dpi) and (min-width: 280px),
       screen and (min-resolution: 2dppx) and (min-width: 280px) {
       background-image: url(../images/scanning/process/03-scan-mob@2x.jpg);
+      width: 94px;
+      height: 81px;
     }
     @media screen and (min-width: 768px) {
       background-image: url(../images/scanning/process/03-scan-tab.jpg);
+      width: 108px;
+      height: 93px;
     }
     @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
       screen and (min-resolution: 192dpi) and (min-width: 768px),
       screen and (min-resolution: 2dppx) and (min-width: 768px) {
       background-image: url(../images/scanning/process/03-scan-tab@2x.jpg);
+      width: 108px;
+      height: 93px;
     }
     @media screen and (min-width: 1440px) {
       background-image: url(../images/scanning/process/03-scan.jpg);
+      width: 177px;
+      height: 152px;
     }
-    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1440px),
-      screen and (min-resolution: 192dpi) and (min-width: 1440px),
-      screen and (min-resolution: 2dppx) and (min-width: 1440px) {
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1444px),
+      screen and (min-resolution: 192dpi) and (min-width: 1444px),
+      screen and (min-resolution: 2dppx) and (min-width: 1444px) {
       background-image: url(../images/scanning/process/03-scan@2x.jpg);
+      width: 177px;
+      height: 152px;
     }
   }
   &--print::before {
     background-image: url(../images/scanning/process/04-scan-mob.jpg);
+    width: 92px;
+    height: 82px;
 
     @media screen and (min-device-pixel-ratio: 2) and (min-width: 280px),
       screen and (min-resolution: 192dpi) and (min-width: 280px),
       screen and (min-resolution: 2dppx) and (min-width: 280px) {
       background-image: url(../images/scanning/process/04-scan-mob@2x.jpg);
+      width: 92px;
+      height: 82px;
     }
     @media screen and (min-width: 768px) {
       background-image: url(../images/scanning/process/04-scan-tab.jpg);
+      width: 107px;
+      height: 96px;
     }
     @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
       screen and (min-resolution: 192dpi) and (min-width: 768px),
       screen and (min-resolution: 2dppx) and (min-width: 768px) {
       background-image: url(../images/scanning/process/04-scan-tab@2x.jpg);
+      width: 107px;
+      height: 96px;
     }
     @media screen and (min-width: 1440px) {
       background-image: url(../images/scanning/process/04-scan.jpg);
+      width: 175px;
+      height: 157px;
     }
-    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1440px),
-      screen and (min-resolution: 192dpi) and (min-width: 1440px),
-      screen and (min-resolution: 2dppx) and (min-width: 1440px) {
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1444px),
+      screen and (min-resolution: 192dpi) and (min-width: 1444px),
+      screen and (min-resolution: 2dppx) and (min-width: 1444px) {
       background-image: url(../images/scanning/process/04-scan@2x.jpg);
+      width: 175px;
+      height: 157px;
     }
   }
 }
@@ -207,9 +261,6 @@
   content: '';
   display: block;
   position: absolute;
-  width: 94px;
-  height: 82px;
-  // background-image: url(../images/scanning/process/01-scan-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -241,9 +292,6 @@
   .scan-process__frame::before {
     top: 30%;
   }
-  .scanning__picture {
-    height: 0;
-  }
 
   .scan-process {
     &__title {
@@ -274,7 +322,7 @@
 }
 
 // Desktop
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1444px) {
   .scanning-hero {
     margin-bottom: 0;
     padding-bottom: 100px;
@@ -287,18 +335,15 @@
       font-size: 18px;
       line-height: 1.28;
       width: 515px;
-      margin-left: 32px;
+      margin-right: 32px;
     }
     &__desc {
       display: flex;
-      justify-content: center;
       align-items: flex-start;
-      width: 475px;
+      // width: 475px;
     }
   }
-  .scanning__picture {
-    height: 0;
-  }
+
   .scan-process {
     &__title {
       font-size: 36px;
@@ -322,6 +367,6 @@
     }
   }
   .scan-process__frame::before {
-    top: 50%;
+    top: 40%;
   }
 }
