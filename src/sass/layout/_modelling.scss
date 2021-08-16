@@ -14,40 +14,54 @@
   font-weight: bold;
   text-transform: uppercase;
   color: $secondary-text;
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 1.26;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 36px;
+  }
 }
 
 // Hero
 .modelling-hero__title {
-  margin-bottom: 16px;
   font-weight: 700;
   font-style: normal;
   font-size: 24px;
   line-height: 1.26;
+  margin-bottom: 16px;
   text-transform: uppercase;
-
-  color: #487996;
+  color: $secondary-text;
 
   @media screen and (min-width: 768px) {
     font-size: 36px;
-    line-height: 1.26;
   }
-
-  color: var(--secondary-text);
+  @media screen and (min-width: 1440px) {
+    font-size: 48px;
+    margin-bottom: 24px;
+  }
 }
 .modelling-text,
 .modelling-methods__item {
   font-weight: 300;
   font-size: 16px;
   line-height: 1.26;
-
   color: $primary-text;
   @media screen and (min-width: 1440px) {
     font-size: 18px;
   }
-
 }
 .modelling-hero__content {
   padding-bottom: 52px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 50px;
+  }
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+  }
 }
 .modelling-hero__text {
   @media screen and (min-width: 768px) {
@@ -55,16 +69,26 @@
   }
 }
 .modelling-hero__text:not(:last-child) {
-  margin-bottom: 16px;
+  @media screen and (max-width: 1439px) {
+    margin-bottom: 16px;
+  }
 }
 
 // Methods
 .modelling-methods__title {
-  font-size: 18px;
-  line-height: 1.28;
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
+    line-height: 1.28;
+  }
 }
 .modelling-methods__list {
   padding-bottom: 32px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 52px;
+  }
+  @media screen and (min-width: 1440px) {
+    padding-bottom: 100px;
+  }
 }
 .modelling-methods__item:not(:last-child) {
   margin-bottom: 16px;
@@ -72,32 +96,33 @@
 .modelling-methods__item {
   position: relative;
   display: flex;
-
   margin-left: 17px;
 }
 .modelling-methods__item::before {
   content: '';
+  position: absolute;
   min-width: 7px;
   height: 7px;
-
   top: 8px;
   left: -17px;
-
   background-color: $secondary-text;
   border-radius: 3px 0px;
-  &:last-child {
-    position: absolute;
-  }
 }
 
 // Backround picture
+.modelling-methods__container {
+  position: relative;
+}
+
 .modelling-methods__picture {
-  min-height: 164px;
-  margin-bottom: 52px;
+  height: 164px;
   background-image: url(../images/modeling/gear-mob.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 52px;
+  }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 280px),
     screen and (min-resolution: 192dpi) and (min-width: 280px),
@@ -106,7 +131,12 @@
   }
   @media screen and (min-width: 768px) {
     background-image: url(../images/modeling/gear-tab.jpg);
-    background-size: cover;
+    width: 246px;
+    height: 144px;
+    background-size: contain;
+    position: absolute;
+    right: 60px;
+    top: 31px;
   }
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
     screen and (min-resolution: 192dpi) and (min-width: 768px),
@@ -116,6 +146,13 @@
   }
   @media screen and (min-width: 1440px) {
     background-image: url(../images/modeling/gear.jpg);
+    width: 515px;
+    height: 301px;
+    background-size: contain;
+    position: absolute;
+    right: 189px;
+    top: -64px;
+    z-index: -1;
     background-size: cover;
   }
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1440px),
@@ -129,13 +166,31 @@
 // We Create
 .modelling-create__container {
   padding-bottom: 76px;
+  @media screen and (min-width: 1440px) {
+    padding-bottom: 100px;
+  }
 }
 .modelling-create__title {
-  font-size: 16px;
-  line-height: 1.25;
+  @media screen and (max-width: 767px) {
+    max-width: 220px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 480px;
+    margin-bottom: 24px;
+  }
+  @media screen and (min-width: 1140px) {
+    max-width: 840px;
+    margin-bottom: 52px;
+  }
 }
 .modelling-create__list {
   margin-bottom: 52px;
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 100px;
+  }
 }
 // We Create pictures
 
@@ -143,6 +198,9 @@
   display: flex;
   @media screen and (max-width: 767px) {
     flex-wrap: wrap;
+  }
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
   }
 }
 .modelling-create__item {
@@ -166,11 +224,17 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
-  color: #487996;
-  background-color: #f5f5fa;
+  color: $secondary-text;
+  background-color: $secondary-bg;
   text-align: center;
   text-transform: uppercase;
   border-radius: 31px;
   box-shadow: -5px -5px 10px 0px #ffffff, 5px 5px 10px 0px #48799640,
     10px 10px 20px 0px #4879961a, -10px -10px 20px 0px #ffffff;
+
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 277px;
+  }
 }
