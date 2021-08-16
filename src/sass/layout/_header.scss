@@ -88,7 +88,7 @@
 .header-menu-close{
   position: relative;
   top: 0px;
-  right: -50px;
+  right: 55px;
   border: none;
   box-sizing: border-box;
   border-radius: 50%;
@@ -222,8 +222,8 @@
 
   .header-menu-close{
     position: relative;
-    top: 7px;
-    right: -165px;
+    top: 0px;
+    right: 90px;
     border: none;
     box-sizing: border-box;
     border-radius: 50%;
@@ -313,7 +313,11 @@
     color: #2b2b2b;
   }
 
-    .header-menu{
+  .header-menu{
+    display: none;
+  }
+
+  .header-menu-close{
     display: none;
   }
 
