@@ -23,10 +23,15 @@
 }
 .scanning-hero {
   margin-bottom: 24px;
-  min-height: 200px;
+}
+.scanning-hero_container {
+  position: relative;
+}
+.scanning__picture {
+  height: 200px;
   background-image: url(../images/scanning/scanning-mob.jpg);
   background-repeat: no-repeat;
-  background-position: 50% 100%;
+  background-size: cover;
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 280px),
     screen and (min-resolution: 192dpi) and (min-width: 280px),
@@ -35,27 +40,30 @@
   }
   @media screen and (min-width: 768px) {
     background-image: url(../images/scanning/scanning-tab.jpg);
-    background-position: 103% 95%;
-    min-height: 172px;
+    width: 241px;
+    height: 172px;
+    position: absolute;
+    background-size: contain;
+    top: 50%;
+    left: 72%;
+    z-index: -1;
   }
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
     screen and (min-resolution: 192dpi) and (min-width: 768px),
     screen and (min-resolution: 2dppx) and (min-width: 768px) {
     background-image: url(../images/scanning/scanning-tab@2x.jpg);
-    background-position: 103% 95%;
-    min-height: 172px;
   }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1444px) {
     background-image: url(../images/scanning/scanning.jpg);
-    background-position: 80% 150%;
-    min-height: 368px;
+    width: 515px;
+    height: 368px;
+    top: 34%;
+    left: 52%;
   }
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1444px),
     screen and (min-resolution: 192dpi) and (min-width: 1444px),
     screen and (min-resolution: 2dppx) and (min-width: 1444px) {
     background-image: url(../images/scanning/scanning@2x.jpg);
-    background-position: 84% 100%;
-    min-height: 368px;
   }
 }
 
@@ -284,9 +292,6 @@
   .scan-process__frame::before {
     top: 30%;
   }
-  .scanning__picture {
-    height: 0;
-  }
 
   .scan-process {
     &__title {
@@ -338,9 +343,7 @@
       // width: 475px;
     }
   }
-  .scanning__picture {
-    height: 0;
-  }
+
   .scan-process {
     &__title {
       font-size: 36px;
