@@ -100,8 +100,6 @@ html {
 }
 
 .decor {
-  display: none;
-  
   &__tl {
     @include respond-from-min($tablet) {
       position: absolute;
