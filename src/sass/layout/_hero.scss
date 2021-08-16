@@ -1,122 +1,132 @@
+html {
+  scroll-behavior: smooth;
+}
 .list {
   list-style-type: none;
 }
-// .hero {
-//     padding-bottom: 76px;
-// }
+.hero {
+  padding-bottom: 52px;
 
-.hero__title {
- font-family: $secondary-font;
- font-style: normal;
- font-weight: 400;
-  font-size: 18px;
-  line-height: 1.16;
-  color: ($primary-text);
-  text-align: center;
-  margin-bottom: 32px;
-}
+  &__container {
+    max-width: 280px;
+    margin: 0 auto;
 
-.hero-list {
-    display: flex;
-    justify-content: center; 
-}
-.hero-list__item:not(:last-child) {
-  margin-right: 20px;
-}
-.hero-desc {
-  margin-top: 32px;
-}
-.hero-desc__text {
-font-family: $secondary-font;
-font-style: normal;
-font-weight: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 1.16px;
-text-align: center;
-color: ($primary-text);
-}
-@media screen and (min-width: 768px) and (max-width: 1439px) {
-  .hero__title {
-    font-size: 24px;
-    margin-bottom: 65px;
+    @include respond-from-min($tablet) {
+      max-width: 420px;
+    }
+    @include respond-from-min($desktop) {
+      max-width: 624px;
+    }
   }
+  &__title {
+    font-family: $secondary-font;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.16;
 
-  .hero-desc__text {
+    text-align: center;
     font-size: 18px;
+    color: $primary-text;
+    margin-bottom: 32px;
+
+    @include respond-from-min($tablet) {
+      font-size: 24px;
+      margin-bottom: 65px;
+    }
+    @include respond-from-min($desktop) {
+      font-size: 48px;
+      margin-bottom: 69px;
+    }
   }
-  .hero-desc {
+
+  &-list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &-list__item:not(:last-child) {
+    margin-right: 20px;
+  }
+  &-desc {
+    margin-top: 32px;
+  }
+
+  &-desc__text {
+    font-family: $secondary-font;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.16px;
+    text-align: center;
+    color: $primary-text;
     margin-top: 65px;
-}
-}
-@media screen and (min-width: 1440px) {
-  .hero__title {
-  font-size: 48px;
-   margin-bottom: 69px;
-  }
-  .hero-desc__text {
-    font-size: 36px;
-  }
-  .hero-desc {
-    margin-top: 100px;
-}
-}
 
-.img-radius--around {
-  border-radius: 100px;
-  
+    @media screen and (max-width: 767px) {
+      font-size: 16px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+      font-size: 18px;
+    }
+    @media screen and (min-width: 1440px) {
+      font-size: 36px;
+      margin-top: 100px;
+    }
+  }
 }
-.img-radius--left {
-  border-top-right-radius: 25%;
+.hero-img {
+  filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.3));
   
-}
-.img-radius--right {
-  border-top-right-radius: 25%;
-  border-bottom-left-radius: 25%;
+  &--left {
+    border-radius: 0px 35px 0px 0px; 
+  }
   
+  &--around {
+    border-radius: 100px;
+  }
+
+  &--right {
+    border-radius: 0px 25px;
+  }
 }
-/* .box {
-  min-height: 100vh;
+/* .arrow__gallery {
   position: relative;
+  border-radius: 0px 0px 35px 0px;
+  left: 90px;
 }
-.box__figure {
-  position: absolute;
-  width: 144px;
-  height: 144px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-  font-size: 64px;
-  color: #fff;
 
- background: turquoise;
+.arrow__icon {
+  height: 14px;
+  width: 9px;
+  fill: $accent;
+}
+.decor {
+  &__tl {
+    position: absolute;
+    width: 172.37px;
+    height: 116.11px;
+    left: 608.03px;
+    top: 47.38px;
+  }
+  &__bl {
+    position: absolute;
+    width: 140.66px;
+    height: 73.65px;
+    left: -3.19px;
+    top: 364.5px;
+  }
+  &__tr {
+position: absolute;
+width: 73.65px;
+height: 73.65px;
+left: 662.24px;
+top: 81.65px;
 border-radius: 0px 0px 72px 0px;
+  }
+  &__br {
+    position: absolute;
+width: 73.65px;
+height: 73.65px;
+left: 662.24px;
+top: 302.61px;
+  }
 }
-.box__figure:nth-child(1) {
-  left: 32px;
-  top: 151px;
-  background-color: #1789fc;
-
-  z-index: 2;
-}
-.box__figure:nth-child(2) {
-  top: 30px;
-  left: 230px;
-  background-color: #ef233c;
-
-  z-index: 2;
-}
-
-.box__figure:nth-child(3) {
-  top: 140px;
-  left: 220px;
-  background-color: #ffd07b;
-  z-index: 1;
-}
-
-.box__figure:nth-child(4) {
-  top: 120px;
-  left: 120px;
-  background-color: #4caf50;
-} */
+ */
