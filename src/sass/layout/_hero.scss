@@ -74,11 +74,11 @@ html {
 }
 .hero-img {
   filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.3));
-  
+
   &--left {
-    border-radius: 0px 35px 0px 0px; 
+    border-radius: 0px 35px 0px 0px;
   }
-  
+
   &--around {
     border-radius: 100px;
   }
@@ -87,46 +87,104 @@ html {
     border-radius: 0px 25px;
   }
 }
-/* .arrow__gallery {
-  position: relative;
-  border-radius: 0px 0px 35px 0px;
-  left: 90px;
+.arrow {
+  &__icon {
+    left: 78.13%;
+    right: -34.39%;
+    top: 93.76%;
+    bottom: -81.26%;
+    height: 14px;
+    width: 9px;
+    fill: $accent;
+  }
 }
 
-.arrow__icon {
-  height: 14px;
-  width: 9px;
-  fill: $accent;
-}
 .decor {
   &__tl {
-    position: absolute;
-    width: 172.37px;
-    height: 116.11px;
-    left: 608.03px;
-    top: 47.38px;
+    @include respond-from-min($tablet) {
+      position: absolute;
+      width: 73.65px;
+      height: 73.65px;
+      left: 105.76px;
+      top: 79.1px;
+
+      background: #ffffff;
+      border-radius: 72px;
+    }
+    @include respond-from-min($desktop) {
+      position: absolute;
+      width: 144px;
+      height: 144px;
+      left: 176px;
+      top: 146px;
+      background: #ffffff;
+      border-radius: 72px;
+    }
   }
+
   &__bl {
-    position: absolute;
-    width: 140.66px;
-    height: 73.65px;
-    left: -3.19px;
-    top: 364.5px;
+    @include respond-from-min($tablet) {
+      position: absolute;
+      width: 73.65px;
+      height: 73.65px;
+      left: 32.1px;
+      top: 364.5px;
+
+      background: #ffffff;
+      border-radius: 72px;
+    }
+    @include respond-from-min($desktop) {
+      position: absolute;
+      width: 144px;
+      height: 144px;
+      left: 32px;
+      top: 704px;
+      background: #ffffff;
+      border-radius: 72px;
+    }
   }
   &__tr {
-position: absolute;
-width: 73.65px;
-height: 73.65px;
-left: 662.24px;
-top: 81.65px;
-border-radius: 0px 0px 72px 0px;
+    @include respond-from-min($tablet) {
+      position: absolute;
+      width: 73.65px;
+      height: 73.65px;
+      left: 662.24px;
+      top: 81.65px;
+
+      background: #ffffff;
+      border-radius: 0px 0px 72px 0px;
+    }
+    @include respond-from-min($desktop) {
+      position: absolute;
+      width: 144px;
+      height: 144px;
+      left: 1264px;
+      top: 151px;
+
+      background: #ffffff;
+      border-radius: 0px 0px 72px 0px;
+    }
   }
   &__br {
-    position: absolute;
-width: 73.65px;
-height: 73.65px;
-left: 662.24px;
-top: 302.61px;
+    @include respond-from-min($tablet) {
+      position: absolute;
+      width: 73.65px;
+      height: 73.65px;
+      left: 662.24px;
+      top: 302.61px;
+      
+      background: #FFFFFF;
+      border-radius: 72px 72px 0px 0px;
+    }
+    @include respond-from-min($desktop) {
+      position: absolute;
+      width: 144px;
+      height: 144px;
+      left: 1264px;
+      top: 583px;
+      
+      background: #FFFFFF;
+      border-radius: 72px 72px 0px 0px;
+    }
   }
 }
- */
