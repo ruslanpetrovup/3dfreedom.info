@@ -1,4 +1,4 @@
-<form class="form take-order__section-form">
+<form class="form take-order__section-form" method="post" enctype="multipart/form-data">
   <h3 class="section__title-subsection form__title">ЗВ’ЯЖІТЬСЯ З НАМИ</h3>
 
   <label class="form__field form__field--position-first">
@@ -86,21 +86,24 @@
 
     <span class="form__label form__label--position">Колір</span>
   </div>
-
-  <label class="form__field form__field--position-textatea">
-    <textarea
-      class="form__textarea"
-      name="comment"
-      cols="30"
-      rows="10"
-      placeholder="Залишіть своє повідомлення"
-    ></textarea>
-    <span class="form__label form__label--position-textarea">Повідомлення</span>
-    <svg class="form__paperclip">
-      <use href="./images/svg/sprites.svg#paperclip"></use>
-    </svg>
-  </label>
-
+  <div class="form__file-selection">
+    <label class="form__field form__field--position-textatea">
+      <textarea
+        class="form__textarea"
+        name="comment"
+        cols="30"
+        rows="10"
+        placeholder="Залишіть своє повідомлення"
+      ></textarea>
+      <span class="form__label form__label--position-textarea">Повідомлення</span>
+    </label>
+    <label class="form__label-file">
+      <svg class="form__paperclip">
+        <use href="./images/svg/sprites.svg#paperclip"></use>
+      </svg>
+      <input type="file" name="photo" multiple accept="image/*,image/jpeg" hidden />
+    </label>
+  </div>
   <p class="form__note section__text">
     * Прикріпіть зображення / креслення / STL / Obj / CAD-модель
   </p>
