@@ -6,11 +6,20 @@
   display: inline-flex;
 }
 
-.address-tel,
-.work-time {
-  margin-top: 8px;
+@media screen and (max-width: 1439px) {
+  .address-tel,
+  .work-time,
+  .contacts__link {
+    margin-top: 8px;
+  }
 }
-
+@media screen and (min-width: 1440px) {
+  .address-tel,
+  .work-time,
+  .contacts__link {
+    margin-top: 18px;
+  }
+}
 
 .address-tel__item:not(:first-child),
 .work-time__item:not(:first-child) {
@@ -33,10 +42,6 @@
   }
 }
 
-.contacts__link {
-  margin-top: 8px;
-}
-
 @media screen and (min-width: 768px) and (max-width: 1439px) {
   .contacts {
     display: flex;
@@ -46,5 +51,90 @@
 
   .work-time__text {
     text-align: right;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .contacts {
+    text-align: right;
+
+    &__title-subsection {
+      margin-top: 30px;
+    }
+  }
+
+  .work-time__item {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .image-decor {
+    line-height: 0;
+    position: relative;
+
+    width: 438px;
+    height: 295px;
+    // background-image: url('../images/order/decor/order-galery-bg.jpg');
+    // background-image: url('../images/order/decor/order-galery-bg.jpg');
+    &__blok {
+      width: 138px;
+      height: 138px;
+      // background-image: url('../images/order/decor/order-galery-bg.jpg');
+      // background-repeat: no-repeat;
+      // background-size: cover;
+      // background-position: center;
+      // background-attachment: fixed; /* !!! */
+      background-color: black;
+      // box-shadow: (20px 20px 80px rgba(0, 0, 0, 0.25));
+      // border-top-right-radius: 72px;
+    }
+
+    &__container {
+      // outline: 1px solid red;
+
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      background: rgb(255, 255, 255);
+
+      mix-blend-mode: lighten;
+    }
+  }
+
+  .image-decor__blok-1 {
+    border-radius: 0px 72px 0px 0px;
+
+    // mix-blend-mode: lighten;
+  }
+
+  .image-decor__blok-2 {
+    border-radius: 0px 0px 0px 72px;
+    transform: translateY(10px);
+    // mix-blend-mode: lighten;
+  }
+
+  .image-decor__blok-3 {
+    border-radius: 72px 0px 72px 0px;
+    // mix-blend-mode: lighten;
+  }
+  .image-decor__blok-4 {
+    border-radius: 0px 72px 0px 72px;
+    transform: translateX(2px);
+    // mix-blend-mode: lighten;
+  }
+  .image-decor__blok-5 {
+    border-radius: 72px;
+    transform: translate(-5px, 5px);
+    // mix-blend-mode: lighten;
+  }
+  .image-decor__blok-6 {
+    border-radius: 0px 0px 72px 0px;
+    transform: translateX(-11px);
+    // mix-blend-mode: lighten;
   }
 }

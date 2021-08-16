@@ -94,6 +94,12 @@ form {
     text-transform: uppercase;
   }
 
+  @include respond-from-min($desktop) {
+    &__title-subsection--position {
+      margin-top: 30px;
+    }
+  }
+
   &__title--position {
     @include respond-to-max($tablet) {
       margin-top: 12px;
