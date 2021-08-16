@@ -91,6 +91,7 @@
 
     &__container {
       // outline: 1px solid red;
+
       position: absolute;
       top: 0;
       width: 100%;
@@ -99,7 +100,7 @@
       flex-wrap: wrap;
       justify-content: space-between;
 
-      background: rgb(121, 61, 61);
+      background: rgb(255, 255, 255);
 
       mix-blend-mode: lighten;
     }
@@ -107,6 +108,7 @@
 
   .image-decor__blok-1 {
     border-radius: 0px 72px 0px 0px;
+
     // mix-blend-mode: lighten;
   }
 
