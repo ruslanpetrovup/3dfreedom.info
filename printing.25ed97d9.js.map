@@ -1,1 +1,0 @@
-{"version":3,"sources":["printing.js"],"names":[],"mappings":";;;;;AAIA,aAHA,QAAA,oBAGA,QAAA","file":"printing.25ed97d9.js","sourceRoot":"../src","sourcesContent":["\nimport './sass/main.scss';\n\n\nimport './sass/font-faces.scss';\n\n"]}
