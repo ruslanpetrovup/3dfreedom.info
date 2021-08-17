@@ -1,17 +1,17 @@
-<form class="form take-order__section-form">
+<form class="form take-order__section-form" method="post" enctype="multipart/form-data">
   <h3 class="section__title-subsection form__title">ЗВ’ЯЖІТЬСЯ З НАМИ</h3>
 
   <label class="form__field form__field--position-first">
     <input class="form__input" name="name" type="text" placeholder=" " />
-    <span class="form__label form__label--position">Ім’я</span>
+    <span class="form__label form__label-input form__label--position">Ім’я</span>
   </label>
 
   <label class="form__field form__field--position">
     <input class="form__input" name="fild_mail" type="email" placeholder=" " />
-    <span class="form__label form__label--position">Email</span>
+    <span class="form__label form__label-input form__label--position">Email</span>
   </label>
 
-  <label class="form__field form__field--position">
+  <div class="form__field form__field--position-select">
     <!-- <select class="form__select" name="type_of_plastic" placeholder=" "></select> -->
     <div class="select" name="type_of_plastic">
       <div class="select__heder">
@@ -30,9 +30,9 @@
       </div>
     </div>
     <span class="form__label form__label--position">Види пластика</span>
-  </label>
+  </div>
 
-  <label class="form__field form__field--position">
+  <div class="form__field form__field--position-select">
     <!-- <select class="form__select" name="print_quality" placeholder="fgdfgdfg">
       <option hidden value=""></option>
       <option value="300">300 мікрон</option>
@@ -62,9 +62,9 @@
     </div>
 
     <span class="form__label form__label--position">Якість друку</span>
-  </label>
+  </div>
 
-  <label class="form__field form__field--position">
+  <div class="form__field form__field--position-select">
     <!-- <select class="form__select" name="print_color" placeholder=" "></select> -->
 
     <div class="select" name="print_color">
@@ -85,22 +85,25 @@
     </div>
 
     <span class="form__label form__label--position">Колір</span>
-  </label>
-
-  <label class="form__field form__field--position-textatea">
-    <textarea
-      class="form__textarea"
-      name="comment"
-      cols="30"
-      rows="10"
-      placeholder="Залишіть своє повідомлення"
-    ></textarea>
-    <span class="form__label form__label--position-textarea">Повідомлення</span>
-    <svg class="form__paperclip">
-      <use href="./images/svg/sprites.svg#paperclip"></use>
-    </svg>
-  </label>
-
+  </div>
+  <div class="form__file-selection">
+    <label class="form__field form__field--position-textatea">
+      <textarea
+        class="form__textarea"
+        name="comment"
+        cols="30"
+        rows="10"
+        placeholder="Залишіть своє повідомлення"
+      ></textarea>
+      <span class="form__label form__label--position-textarea">Повідомлення</span>
+    </label>
+    <label class="form__label-file">
+      <svg class="form__paperclip">
+        <use href="./images/svg/sprites.svg#paperclip"></use>
+      </svg>
+      <input type="file" name="photo" multiple accept="image/*,image/jpeg" hidden />
+    </label>
+  </div>
   <p class="form__note section__text">
     * Прикріпіть зображення / креслення / STL / Obj / CAD-модель
   </p>

@@ -27,6 +27,10 @@
     height: 20px;
   }
 
+  &__file-selection {
+    position: relative;
+  }
+
   &__note {
     margin-top: 4px;
     font-weight: 400;
@@ -52,13 +56,14 @@
     text-transform: capitalize;
   }
 
-  &__field--position {
-    margin-top: 35px;
+  &__field--position,
+  &__field--position-select {
+    margin-top: 36px;
   }
 
   @media screen and (max-width: 767px) {
     &__field--position-first {
-      margin-top: 19px;
+      margin-top: 20px;
     }
   }
 
@@ -70,7 +75,7 @@
 
   @media screen and (min-width: 1440px) {
     &__field--position-first {
-      margin-top: 35px;
+      margin-top: 36px;
     }
   }
 
@@ -87,19 +92,15 @@
 
   &__label--position-textarea {
     position: absolute;
-    top: -2px;
+    top: -4px;
     transform: translateY(-100%);
   }
 
-  &__field:focus-within > &__label {
+  &__field:focus-within > &__label-input {
     transform: translateY(-38px);
   }
 
   &__input:not(:placeholder-shown) + &__label {
-    transform: translateY(-38px);
-  }
-
-  &__label--position.no_empti {
     transform: translateY(-38px);
   }
 
@@ -112,7 +113,7 @@
   &__select {
     // padding-top: 4px;
     // padding-bottom: 4px;
-
+    background-color: transparent;
     padding-top: 5px;
     padding-bottom: 7px;
 
@@ -141,8 +142,17 @@
     border-radius: 50px 0px;
 
     color: $primary-text;
+    background-color: transparent;
 
     resize: none;
+    @media screen and (min-width: 1440px) {
+      height: 199px;
+      @include font-source-sans(18px, 20px);
+    }
+  }
+
+  &__label--position.no_empti {
+    transform: translateY(-38px);
   }
 }
 
@@ -170,7 +180,7 @@
 
   position: relative;
   &__heder {
-    // height: 32px;
+    height: 32px;
     display: flex;
     cursor: pointer;
     border-top: none;
@@ -184,6 +194,9 @@
   }
   &__current {
     @include font-source-sans(16px, 20px, 400);
+    @media screen and (min-width: 1440px) {
+      @include font-source-sans(18px, 20px);
+    }
   }
 
   &__icon {
@@ -225,6 +238,9 @@
     // }
     cursor: pointer;
     @include font-source-sans(16px, 20px, 400);
+    @media screen and (min-width: 1440px) {
+      @include font-source-sans(18px, 20px);
+    }
     padding-left: 8px;
     padding-right: 8px;
     padding-top: 5px;
