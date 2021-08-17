@@ -336,7 +336,15 @@
       line-height: 1.28;
       width: 515px;
       margin-right: 32px;
+      margin-bottom: 0px;
+      &--first {
+        margin-bottom: 24px;
+      }
+      &--last {
+        margin-right: 0px;
+      }
     }
+
     &__desc {
       display: flex;
       align-items: flex-start;
