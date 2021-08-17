@@ -44,8 +44,8 @@
     height: 172px;
     position: absolute;
     background-size: contain;
-    top: 50%;
-    left: 72%;
+    top: 47%;
+    left: 67%;
     z-index: -1;
   }
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
@@ -57,8 +57,8 @@
     background-image: url(../images/scanning/scanning.jpg);
     width: 515px;
     height: 368px;
-    top: 34%;
-    left: 52%;
+    top: 33%;
+    left: 50%;
   }
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1444px),
     screen and (min-resolution: 192dpi) and (min-width: 1444px),
@@ -286,7 +286,7 @@
       font-size: 36px;
     }
     &__desc {
-      width: 545px;
+      width: 500px;
     }
   }
   .scan-process__frame::before {
