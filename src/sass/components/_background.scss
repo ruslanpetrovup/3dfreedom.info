@@ -1,5 +1,6 @@
 .bg-item {
   position: absolute;
+  z-index: -1;
 
   background-color: $primary-bg;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
@@ -7,13 +8,29 @@
   width: 73.65px;
   height: 73.65px;
 
+  @include respond-from-min($desktop) {
+    width: 144px;
+    height: 144px;
+  }
+
+  // TODO: Delete this
+  outline: 1px solid MistyRose;
+
   // Top Left
   &__tl {
-    left: 74.65px;
-    top: 81.65px;
+    left: 0;
+    top: 8px;
+    border-radius: 0 35px 35px 0;
 
-    border-radius: 35px 0px 0px 35px;
-    transform: rotate(180deg);
+    @include respond-from-min($tablet) {
+      left: 233px;
+      top: 8px;
+    }
+
+    @include respond-from-min($desktop) {
+      left: 293px;
+      top: 7px;
+    }
   }
 
   // Top Right
@@ -22,7 +39,16 @@
     top: 8px;
 
     border-radius: 35px 0px 0px 35px;
-    transform: rotate(180deg);
+
+    @include respond-from-min($tablet) {
+      right: 233px;
+      top: 8px;
+    }
+
+    @include respond-from-min($desktop) {
+      right: 293px;
+      top: 7px;
+    }
   }
 
   // Second Left
@@ -30,8 +56,17 @@
     left: -29px;
     top: 302.61px;
 
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
     border-radius: 0px 0px 35px 0px;
+
+    @include respond-from-min($tablet) {
+      left: 32.1px;
+      top: 438.15px;
+    }
+
+    @include respond-from-min($desktop) {
+      left: 32px;
+      top: 848px;
+    }
   }
 
   // Third Left
@@ -39,8 +74,17 @@
     left: -17px;
     top: 650.93px;
 
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-    border-radius: 25px 0px;
+    border-radius: 25px 0;
+
+    @include respond-from-min($tablet) {
+      left: 32.1px;
+      top: 650.93px;
+    }
+
+    @include respond-from-min($desktop) {
+      left: 32px;
+      top: 1264px;
+    }
   }
 
   // Bottom Left
@@ -48,35 +92,71 @@
     left: -18px;
     top: 1069.83px;
 
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
     border-radius: 0px 0px 0px 35px;
+
+    @include respond-from-min($tablet) {
+      left: 32.1px;
+      top: 1069.83px;
+    }
+
+    @include respond-from-min($desktop) {
+      left: 32px;
+      top: 2083px;
+    }
   }
 
   // Second Right
   &__secr {
-    left: -29px;
-    top: 302.61px;
+    right: -10px;
+    top: 588.53px;
 
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
     border-radius: 72px;
+
+    @include respond-from-min($tablet) {
+      right: -17px;
+      top: 588.53px;
+    }
+
+    @include respond-from-min($desktop) {
+      right: -64px;
+      top: 588.53px;
+    }
   }
 
   // Third Right
   &__thr {
-    left: -17px;
-    top: 650.93px;
+    right: -20px;
+    top: 1033px;
 
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
     border-radius: 25px 0px;
     transform: rotate(90deg);
+
+    @include respond-from-min($tablet) {
+      right: 32.1px;
+      top: 1033.01px;
+    }
+
+    @include respond-from-min($desktop) {
+      right: 34px;
+      top: 2011px;
+    }
   }
 
   //  Bottom Right
   &__br {
-    left: -18px;
-    top: 1069.83px;
+    right: -18px;
+    top: 1359.84px;
 
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-    border-radius: 0px 0px 0px 35px;
+    border-radius: 25px 0px;
+
+    @include respond-from-min($tablet) {
+      right: 32.1px;
+      top: 1359.84px;
+    }
+
+    @include respond-from-min($desktop) {
+      right: 34px;
+      top: 2650px;
+    }
   }
 }
