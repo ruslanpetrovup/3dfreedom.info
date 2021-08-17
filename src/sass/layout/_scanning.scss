@@ -276,10 +276,11 @@
 //order-form
 
 .button__scanning {
-  margin: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 52px;
   margin-bottom: 76px;
-  border-color: transparent;
 }
 
 // Tablet
@@ -382,5 +383,9 @@
   }
   .scan-process__frame::before {
     top: 40%;
+  }
+  .button__scanning {
+    margin-top: 100px;
+    margin-bottom: 100px;
   }
 }
