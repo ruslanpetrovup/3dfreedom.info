@@ -157,4 +157,53 @@
       top: 2650px;
     }
   }
+
+  // INDEX Only
+  // Left
+  &--tl-row-1 {
+    left: 0;
+  }
+  &--tl-row-2 {
+    left: 0;
+  }
+  &--secl-row-1 {
+    left: 0;
+  }
+  &--secl-row-2 {
+    left: 0;
+  }
+  &--secl-row-3 {
+    left: 0;
+  }
+  &--thl-top {
+    left: 0;
+  }
+  &--bl-circle {
+    left: 0;
+  }
+  // Right
+  &--tr-row-1 {
+    right: 0;
+  }
+  &--tr-row-2 {
+    right: 0;
+  }
+  &--tr-row-circle {
+    right: 0;
+  }
+  &--secr-row-1 {
+    right: 0;
+  }
+  &--secr-row-2 {
+    right: 0;
+  }
+  &--secr-row-3 {
+    right: 0;
+  }
+  &--thr-fig {
+    right: 0;
+  }
+  &--br-fig {
+    right: 0;
+  }
 }
