@@ -137,6 +137,9 @@ html {
   }
 
   &__icon {
+    
+    padding: 5px;
+
     @include respond-from-min($tablet) {
       height: 14px;
       width: 9px;
