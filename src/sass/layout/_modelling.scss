@@ -133,6 +133,7 @@
     background-image: url(../images/modeling/gear-tab.jpg);
     width: 246px;
     height: 144px;
+    z-index: -5;
     background-size: contain;
     position: absolute;
     right: 60px;
@@ -152,7 +153,7 @@
     position: absolute;
     right: 189px;
     top: -64px;
-    z-index: -1;
+    z-index: -5;
     background-size: cover;
   }
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1440px),
@@ -220,7 +221,7 @@
   display: block;
   width: 280px;
   height: 56px;
-  padding: 16px 32px;
+  // padding: 16px 32px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
@@ -236,5 +237,119 @@
     margin-left: auto;
     margin-right: auto;
     width: 277px;
+  }
+}
+// Backgroung
+.bg__item--1 {
+  // display: block;
+  left: -29px;
+  top: 303px;
+  border-radius: 0 0 35px 0;
+
+  @media screen and (min-width: 768px) {
+    top: 229px;
+    left: 8px;
+  }
+
+  @media screen and (min-width: 1444px) {
+    top: 280px;
+    left: 13px;
+    border-radius: 0 0 72px 0;
+  }
+}
+.bg__item--2 {
+  // перевірити чи дійсно в таблет версії ширина не рівна довжині
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    top: 90px;
+    right: 9px;
+    border-radius: 0 0 0 35px;
+  }
+
+  @media screen and (min-width: 1444px) {
+    top: 159px;
+    right: 13px;
+    border-radius: 0 0 0 75px;
+  }
+}
+.bg__item--3 {
+  border-radius: 25px 0;
+
+  @media screen and (max-width: 767px) {
+    top: 651px;
+    left: -17px;
+  }
+
+  @media screen and (min-width: 768px) {
+    z-index: 1;
+    top: 471px;
+    right: 0px;
+    // треба 8 але інакше перекриває картинку
+  }
+
+  @media screen and (min-width: 1444px) {
+    z-index: -1;
+    top: 667px;
+    right: -23px;
+    border-radius: 72px 0;
+  }
+}
+.bg__item--4 {
+  border-radius: 72px;
+  top: 588px;
+  right: -15px;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 1444px) {
+    display: block;
+    top: 1247px;
+    right: -44px;
+  }
+}
+.bg__item--5 {
+  @media screen and (max-width: 767px) {
+    border-radius: 0 25px;
+    top: 1033px;
+    right: -21px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.bg__item--6 {
+  @media screen and (max-width: 767px) {
+    top: 1070px;
+    left: -18px;
+    border-radius: 0 0 0 35px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.bg__item--7 {
+  @media screen and (max-width: 767px) {
+    top: 1360px;
+    right: -15px;
+    border-radius: 25px 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.bg__item--8 {
+  display: none;
+
+  @media screen and (min-width: 1444px) {
+    display: block;
+    top: 1077px;
+    left: -64px;
+    border-radius: 72px;
   }
 }
