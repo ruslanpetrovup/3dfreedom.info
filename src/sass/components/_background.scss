@@ -7,13 +7,14 @@
   width: 73.65px;
   height: 73.65px;
 
+  // TODO: Delete this
+  outline: 1px solid $accent;
+
   // Top Left
   &__tl {
-    left: 74.65px;
-    top: 81.65px;
-
-    border-radius: 35px 0px 0px 35px;
-    transform: rotate(180deg);
+    left: 0;
+    top: 8px;
+    border-radius: 0 35px 35px 0;
   }
 
   // Top Right
@@ -22,7 +23,6 @@
     top: 8px;
 
     border-radius: 35px 0px 0px 35px;
-    transform: rotate(180deg);
   }
 
   // Second Left
@@ -30,7 +30,6 @@
     left: -29px;
     top: 302.61px;
 
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
     border-radius: 0px 0px 35px 0px;
   }
 
@@ -39,8 +38,7 @@
     left: -17px;
     top: 650.93px;
 
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-    border-radius: 25px 0px;
+    border-radius: 25px 0;
   }
 
   // Bottom Left
@@ -48,35 +46,31 @@
     left: -18px;
     top: 1069.83px;
 
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
     border-radius: 0px 0px 0px 35px;
   }
 
   // Second Right
   &__secr {
-    left: -29px;
-    top: 302.61px;
+    right: -10px;
+    top: 588.53px;
 
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
     border-radius: 72px;
   }
 
   // Third Right
   &__thr {
-    left: -17px;
-    top: 650.93px;
+    right: -20px;
+    top: 1033px;
 
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
     border-radius: 25px 0px;
     transform: rotate(90deg);
   }
 
   //  Bottom Right
   &__br {
-    left: -18px;
-    top: 1069.83px;
+    right: -18px;
+    top: 1359.84px;
 
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-    border-radius: 0px 0px 0px 35px;
+    border-radius: 25px 0px;
   }
 }
