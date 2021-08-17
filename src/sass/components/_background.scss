@@ -1,0 +1,82 @@
+.bg-item {
+  position: absolute;
+
+  background-color: $primary-bg;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+
+  width: 73.65px;
+  height: 73.65px;
+
+  // Top Left
+  &__tl {
+    left: 74.65px;
+    top: 81.65px;
+
+    border-radius: 35px 0px 0px 35px;
+    transform: rotate(180deg);
+  }
+
+  // Top Right
+  &__tr {
+    right: 0;
+    top: 8px;
+
+    border-radius: 35px 0px 0px 35px;
+    transform: rotate(180deg);
+  }
+
+  // Second Left
+  &__secl {
+    left: -29px;
+    top: 302.61px;
+
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 35px 0px;
+  }
+
+  // Third Left
+  &__thl {
+    left: -17px;
+    top: 650.93px;
+
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 25px 0px;
+  }
+
+  // Bottom Left
+  &__bl {
+    left: -18px;
+    top: 1069.83px;
+
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 0px 35px;
+  }
+
+  // Second Right
+  &__secr {
+    left: -29px;
+    top: 302.61px;
+
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 72px;
+  }
+
+  // Third Right
+  &__thr {
+    left: -17px;
+    top: 650.93px;
+
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 25px 0px;
+    transform: rotate(90deg);
+  }
+
+  //  Bottom Right
+  &__br {
+    left: -18px;
+    top: 1069.83px;
+
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 0px 35px;
+  }
+}
