@@ -6,6 +6,14 @@ html {
 }
 .hero {
   padding-bottom: 52px;
+  // height: 657px;
+
+  @include respond-from-min($tablet) {
+    padding-bottom: 52px;
+  }
+  @include respond-from-min($desktop) {
+    padding-bottom: 100px;
+  }
 
   &__container {
     max-width: 280px;
@@ -31,7 +39,7 @@ html {
 
     @include respond-from-min($tablet) {
       font-size: 24px;
-      margin-bottom: 65px;
+      margin-bottom: 45px;
     }
     @include respond-from-min($desktop) {
       font-size: 48px;
@@ -42,6 +50,14 @@ html {
   &-list {
     display: flex;
     justify-content: center;
+    margin-bottom: 32px;
+
+    @include respond-from-min($tablet) {
+      margin-bottom: 65px;
+    }
+    @include respond-from-min($desktop) {
+      margin-bottom: 100px;
+    }
   }
 
   &-list__item:not(:last-child) {
@@ -58,20 +74,23 @@ html {
     line-height: 1.16px;
     text-align: center;
     color: $primary-text;
-    margin-top: 65px;
+    margin-top: 30px;
+     margin-bottom: 40px;
 
     @media screen and (max-width: 767px) {
       font-size: 16px;
     }
     @media screen and (min-width: 768px) and (max-width: 1439px) {
       font-size: 18px;
+      margin-bottom: 55px;
     }
     @media screen and (min-width: 1440px) {
       font-size: 36px;
-      margin-top: 100px;
+      margin-top: 70px;
     }
   }
 }
+
 .hero-img {
   filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.3));
 
@@ -87,19 +106,57 @@ html {
     border-radius: 0px 25px;
   }
 }
+
+// Arrow
 .arrow {
+  display: none;
+
+  @include respond-from-min($tablet) {
+    display: block;
+    position: absolute;
+    left: 105.76px;
+    top: 302.61px;
+
+    width: 73.65px;
+    height: 73.65px;
+
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 35px 0px;
+
+    padding-top: 29.67px;
+    padding-bottom: 29.66px;
+    text-align: center;
+  }
+
+  @include respond-from-min($desktop) {
+    left: 176px;
+    top: 583px;
+    width: 144px;
+    height: 144px;
+    padding: 58px 63px;
+  }
+
   &__icon {
-    left: 78.13%;
-    right: -34.39%;
-    top: 93.76%;
-    bottom: -81.26%;
-    height: 14px;
-    width: 9px;
-    fill: $accent;
+    @include respond-from-min($tablet) {
+      height: 14px;
+      width: 9px;
+      fill: $accent;
+    }
+    @include respond-from-min($desktop) {
+      height: 28px;
+      width: 18px;
+    }
   }
 }
 
 .decor {
+  display: none;
+
+  @include respond-from-min($tablet) {
+    display: block;
+  }
+
+  // Left decor
   &__tl {
     @include respond-from-min($tablet) {
       position: absolute;
@@ -107,18 +164,14 @@ html {
       height: 73.65px;
       left: 105.76px;
       top: 79.1px;
-
       background: #ffffff;
       border-radius: 72px;
     }
     @include respond-from-min($desktop) {
-      position: absolute;
       width: 144px;
       height: 144px;
       left: 176px;
       top: 146px;
-      background: #ffffff;
-      border-radius: 72px;
     }
   }
 
@@ -134,57 +187,50 @@ html {
       border-radius: 72px;
     }
     @include respond-from-min($desktop) {
-      position: absolute;
       width: 144px;
       height: 144px;
-      left: 32px;
       top: 704px;
-      background: #ffffff;
-      border-radius: 72px;
     }
   }
+
+  // Right decor
   &__tr {
     @include respond-from-min($tablet) {
       position: absolute;
       width: 73.65px;
       height: 73.65px;
-      left: 662.24px;
+      right: 32.1px;
       top: 81.65px;
 
       background: #ffffff;
       border-radius: 0px 0px 72px 0px;
     }
+
     @include respond-from-min($desktop) {
-      position: absolute;
       width: 144px;
       height: 144px;
-      left: 1264px;
+      right: 32.1px;
       top: 151px;
-
-      background: #ffffff;
-      border-radius: 0px 0px 72px 0px;
     }
   }
+
   &__br {
     @include respond-from-min($tablet) {
       position: absolute;
       width: 73.65px;
       height: 73.65px;
-      left: 662.24px;
+      right: 32.1px;
       top: 302.61px;
-      
-      background: #FFFFFF;
+
+      background: #ffffff;
       border-radius: 72px 72px 0px 0px;
     }
+
     @include respond-from-min($desktop) {
-      position: absolute;
       width: 144px;
       height: 144px;
-      left: 1264px;
       top: 583px;
-      
-      background: #FFFFFF;
-      border-radius: 72px 72px 0px 0px;
+
     }
   }
 }
