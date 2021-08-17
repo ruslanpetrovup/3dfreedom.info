@@ -1,4 +1,4 @@
-.contacts-section{
+.contacts-section {
   padding-top: 12px;
   padding-bottom: 76px;
 
@@ -9,14 +9,12 @@
   @media screen and (min-width: 1440px) {
     padding-bottom: 100px;
   }
-
- 
 }
 
-.section__title{
+.section__title {
   margin-bottom: 16px;
 }
-.contacts__video{
+.contacts__video {
   border-radius: 15px;
 }
 
@@ -26,7 +24,6 @@
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
-  
 
   color: $secondary-text;
   &__text {
@@ -41,69 +38,66 @@
 }
 .thumb-wrap iframe {
   position: absolute;
- 
+
   width: 100%;
   height: 100%;
   border-width: 0;
   outline-width: 0;
 }
 @media screen and (min-width: 768px) {
-  .contacts__video{
+  .contacts__video {
     width: 247px;
-height: 192px;
+    height: 192px;
   }
- 
-  .section-contact__text--position{
+
+  .section-contact__text--position {
     margin-top: 0px;
   }
-  }
- 
+}
+
 //Form
 
 //Hero Tablet
 
-
-@media screen and (min-width: 768px)
-{
-  .contacts-hero__content{
+@media screen and (min-width: 768px) {
+  .contacts-hero__content {
     display: flex;
   }
-.contacts-hero__text{
+  .contacts-hero__text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-left: 20px;
-    
+  }
 }
-}
-
 
 @media screen and (min-width: 1440px) {
-  .contacts__video{
- width: 515px;
-height: 315px;
+  .contacts__video {
+    width: 515px;
+    height: 315px;
   }
-  .contacts-hero__text{
+  .contacts-hero__text {
     display: flex;
     flex-direction: column;
     justify-content: start;
     margin-left: 20px;
-}
-.contacts-icon{
-  width: 49px;
-  height: 49px;
-  position: absolute;
-  transform: translate(-180px, 80px);
-}
-.contacts-container{
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  align-items: baseline;
-}
-.contacts--position{
-  display: flex;
-  flex-direction: column;
+  }
+  .contacts-icon {
+    width: 49px;
+    height: 49px;
+    position: absolute;
+    transform: translate(-180px, 80px);
+  }
+  .contacts-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .contacts--position {
+    display: flex;
+    flex-direction: column;
+
 
   text-align: left  ;
 }
@@ -111,7 +105,7 @@ height: 315px;
   display: flex;
   justify-content: flex-start;
 }
-.contacts__item{
+.contacts-page__item:not(:last-child){
  margin-bottom: 64px;
-}
+
 }
