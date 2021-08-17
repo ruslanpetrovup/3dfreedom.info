@@ -105,6 +105,22 @@
     justify-content: center;
     height: 30px;
   }
+
+  .submenu-lang{
+    display: none;
+    position: absolute;
+    top: 47px;
+    left: 410px;
+    min-width: 160px;
+    padding: 12px 16px;
+    z-index: 1;
+  }
+
+  nav div ul:hover .submenu-lang{
+    display: block;
+  }
+
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
@@ -236,12 +252,26 @@
     align-items: flex-start;
     height: 30px;
   }
+
+   .submenu-lang{
+    display: none;
+    position: absolute;
+    top: 47px;
+    left: 770px;
+    min-width: 160px;
+    padding: 12px 16px;
+    z-index: 1;
+  }
+
+  nav div ul:hover .submenu-lang{
+    display: block;
+  }
 }
 
 @media screen and (min-width: 1440px) {
   .header {
     display: flex;
-    align-items: stretch;
+    align-items:flex-end;
     justify-content: space-between;
     padding-top: 40px;
     padding-bottom: 36px;
@@ -277,6 +307,7 @@
       display: flex;
       width: 470px;
       justify-content: space-between;
+      position: relative;
     }
   }
 
@@ -320,7 +351,7 @@
   .header-form-expand {
     position: relative;
     top: -20px;
-    left: 90px;
+    left: 60px;
     width: 0px;
     border: none;
     background-color: inherit;
@@ -330,4 +361,36 @@
   .header-service {
     margin-top: 8px;
   }
+
+  .submenu{
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 85px;
+    min-width: 160px;
+    padding: 12px 16px;
+    z-index: 1;
+  }
+
+  nav ul div:hover .submenu{
+    display: block;
+  }
+
+  .submenu-lang{
+    display: none;
+    position: absolute;
+    top: 47px;
+    left: 1060px;
+    min-width: 160px;
+    padding: 12px 16px;
+    z-index: 1;
+  }
+
+  nav div ul:hover .submenu-lang{
+    display: block;
+  }
+
+
+
+
 }
