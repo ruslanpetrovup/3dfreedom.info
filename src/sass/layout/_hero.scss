@@ -23,6 +23,7 @@ html {
       max-width: 420px;
     }
     @include respond-from-min($desktop) {
+      padding: 50px;
       max-width: 624px;
     }
   }
@@ -137,6 +138,8 @@ html {
   }
 
   &__icon {
+    padding: 5px;
+
     @include respond-from-min($tablet) {
       height: 14px;
       width: 9px;
