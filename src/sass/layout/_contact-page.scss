@@ -111,7 +111,7 @@ height: 315px;
   display: flex;
   justify-content: flex-start;
 }
-.contacts__item{
+.contacts-page__item:not(:last-child){
  margin-bottom: 64px;
 }
 }
