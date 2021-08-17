@@ -344,7 +344,9 @@
         margin-right: 0px;
       }
     }
-
+    &__wrapping-text {
+      display: block;
+    }
     &__desc {
       display: flex;
       align-items: flex-start;
