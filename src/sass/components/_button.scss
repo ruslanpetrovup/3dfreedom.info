@@ -31,6 +31,12 @@
     }
   }
 
+  @media screen and (min-width: 1440px) {
+    &__form--position {
+      margin-top: 24px;
+    }
+  }
+
   @media screen and (max-width: 767px) {
     &__form--position {
       margin-top: 24px;

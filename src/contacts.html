@@ -1,34 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-        rel="stylesheet"
-    />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- META -->
+    <include src="./partials/meta-tags.html"></include>
+
     <title>Contacts</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Header -->
     <include src="./partials/header.html"></include>
 
     <section class="contacts-section">
-        <div class="container">
-            <!-- Hero-->
-            <include src="./partials/contacts/hero.html"></include>
-<div class="contacts-container">
-    <!-- Form-->
-    <include src="./partials/contacts/form.html"></include>
+      <div class="container">
+        <!-- Hero-->
+        <include src="./partials/contacts/hero.html"></include>
+        <div class="contacts-container">
+          <!-- Form-->
+          <include src="./partials/contacts/form.html"></include>
 
-    <!-- Contacts-->
-    <include src="./partials/contacts/contacts.html"></include>
-</div>
-            
+          <!-- Contacts-->
+          <include src="./partials/contacts/contacts.html"></include>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
@@ -36,7 +33,6 @@
 
     <!-- Main SASS File in Script -->
 
-
     <script src="./contacts.js"></script>
-</body>
+  </body>
 </html>
