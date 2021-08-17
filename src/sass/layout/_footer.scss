@@ -1,3 +1,8 @@
+.footer-container {
+  width: auto;
+  margin-left: -27vw;
+  margin-right: -27vw;
+}
 .footer {
   min-width: 320px;
   padding-top: 32px;
@@ -7,7 +12,6 @@
   background-color: $secondary-bg;
   box-shadow: 5px 2px 5px 8px rgba(72, 121, 150, 0.1);
 }
-
 .logo-footer {
   display: block;
   margin-bottom: 19px;
