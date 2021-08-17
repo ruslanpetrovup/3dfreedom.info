@@ -1,4 +1,7 @@
-@import './emoji';
+html {
+  // Для плавного переходу
+  scroll-behavior: smooth;
+}
 body {
   font-family: $primary-font;
   background-color: $primary-bg;
