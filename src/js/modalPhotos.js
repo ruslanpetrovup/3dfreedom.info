@@ -4,6 +4,7 @@ const imgSrc = document.querySelector('.modal-window__img')
 
 
 const modalOpen = (even) => {
+    even.preventDefault()
     if (even.target.nodeName !== "IMG") {
         return
     }
@@ -13,6 +14,7 @@ const modalOpen = (even) => {
 }
     
 const modalClose = (even) => {
+    even.preventDefault()
     if (even.target.className !== "backdrop is-active") {
         return
     }
