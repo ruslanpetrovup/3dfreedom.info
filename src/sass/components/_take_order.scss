@@ -119,3 +119,111 @@
     flex-direction: column;
   }
 }
+
+.decor-pege {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
+
+  @media screen and (min-width: 320px) {
+    width: 320px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 1440px;
+  }
+
+  &__blok {
+    z-index: -1;
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    @media screen and (min-width: 1440px) {
+      width: 144px;
+      height: 144px;
+    }
+    // background-image: url('../images/order/decor/order-galery-bg.jpg');
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center;
+    // background-attachment: fixed; /* !!! */
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    background-color: $primary-bg;
+  }
+
+  &__blok-1 {
+    bottom: 283px;
+    right: -15px;
+    border-radius: 25px 0 25px 0;
+    @media screen and (min-width: 768px) {
+      bottom: 285px;
+      right: 9px;
+      border-radius: 0 25px 0 25px;
+    }
+    @media screen and (min-width: 1440px) {
+      bottom: 139px;
+      right: -44px;
+      border-radius: 50% 50% 50% 50%;
+    }
+  }
+  &__blok-2 {
+    bottom: 590px;
+    right: -15px;
+    border-radius: 0 25px 0 25px;
+    @media screen and (min-width: 768px) {
+      bottom: -12px;
+      left: -17px;
+      border-radius: 50% 50% 50% 50%;
+    }
+    @media screen and (min-width: 1440px) {
+      bottom: 309px;
+      left: -64px;
+      border-radius: 50% 50% 50% 50%;
+    }
+  }
+  &__blok-3 {
+    top: 495px;
+    right: -15px;
+    border-radius: 50% 50% 50% 50%;
+    @media screen and (min-width: 768px) {
+      top: 9px;
+      right: 9px;
+      border-radius: 0 0 0 35px;
+    }
+    @media screen and (min-width: 1440px) {
+      top: 9px;
+      right: 9px;
+      border-radius: 0 0 0 75px;
+    }
+  }
+  &__blok-4 {
+    top: 220px;
+    left: -29px;
+    border-radius: 0 0 35px 0;
+    @media screen and (min-width: 768px) {
+      top: 147px;
+      left: 13px;
+      border-radius: 0 0 35px 0;
+    }
+    @media screen and (min-width: 1440px) {
+      top: 129px;
+      left: 9px;
+      border-radius: 0 0 72px 0;
+    }
+  }
+
+  &__blok-5 {
+    display: none;
+    @media screen and (min-width: 1440px) {
+      display: block;
+      top: 516px;
+      right: -23px;
+      border-radius: 72px 0 72px 0;
+    }
+  }
+}

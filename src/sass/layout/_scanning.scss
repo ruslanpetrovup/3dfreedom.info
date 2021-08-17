@@ -1,5 +1,6 @@
 .scanning-hero {
   &__title {
+    font-family: $primary-font;
     color: $secondary-text;
     font-weight: 700;
     font-size: 24px;
@@ -8,6 +9,7 @@
     margin-bottom: 16px;
   }
   &__text {
+    font-family: $primary-font;
     color: $primary-text;
     font-weight: 300;
     font-size: 16px;
@@ -44,8 +46,8 @@
     height: 172px;
     position: absolute;
     background-size: contain;
-    top: 50%;
-    left: 72%;
+    top: 47%;
+    left: 67%;
     z-index: -1;
   }
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
@@ -57,8 +59,8 @@
     background-image: url(../images/scanning/scanning.jpg);
     width: 515px;
     height: 368px;
-    top: 34%;
-    left: 52%;
+    top: 33%;
+    left: 50%;
   }
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1444px),
     screen and (min-resolution: 192dpi) and (min-width: 1444px),
@@ -71,6 +73,7 @@
 
 .scan-process {
   &__title {
+    font-family: $primary-font;
     color: $secondary-text;
     font-weight: 700;
     font-size: 18px;
@@ -80,6 +83,7 @@
   }
 
   &__subtitle {
+    font-family: $primary-font;
     color: $secondary-text;
     font-weight: 400;
     font-size: 14px;
@@ -286,7 +290,7 @@
       font-size: 36px;
     }
     &__desc {
-      width: 545px;
+      width: 500px;
     }
   }
   .scan-process__frame::before {
@@ -336,6 +340,16 @@
       line-height: 1.28;
       width: 515px;
       margin-right: 32px;
+      margin-bottom: 0px;
+      &--first {
+        margin-bottom: 24px;
+      }
+      &--last {
+        margin-right: 0px;
+      }
+    }
+    &__wrapping-text {
+      display: block;
     }
     &__desc {
       display: flex;

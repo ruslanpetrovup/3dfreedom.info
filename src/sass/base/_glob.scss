@@ -1,7 +1,24 @@
-@import './emoji';
+html {
+  // Для плавного переходу
+  scroll-behavior: smooth;
+}
 body {
   font-family: $primary-font;
   background-color: $primary-bg;
+
+  // SIZES
+  position: relative;
+  width: $mobile;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include respond-from-min($tablet) {
+    width: $tablet;
+  }
+
+  @include respond-from-min($desktop) {
+    width: $desktop;
+  }
 }
 h1,
 h2,
