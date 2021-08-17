@@ -9,6 +9,8 @@
   height: 73.65px;
 
   @include respond-from-min($desktop) {
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+
     width: 144px;
     height: 144px;
   }
@@ -169,7 +171,12 @@
 
       border-radius: 35px 0px 0px 0px;
     }
+    @include respond-from-min($desktop) {
+      left: 32px;
+      top: 7px;
+    }
   }
+
   &--tl-row-2 {
     display: none;
     @include respond-from-min($tablet) {
@@ -178,7 +185,12 @@
       top: 81.65px;
       border-radius: 0px 0px 35px 0px;
     }
+    @include respond-from-min($desktop) {
+      left: 32px;
+      top: 151px;
+    }
   }
+
   &--secl-row-1 {
     display: none;
     @include respond-from-min($tablet) {
@@ -187,7 +199,12 @@
       top: 155.31px;
       border-radius: 0px 35px 0px 0px;
     }
+    @include respond-from-min($desktop) {
+      left: 176px;
+      top: 295px;
+    }
   }
+
   &--secl-row-2 {
     display: none;
     @include respond-from-min($tablet) {
@@ -196,7 +213,12 @@
       top: 228.96px;
       border-radius: 0px 0px 0px 35px;
     }
+    @include respond-from-min($desktop) {
+      left: 32px;
+      top: 439px;
+    }
   }
+
   &--secl-row-3 {
     display: none;
     @include respond-from-min($tablet) {
@@ -205,7 +227,12 @@
       top: 302.61px;
       border-radius: 0px 0px 35px 0px;
     }
+    @include respond-from-min($desktop) {
+      left: 176px;
+      top: 583px;
+    }
   }
+
   &--thl-top {
     display: none;
     @include respond-from-min($tablet) {
@@ -214,7 +241,12 @@
       top: 996.18px;
       border-radius: 0px 35px 0px 0px;
     }
+    @include respond-from-min($desktop) {
+      left: 176px;
+      top: 1939px;
+    }
   }
+
   &--bl-circle {
     display: none;
     @include respond-from-min($tablet) {
@@ -223,18 +255,13 @@
       top: 1330.17px;
       border-radius: 72px;
     }
+    @include respond-from-min($desktop) {
+      left: -64px;
+      top: 2592px;
+    }
   }
 
   // Right
-  &--tr-row-1 {
-    display: none;
-    @include respond-from-min($tablet) {
-      // TODO: Check out
-      display: none;
-      right: 91.95px;
-      top: 8px;
-    }
-  }
   &--tr-row-2 {
     display: none;
     @include respond-from-min($tablet) {
@@ -242,7 +269,12 @@
       right: 105.76px;
       top: 81.65px;
     }
+    @include respond-from-min($desktop) {
+      right: 176px;
+      top: 151px;
+    }
   }
+
   &--tr-row-circle {
     display: none;
     @include respond-from-min($tablet) {
@@ -252,7 +284,12 @@
 
       border-radius: 72px;
     }
+    @include respond-from-min($desktop) {
+      right: 176px;
+      top: 295px;
+    }
   }
+
   &--secr-row-1 {
     display: none;
     @include respond-from-min($tablet) {
@@ -262,7 +299,11 @@
 
       border-radius: 25px 0px;
     }
+    @include respond-from-min($desktop) {
+      top: 439px;
+    }
   }
+
   &--secr-row-2 {
     display: none;
     @include respond-from-min($tablet) {
@@ -272,7 +313,12 @@
 
       border-radius: 0px 0px 0px 35px;
     }
+    @include respond-from-min($desktop) {
+      right: 176px;
+      top: 583px;
+    }
   }
+
   &--secr-row-3 {
     display: none;
     @include respond-from-min($tablet) {
@@ -283,7 +329,11 @@
       border-radius: 0px 35px 0px 0px;
       transform: rotate(180deg);
     }
+    @include respond-from-min($desktop) {
+      top: 851px;
+    }
   }
+
   &--thr-fig {
     display: none;
     @include respond-from-min($tablet) {
@@ -294,7 +344,11 @@
       border-radius: 0px 0px 35px 0px;
       transform: rotate(-180deg);
     }
+    @include respond-from-min($desktop) {
+      top: 1142px;
+    }
   }
+
   &--br-fig {
     display: none;
     @include respond-from-min($tablet) {
@@ -304,6 +358,11 @@
 
       border-radius: 0px 0px 0px 35px;
     }
+    @include respond-from-min($desktop) {
+      right: 176px;
+      top: 2794px;
+    }
   }
+
   // INDEX >> END
 }
