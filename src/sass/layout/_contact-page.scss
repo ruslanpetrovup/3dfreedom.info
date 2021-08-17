@@ -11,7 +11,7 @@
   }
 }
 
-.section__title {
+.contacts-section__title {
   margin-bottom: 16px;
 }
 .contacts__video {
@@ -98,15 +98,13 @@
     display: flex;
     flex-direction: column;
 
-
-  text-align: left  ;
-}
-.work-time__item--contacts{
-  display: flex;
-  justify-content: flex-start;
-}
-.contacts-page__item:not(:last-child){
- margin-bottom: 64px;
-
-}
+    text-align: left;
+  }
+  .work-time__item--contacts {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .contacts-page__item:not(:last-child) {
+    margin-bottom: 64px;
+  }
 }
