@@ -157,7 +157,7 @@
 }
 
 .form__textarea::placeholder {
-  font-family: Cera Pro;
+  font-family: $primary-font;
   // text-transform: uppercase;
   @include font-source-sans(16px, 20px);
 
