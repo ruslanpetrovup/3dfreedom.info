@@ -111,6 +111,10 @@
   line-height: 1.25;
   color: #2b2b2b;
 }
+
+.services__text:not(:last-child) {
+  margin-bottom: 16px;
+}
 .services__words {
   font-weight: 700;
   color: #487996;
