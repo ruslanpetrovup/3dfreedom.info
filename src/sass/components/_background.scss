@@ -161,49 +161,109 @@
   // INDEX Only
   // Left
   &--tl-row-1 {
-    left: 0;
+    display: none;
+    @include respond-from-min($tablet) {
+      display: block;
+      
+    }
   }
   &--tl-row-2 {
-    left: 0;
+    display: none;
+    @include respond-from-min($tablet) {
+      display: block;
+      
+    }
   }
   &--secl-row-1 {
-    left: 0;
+    display: none;
+    @include respond-from-min($tablet) {
+      display: block;
+      
+    }
   }
   &--secl-row-2 {
-    left: 0;
+    display: none;
+    @include respond-from-min($tablet) {
+      display: block;
+      
+    }
   }
   &--secl-row-3 {
-    left: 0;
+    display: none;
+    @include respond-from-min($tablet) {
+      display: block;
+      
+    }
   }
   &--thl-top {
-    left: 0;
+    display: none;
+    @include respond-from-min($tablet) {
+      display: block;
+      
+    }
   }
   &--bl-circle {
-    left: 0;
+    display: none;
+    @include respond-from-min($tablet) {
+      display: block;
+      
+    }
   }
   // Right
   &--tr-row-1 {
-    right: 0;
+    display: none;
+    r@include respond-from-min($tablet) {
+      display: block;
+      
+    }
   }
   &--tr-row-2 {
-    right: 0;
+    display: none;
+    r@include respond-from-min($tablet) {
+      display: block;
+      
+    }
   }
   &--tr-row-circle {
-    right: 0;
+    display: none;
+    r@include respond-from-min($tablet) {
+      display: block;
+      
+    }
   }
   &--secr-row-1 {
-    right: 0;
+    display: none;
+    r@include respond-from-min($tablet) {
+      display: block;
+      
+    }
   }
   &--secr-row-2 {
-    right: 0;
+    display: none;
+    r@include respond-from-min($tablet) {
+      display: block;
+      
+    }
   }
   &--secr-row-3 {
-    right: 0;
+    display: none;
+    r@include respond-from-min($tablet) {
+      display: block;
+      
+    }
   }
   &--thr-fig {
-    right: 0;
+    display: none;
+    r@include respond-from-min($tablet) {
+      display: block;
+      
+    }
   }
   &--br-fig {
-    right: 0;
+    display: none;
+    r@include respond-from-min($tablet) {
+      display: block;
+      
+    }
   }
 }
