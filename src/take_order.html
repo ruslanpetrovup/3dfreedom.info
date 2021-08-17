@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
@@ -26,21 +27,26 @@
   <body>
     <!-- Header -->
     <include src="./partials/header.html"></include>
+    <div class="decor-pege">
+      <section class="take-order section">
+        <div class="container">
+          <!-- Hero-->
+          <include src="./partials/order/hero.html"></include>
+          <div class="take-order__container">
+            <!-- Form-->
+            <include src="./partials/order/form.html"></include>
 
-    <section class="take-order section">
-      <div class="container">
-        <!-- Hero-->
-        <include src="./partials/order/hero.html"></include>
-        <div class="take-order__container">
-          <!-- Form-->
-          <include src="./partials/order/form.html"></include>
-
-          <!-- Contacts-->
-          <include src="./partials/order/contacts.html"></include>
+            <!-- Contacts-->
+            <include src="./partials/order/contacts.html"></include>
+          </div>
         </div>
-      </div>
-    </section>
-
+      </section>
+      <div class="decor-pege__blok decor-pege__blok-1"></div>
+      <div class="decor-pege__blok decor-pege__blok-2"></div>
+      <div class="decor-pege__blok decor-pege__blok-3"></div>
+      <div class="decor-pege__blok decor-pege__blok-4"></div>
+      <div class="decor-pege__blok decor-pege__blok-5"></div>
+    </div>
     <!-- Footer -->
     <include src="./partials/footer.html"></include>
 
