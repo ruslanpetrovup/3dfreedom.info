@@ -5,6 +5,7 @@ html {
   list-style-type: none;
 }
 .hero {
+  padding: 12px;
   padding-bottom: 52px;
   // height: 657px;
 
@@ -23,10 +24,11 @@ html {
       max-width: 420px;
     }
     @include respond-from-min($desktop) {
-      max-width: 624px;
+      max-width: 524px;
     }
   }
-  &__title {
+  
+  &__desc {
     font-family: $secondary-font;
     font-style: normal;
     font-weight: 400;
@@ -39,11 +41,12 @@ html {
 
     @include respond-from-min($tablet) {
       font-size: 24px;
-      margin-bottom: 45px;
+      margin-bottom: 64px;
     }
     @include respond-from-min($desktop) {
       font-size: 48px;
       margin-bottom: 69px;
+      // padding: 30px 50px 0px 50px;
     }
   }
 
@@ -63,30 +66,30 @@ html {
   &-list__item:not(:last-child) {
     margin-right: 20px;
   }
-  &-desc {
-    margin-top: 32px;
-  }
+  // &-desc {
+  //   margin-top: 32px;
+  // }
 
-  &-desc__text {
+  &__text {
     font-family: $secondary-font;
     font-style: normal;
     font-weight: 400;
     line-height: 1.16px;
     text-align: center;
     color: $primary-text;
-    margin-top: 30px;
-     margin-bottom: 40px;
+    // margin-top: 30px;
+    //  margin-bottom: 40px;
 
     @media screen and (max-width: 767px) {
       font-size: 16px;
     }
     @media screen and (min-width: 768px) and (max-width: 1439px) {
       font-size: 18px;
-      margin-bottom: 55px;
+      // margin-bottom: 55px;
     }
     @media screen and (min-width: 1440px) {
       font-size: 36px;
-      margin-top: 70px;
+      // margin-top: 70px;
     }
   }
 }
@@ -110,6 +113,7 @@ html {
 // Arrow
 .arrow {
   display: none;
+  
 
   @include respond-from-min($tablet) {
     display: block;
@@ -136,9 +140,12 @@ html {
     padding: 58px 63px;
   }
 
+  &__box {
+    // display: block;
+    width: 32px;
+    height: 32px;
+  }
   &__icon {
-    
-    padding: 5px;
 
     @include respond-from-min($tablet) {
       height: 14px;
