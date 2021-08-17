@@ -106,7 +106,7 @@
     height: 30px;
   }
 
-  .submenu-lang{
+  .submenu-lang {
     display: none;
     position: absolute;
     top: 47px;
@@ -116,11 +116,9 @@
     z-index: 1;
   }
 
-  nav div ul:hover .submenu-lang{
+  nav div ul:hover .submenu-lang {
     display: block;
   }
-
-
 }
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
@@ -253,7 +251,7 @@
     height: 30px;
   }
 
-   .submenu-lang{
+  .submenu-lang {
     display: none;
     position: absolute;
     top: 47px;
@@ -263,7 +261,7 @@
     z-index: 1;
   }
 
-  nav div ul:hover .submenu-lang{
+  nav div ul:hover .submenu-lang {
     display: block;
   }
 }
@@ -271,7 +269,7 @@
 @media screen and (min-width: 1440px) {
   .header {
     display: flex;
-    align-items:flex-end;
+    align-items: flex-end;
     justify-content: space-between;
     padding-top: 40px;
     padding-bottom: 36px;
@@ -362,7 +360,7 @@
     margin-top: 8px;
   }
 
-  .submenu{
+  .submenu {
     display: none;
     position: absolute;
     top: 0px;
@@ -372,11 +370,11 @@
     z-index: 1;
   }
 
-  nav ul div:hover .submenu{
+  nav ul div:hover .submenu {
     display: block;
   }
 
-  .submenu-lang{
+  .submenu-lang {
     display: none;
     position: absolute;
     top: 47px;
@@ -386,11 +384,10 @@
     z-index: 1;
   }
 
-  nav div ul:hover .submenu-lang{
+  nav div ul:hover .submenu-lang {
     display: block;
   }
-
-
-
-
+}
+.is-hidden {
+  display: none;
 }
