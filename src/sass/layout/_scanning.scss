@@ -1,5 +1,6 @@
 .scanning-hero {
   &__title {
+    font-family: $primary-font;
     color: $secondary-text;
     font-weight: 700;
     font-size: 24px;
@@ -8,6 +9,7 @@
     margin-bottom: 16px;
   }
   &__text {
+    font-family: $primary-font;
     color: $primary-text;
     font-weight: 300;
     font-size: 16px;
@@ -71,6 +73,7 @@
 
 .scan-process {
   &__title {
+    font-family: $primary-font;
     color: $secondary-text;
     font-weight: 700;
     font-size: 18px;
@@ -80,6 +83,7 @@
   }
 
   &__subtitle {
+    font-family: $primary-font;
     color: $secondary-text;
     font-weight: 400;
     font-size: 14px;
