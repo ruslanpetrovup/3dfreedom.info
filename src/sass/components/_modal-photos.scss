@@ -14,26 +14,91 @@
   opacity: 1;
   pointer-events: auto;
 }
-.modal-window {
-  display: flex;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.modal-window__img {
+  width: 100%;
+  overflow: hidden;
 }
-.modal-window__back {
-  margin-right: 36px;
+.modal-window__block {
   display: flex;
-  align-items: center;
-  fill: white;
 }
-.modal-window__next {
-  margin-left: 36px;
-  display: flex;
-  align-items: center;
-  fill: white;
+@media screen and (max-width: 767px) {
+  .modal-window {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 236px;
+    justify-content: center;
+  }
+  .modal-window__icon {
+    width: 11px;
+    height: 11px;
+  }
+  .modal-window__back {
+    margin-right: 9px;
+    display: flex;
+    align-items: center;
+    fill: white;
+  }
+  .modal-window__next {
+    margin-left: 9px;
+    display: flex;
+    align-items: center;
+    fill: white;
+  }
 }
-.modal-window__icon {
-  width: 42px;
-  height: 42px;
+@media screen and (min-width: $tablet) and (max-width: $desktop) {
+  .modal-window {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 554px;
+    justify-content: center;
+  }
+  .modal-window__icon {
+    width: 26px;
+    height: 26px;
+  }
+  .modal-window__back {
+    margin-right: 27px;
+    display: flex;
+    align-items: center;
+    fill: white;
+  }
+  .modal-window__next {
+    margin-left: 27px;
+    display: flex;
+    align-items: center;
+    fill: white;
+  }
+}
+@media screen and(min-width: $desktop) {
+  .modal-window {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 906px;
+    justify-content: center;
+  }
+  .modal-window__icon {
+    width: 42px;
+    height: 42px;
+  }
+  .modal-window__back {
+    margin-right: 36px;
+    display: flex;
+    align-items: center;
+    fill: white;
+  }
+  .modal-window__next {
+    margin-left: 36px;
+    display: flex;
+    align-items: center;
+    fill: white;
+  }
 }
