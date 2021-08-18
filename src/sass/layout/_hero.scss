@@ -124,9 +124,6 @@ html {
     width: 73.65px;
     height: 73.65px;
 
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-    border-radius: 0px 0px 35px 0px;
-
     padding-top: 29.67px;
     padding-bottom: 29.66px;
     text-align: center;
@@ -143,11 +140,9 @@ html {
   &__box {
     position: relative;
     
-
     @include respond-from-min($desktop) {
     padding: 5px;
     }
-
   }
   &__icon {
     
