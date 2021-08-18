@@ -1,7 +1,16 @@
 .footer-container {
-  width: auto;
-  margin-left: calc(-1 * calc((100vw - 320px)) / 2);
-  margin-right: calc(-1 * calc((100vw - 320px)) / 2);
+  margin-left: calc(-1 * calc((100vw - #{$mobile}) / 2));
+  margin-right: calc(-1 * calc((100vw - #{$mobile}) / 2));
+
+  @include respond-from-min($tablet) {
+    margin-left: calc(-1 * calc((100vw - #{$tablet}) / 2));
+    margin-right: calc(-1 * calc((100vw - #{$tablet}) / 2));
+  }
+
+  @include respond-from-min($desktop) {
+    margin-left: calc(-1 * calc((100vw - #{$desktop}) / 2));
+    margin-right: calc(-1 * calc((100vw - #{$desktop}) / 2));
+  }
 }
 .footer {
   min-width: 320px;
@@ -110,11 +119,6 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1443px) {
-  .footer-container {
-    width: auto;
-    margin-left: calc(-1 * calc((100vw - 768px)) / 2);
-    margin-right: calc(-1 * calc((100vw - 768px)) / 2);
-  }
   .footer__navigation {
     display: flex;
   }
@@ -143,11 +147,6 @@
   }
 }
 @media screen and (min-width: 1444px) {
-  .footer-container {
-    width: auto;
-    margin-left: calc(-1 * calc((100vw - 1444px)) / 2);
-    margin-right: calc(-1 * calc((100vw - 1444px)) / 2);
-  }
   .footer {
     padding-top: 30px;
     padding-bottom: 30px;
