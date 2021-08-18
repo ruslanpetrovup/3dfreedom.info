@@ -29,6 +29,7 @@ html {
   }
   
   &__desc {
+    width: 100%;
     font-family: $secondary-font;
     font-style: normal;
     font-weight: 400;
@@ -140,9 +141,8 @@ html {
   }
 
   &__box {
-    // display: block;
-    width: 32px;
-    height: 32px;
+    position: relative;
+    
 
     @include respond-from-min($desktop) {
     padding: 5px;
@@ -150,15 +150,20 @@ html {
 
   }
   &__icon {
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
     @include respond-from-min($tablet) {
-      height: 14px;
-      width: 9px;
+      height: 16px;
+      width: 16px;
       fill: $accent;
     }
     @include respond-from-min($desktop) {
-      height: 28px;
-      width: 18px;
+      width: 32px;
+      height: 32px;
     }
   }
 }
