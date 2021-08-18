@@ -24,7 +24,10 @@ html {
       max-width: 420px;
     }
     @include respond-from-min($desktop) {
-      max-width: 524px;
+      max-width: 624px;
+      padding-top: 50px;
+      padding-left: 50px;
+      padding-right: 50px;
     }
   }
   
