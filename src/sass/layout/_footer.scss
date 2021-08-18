@@ -1,7 +1,16 @@
 .footer-container {
-  width: auto;
-  margin-left: -27vw;
-  margin-right: -27vw;
+  margin-left: calc(-1 * calc((100vw - #{$mobile}) / 2));
+  margin-right: calc(-1 * calc((100vw - #{$mobile}) / 2));
+
+  @include respond-from-min($tablet) {
+    margin-left: calc(-1 * calc((100vw - #{$tablet}) / 2));
+    margin-right: calc(-1 * calc((100vw - #{$tablet}) / 2));
+  }
+
+  @include respond-from-min($desktop) {
+    margin-left: calc(-1 * calc((100vw - #{$desktop}) / 2));
+    margin-right: calc(-1 * calc((100vw - #{$desktop}) / 2));
+  }
 }
 .footer {
   min-width: 320px;
@@ -96,7 +105,6 @@
   font-size: 16px;
   line-height: 1.25;
   text-align: center;
-  text-transform: capitalize;
   color: $secondary-text;
 }
 .footer-contacts__link:hover,
@@ -145,6 +153,7 @@
   }
   .footer__common {
     display: flex;
+    align-items: flex-start;
   }
   .logo-footer {
     margin-right: 136px;
