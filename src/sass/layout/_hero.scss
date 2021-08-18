@@ -114,7 +114,6 @@ html {
 .arrow {
   display: none;
   
-
   @include respond-from-min($tablet) {
     display: block;
     position: absolute;
@@ -144,6 +143,11 @@ html {
     // display: block;
     width: 32px;
     height: 32px;
+
+    @include respond-from-min($desktop) {
+    padding: 5px;
+    }
+
   }
   &__icon {
 
