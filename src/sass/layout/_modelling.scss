@@ -19,7 +19,7 @@
     font-size: 24px;
     line-height: 1.26;
   }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1444px) {
     font-size: 36px;
   }
 }
@@ -30,7 +30,7 @@
   @media screen and (min-width: 768px) {
     padding-bottom: 50px;
   }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1444px) {
     padding-bottom: 100px;
   }
 }
@@ -47,7 +47,7 @@
   @media screen and (min-width: 768px) {
     font-size: 36px;
   }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1444px) {
     font-size: 48px;
     margin-bottom: 24px;
   }
@@ -58,12 +58,12 @@
   font-size: 16px;
   line-height: 1.26;
   color: $primary-text;
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1444px) {
     font-size: 18px;
   }
 }
 .modelling-hero__content {
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1444px) {
     display: flex;
     justify-content: space-between;
   }
@@ -81,10 +81,10 @@
 
 // Methods
 .modelling-methods {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1143px) {
     padding-bottom: 52px;
   }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1444px) {
     padding-bottom: 100px;
   }
 }
@@ -155,7 +155,7 @@
     background-image: url(../images/modeling/gear-tab@2x.jpg);
     background-size: cover;
   }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1444px) {
     background-image: url(../images/modeling/gear.jpg);
     width: 515px;
     height: 301px;
@@ -166,7 +166,7 @@
     z-index: -5;
     background-size: cover;
   }
-  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1440px),
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1444px),
     screen and (min-resolution: 192dpi) and (min-width: 768px),
     screen and (min-resolution: 2dppx) and (min-width: 768px) {
     background-image: url(../images/modeling/gear@2x.jpg);
@@ -177,7 +177,7 @@
 // We Create
 .modelling-create {
   padding-bottom: 76px;
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1444px) {
     padding-bottom: 100px;
   }
 }
@@ -199,7 +199,7 @@
 }
 .modelling-create__list {
   margin-bottom: 52px;
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1444px) {
     margin-bottom: 100px;
   }
 }
