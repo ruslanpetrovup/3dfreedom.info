@@ -114,3 +114,151 @@
     margin-bottom: 68px;
   }
 }
+
+// Backgroung
+//Header
+.bg-contacts__item--header--left {
+  left: 0;
+  top: 8px;
+  border-radius: 0 35px 35px 0;
+
+  @include respond-from-min($tablet) {
+    left: 233px;
+    top: 8px;
+  }
+
+  @include respond-from-min($desktop) {
+    left: 293px;
+    top: 7px;
+  }
+}
+.bg-contacts__item--header--right {
+  right: 0;
+  top: 8px;
+
+  border-radius: 35px 0px 0px 35px;
+
+  @include respond-from-min($tablet) {
+    right: 233px;
+    top: 8px;
+  }
+
+  @include respond-from-min($desktop) {
+    right: 293px;
+    top: 7px;
+  }
+}
+
+.bg-contacts__item--1 {
+  // display: block;
+  left: -29px;
+  top: 303px;
+  border-radius: 0 0 35px 0;
+
+  @media screen and (min-width: 768px) {
+    top: 229px;
+    left: 8px;
+  }
+
+  @media screen and (min-width: 1444px) {
+    top: 280px;
+    left: 13px;
+    border-radius: 0 0 72px 0;
+  }
+}
+.bg-contacts__item--2 {
+  // перевірити чи дійсно в таблет версії ширина не рівна довжині
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    top: 90px;
+    right: 9px;
+    border-radius: 0 0 0 35px;
+  }
+
+  @media screen and (min-width: 1444px) {
+    top: 159px;
+    right: 13px;
+    border-radius: 0 0 0 75px;
+  }
+}
+.bg-contacts__item--3 {
+  border-radius: 25px 0;
+
+  @media screen and (max-width: 767px) {
+    top: 651px;
+    left: -17px;
+  }
+
+  @media screen and (min-width: 768px) {
+    z-index: 1;
+    top: 471px;
+    right: 0px;
+    // треба 8 але інакше перекриває картинку
+  }
+
+  @media screen and (min-width: 1444px) {
+    z-index: -1;
+    top: 667px;
+    right: -23px;
+    border-radius: 72px 0;
+  }
+}
+.bg-contacts__item--4 {
+  border-radius: 72px;
+  top: 588px;
+  right: -15px;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 1444px) {
+    display: block;
+    top: 1247px;
+    right: -44px;
+  }
+}
+.bg-contacts__item--5 {
+  @media screen and (max-width: 767px) {
+    border-radius: 0 25px;
+    top: 1033px;
+    right: -21px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.bg-contacts__item--6 {
+  @media screen and (max-width: 767px) {
+    top: 1070px;
+    left: -18px;
+    border-radius: 0 0 0 35px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.bg-contacts__item--7 {
+  @media screen and (max-width: 767px) {
+    top: 1360px;
+    right: -15px;
+    border-radius: 25px 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.bg-contacts__item--8 {
+  display: none;
+
+  @media screen and (min-width: 1444px) {
+    display: block;
+    top: 1077px;
+    left: -64px;
+    border-radius: 72px;
+  }
+}
