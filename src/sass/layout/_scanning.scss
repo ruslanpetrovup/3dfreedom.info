@@ -281,6 +281,10 @@
   margin-right: auto;
   margin-top: 52px;
   margin-bottom: 76px;
+  width: 280px;
+  @media screen and (min-width: 767px) {
+    width: 277px;
+  }
 }
 
 // Tablet
@@ -388,4 +392,134 @@
     margin-top: 100px;
     margin-bottom: 100px;
   }
+}
+
+// BACKGROUND
+
+.bg__scan {
+  position: absolute;
+  z-index: -1;
+
+  background-color: $primary-bg;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+
+  width: 73.65px;
+  height: 73.65px;
+  // Desktop
+  // @media screen and (min-width: 1444px) {
+  //   width: 144px;
+  //   height: 144px;
+  // }
+
+  &--tl {
+    left: -29px;
+    top: 302px;
+    border-radius: 0px 0px 35px 0px;
+    @media screen and (min-width: 767px) {
+      left: 9px;
+      top: 235px;
+      border-radius: 0px 0px 35px 0px;
+    }
+    // Desktop
+    @media screen and (min-width: 1444px) {
+      left: 25px;
+      top: 230px;
+      border-radius: 0px 0px 72px 0px;
+      width: 144px;
+      height: 144px;
+    }
+  }
+
+  // Top Right
+  &--tr {
+    left: 261px;
+    top: 560px;
+    border-radius: 72px;
+    // Tablet
+    @media screen and (min-width: 767px) {
+      left: 686px;
+      top: 91px;
+      border-radius: 0px 0px 0px 35px;
+      width: 73.65px;
+      height: 63.42px;
+    }
+    // Desktop
+    @media screen and (min-width: 1444px) {
+      left: 1240px;
+      top: 125px;
+      border-radius: 0px 0px 0px 72px;
+      width: 144px;
+      height: 144px;
+    }
+  }
+
+  // Second Left
+  &--secl {
+    left: -17px;
+    top: 915px;
+    border-radius: 25px 0px;
+    @media screen and (min-width: 767px) {
+      display: none;
+    }
+  }
+
+  // Second Right
+  &--secr {
+    left: 270px;
+    top: 985px;
+    border-radius: 25px 0px;
+    @media screen and (min-width: 767px) {
+      display: none;
+    }
+    @media screen and (min-width: 1444px) {
+      display: block;
+      left: 1319px;
+      top: 667px;
+      border-radius: 72px 0px;
+      width: 144px;
+      height: 144px;
+    }
+  }
+
+  //  Bottom Left
+  &--bl {
+    left: -18px;
+    top: 1121px;
+    border-radius: 0px 0px 0px 35px;
+    @media screen and (min-width: 767px) {
+      display: none;
+    }
+    @media screen and (min-width: 1444px) {
+      display: block;
+      left: -64px;
+      top: 1077px;
+      border-radius: 72px;
+      width: 144px;
+      height: 144px;
+    }
+  }
+
+  //  Bottom Right
+  &--br {
+    left: 261px;
+    top: 1314.84px;
+    border-radius: 25px 0px;
+    @media screen and (min-width: 767px) {
+      display: none;
+    }
+    @media screen and (min-width: 1444px) {
+      display: block;
+      left: 1340px;
+      top: 1247px;
+      border-radius: 72px;
+      width: 144px;
+      height: 144px;
+    }
+  }
+}
+.bg__item--secl {
+  display: none;
+}
+.bg__item--secr {
+  display: none;
 }
