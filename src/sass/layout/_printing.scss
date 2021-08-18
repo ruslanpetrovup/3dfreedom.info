@@ -49,9 +49,10 @@
   margin-top: 15px;
   flex-direction: column;
   background-size: cover;
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 767px) and (max-width: 1443px) {
     width: 153px;
     height: 182px;
+
     &:not(:last-child) {
       margin-left: 14px;
     }
@@ -59,9 +60,8 @@
   @media screen and (min-width: 1444px) {
     width: 250px;
     height: 298px;
-    &:first-child {
-      margin-left: 0px;
-    }
+    margin-left: 0px;
+
     &:not(:last-child) {
       margin-right: 21px;
     }
