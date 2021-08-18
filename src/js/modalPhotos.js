@@ -5,10 +5,11 @@ const imgSrc = document.querySelector('.modal-window__img')
 
 const modalOpen = (even) => {
     even.preventDefault()
+    console.dir(even.target.parentElement.children[0].attributes[0].value)
     if (even.target.nodeName !== "IMG") {
         return
     }
-    imgSrc.innerHTML = even.target.parentElement.innerHTML
+    imgSrc.setAttribute('src',even.target.parentElement.children[0].attributes[0].value)
     backdrop.classList.add('is-active');
     backdrop.addEventListener('click', modalClose)
 }
