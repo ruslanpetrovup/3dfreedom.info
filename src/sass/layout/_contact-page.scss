@@ -192,15 +192,15 @@
   border-radius: 25px 0;
 
   @media screen and (max-width: 767px) {
+    display: none;
     top: 651px;
     left: -17px;
   }
 
   @media screen and (min-width: 768px) {
-    z-index: 1;
-    top: 471px;
+    display: block;
+    top: 1115px;
     right: 0px;
-    // треба 8 але інакше перекриває картинку
   }
 
   @media screen and (min-width: 1444px) {
@@ -227,7 +227,7 @@
 .bg-contacts__item--5 {
   @media screen and (max-width: 767px) {
     border-radius: 0 25px;
-    top: 1033px;
+    top: 1090px;
     right: -21px;
   }
 
@@ -237,6 +237,7 @@
 }
 .bg-contacts__item--6 {
   @media screen and (max-width: 767px) {
+    display: none;
     top: 1070px;
     left: -18px;
     border-radius: 0 0 0 35px;
@@ -248,7 +249,7 @@
 }
 .bg-contacts__item--7 {
   @media screen and (max-width: 767px) {
-    top: 1360px;
+    top: 1420px;
     right: -15px;
     border-radius: 25px 0;
   }
