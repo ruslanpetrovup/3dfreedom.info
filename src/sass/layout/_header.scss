@@ -29,6 +29,8 @@
 
     &__link-position {
       display: none;
+      position: absolute;
+      background-color: #ffffff;
     }
   }
 
@@ -377,10 +379,7 @@
   .submenu-lang {
     display: none;
     position: absolute;
-    top: 47px;
-    left: 1060px;
     min-width: 160px;
-    padding: 12px 16px;
     z-index: 1;
   }
 
@@ -390,4 +389,7 @@
 }
 .is-hidden {
   display: none;
+}
+.is-open {
+  display: block;
 }

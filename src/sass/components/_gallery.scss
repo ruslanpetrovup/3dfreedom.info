@@ -15,12 +15,11 @@
 }
 @media screen and (max-width: 767px) {
   .gallery__list-item:not(:last-child) {
-    margin-bottom: 8px;
+    margin-bottom: 24px;
   }
 }
 
 .gallery__list-image {
-  display: block;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -58,9 +57,11 @@
     margin-left: 20px;
   }
   .gallery__list-image {
-    display: block;
     max-width: 100%;
     height: auto;
+  }
+  .gallery__description {
+    margin-top: 16px;
   }
 }
 @media screen and (min-width: 1444px) {
@@ -89,7 +90,6 @@
     margin-left: 32px;
   }
   .gallery__list-image {
-    display: block;
     max-width: 100%;
     height: auto;
   }
@@ -109,7 +109,7 @@
     width: 144px;
     height: 144px;
     right: 32px;
-    top: 1400px;
+    top: 1508px;
     filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
     background-size: cover;
   }
