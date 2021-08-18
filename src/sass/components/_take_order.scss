@@ -2,28 +2,35 @@
   padding-top: 12px;
   padding-bottom: 76px;
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: $desktop) {
     padding-bottom: 100px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     padding-top: 24px;
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $mobile-max) {
     &__title {
       letter-spacing: -0.04em;
+      margin-bottom: 16px;
     }
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: $tablet) {
+    &__title {
+      margin-bottom: 24px;
+    }
+  }
+
+  @media screen and (max-width: $mobile-max) {
     &__section,
     &__section-form {
       padding-bottom: 52px;
     }
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1439px) {
+  @media screen and (min-width: $tablet) and (max-width: $tablet-max) {
     &__section-form {
       padding-bottom: 76px;
     }
@@ -32,7 +39,10 @@
       padding-bottom: 52px;
     }
   }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: $desktop) {
+    &__section-form {
+      padding-bottom: 76px;
+    }
     &__section {
       padding-bottom: 100px;
     }
@@ -44,20 +54,24 @@
     width: 100%;
   }
 
-  @media screen and (max-width: 767px) {
-    &__content {
-      margin-top: 16px;
-    }
+  @media screen and (max-width: $mobile-max) {
+    // &__content {
+    //   // margin-top: 16px;
+    // }
 
-    &__sub-text {
-      margin-top: 16px;
+    // &__sub-text {
+    //   // margin-top: 16px;
+    // }
+
+    &__image {
+      margin-bottom: 16px;
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     &__content {
       display: flex;
-      margin-top: 24px;
+      // margin-top: 24px;
     }
 
     &__text {
@@ -70,14 +84,14 @@
     // &__sub-text {
     // }
   }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: $desktop) {
     &__text {
       margin-left: 32px;
     }
   }
 }
 
-@media screen and (max-width: 1439px) {
+@media screen and (max-width: $tablet-max) {
   .take-order-hero__text-image {
     display: none;
   }
@@ -87,7 +101,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: $desktop) {
   .take-order-hero__text-image {
     display: flex;
     justify-content: space-between;
@@ -129,16 +143,16 @@
   width: 100%;
   overflow: hidden;
 
-  @media screen and (min-width: 320px) {
-    width: 320px;
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
   }
 
-  @media screen and (min-width: 768px) {
-    width: 768px;
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
   }
 
-  @media screen and (min-width: 1440px) {
-    width: 1440px;
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
   }
 
   &__blok {
@@ -146,7 +160,7 @@
     position: absolute;
     width: 74px;
     height: 74px;
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: $desktop) {
       width: 144px;
       height: 144px;
     }
@@ -163,12 +177,12 @@
     bottom: 283px;
     right: -15px;
     border-radius: 25px 0 25px 0;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       bottom: 285px;
       right: 9px;
       border-radius: 0 25px 0 25px;
     }
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: $desktop) {
       bottom: 139px;
       right: -44px;
       border-radius: 50% 50% 50% 50%;
@@ -178,12 +192,12 @@
     bottom: 590px;
     right: -15px;
     border-radius: 0 25px 0 25px;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       bottom: -12px;
       left: -17px;
       border-radius: 50% 50% 50% 50%;
     }
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: $desktop) {
       bottom: 309px;
       left: -64px;
       border-radius: 50% 50% 50% 50%;
@@ -193,12 +207,12 @@
     top: 495px;
     right: -15px;
     border-radius: 50% 50% 50% 50%;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       top: 9px;
       right: 9px;
       border-radius: 0 0 0 35px;
     }
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: $desktop) {
       top: 9px;
       right: 9px;
       border-radius: 0 0 0 75px;
@@ -208,12 +222,12 @@
     top: 220px;
     left: -29px;
     border-radius: 0 0 35px 0;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       top: 147px;
       left: 13px;
       border-radius: 0 0 35px 0;
     }
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: $desktop) {
       top: 129px;
       left: 9px;
       border-radius: 0 0 72px 0;
@@ -222,7 +236,7 @@
 
   &__blok-5 {
     display: none;
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: $desktop) {
       display: block;
       top: 516px;
       right: -23px;

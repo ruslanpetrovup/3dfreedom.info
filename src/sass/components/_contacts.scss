@@ -6,33 +6,55 @@
   display: inline-flex;
 }
 
-@media screen and (max-width: 1439px) {
-  .address-tel,
-  .work-time,
-  .contacts__link {
-    margin-top: 8px;
+// .contacts__item {
+//   margin-bottom: 24px;
+// }
+
+@media screen and (max-width: $tablet-max) {
+  // .address-tel,
+  // .work-time,
+  // .contacts__link {
+  //   // margin-top: 8px;
+  // }
+  .contacts__title--position {
+    margin-bottom: 8px;
   }
 }
-@media screen and (min-width: 1440px) {
-  .address-tel,
-  .work-time,
-  .contacts__link {
-    margin-top: 18px;
+@media screen and (min-width: $desktop) {
+  // .address-tel,
+  // .work-time,
+  // .contacts__link {
+  //   margin-top: 18px;
+  // }
+  .contacts__title--position {
+    margin-bottom: 18px;
+  }
+
+  .address-tel__item:first-child,
+  .work-time__item:first-child {
+    margin-bottom: 18px;
+  }
+}
+@media screen and (max-width: $tablet-max) {
+  .address-tel__item:first-child,
+  .work-time__item:first-child {
+    margin-bottom: 8px;
   }
 }
 
-.address-tel__item:not(:first-child),
-.work-time__item:not(:first-child) {
-  margin-top: 8px;
-}
-
-@media screen and (max-width: 767px) {
-  .contacts__item:not(:first-child) {
-    margin-top: 24px;
+@media screen and (max-width: $mobile-max) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 24px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1439px) {
+@media screen and (min-width: $desktop) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: $tablet) and (max-width: $tablet-max) {
   .contacts__item:first-child {
     width: 247px;
   }
@@ -42,7 +64,7 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1439px) {
+@media screen and (min-width: $tablet) and (max-width: $tablet-max) {
   .contacts {
     display: flex;
     justify-content: space-between;
@@ -54,13 +76,13 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: $desktop) {
   .contacts {
     text-align: right;
 
-    &__title-subsection {
-      margin-top: 30px;
-    }
+    // &__title-subsection {
+    //   // margin-top: 30px;
+    // }
   }
 
   .work-time__item {
@@ -73,7 +95,7 @@
   }
 
   .image-decor {
-    margin-top: 92px;
+    // margin-top: 92px;
     line-height: 0;
     position: relative;
     box-shadow: (20px 20px 80px rgba(0, 0, 0, 8%));

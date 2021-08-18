@@ -1,6 +1,9 @@
 .form {
   // color: #2b2b2b;
-  @media screen and (min-width: 768px) {
+  &__title {
+    margin-bottom: 17px;
+  }
+  @media screen and (min-width: $tablet) {
     margin: 0 auto;
     width: 420px;
 
@@ -9,12 +12,17 @@
 
     &__title {
       text-align: center;
+      margin-bottom: 24px;
     }
   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: $desktop) {
     margin: 0;
     width: 515px;
+
+    &__title {
+      margin-bottom: 33px;
+    }
   }
 
   &__paperclip {
@@ -29,12 +37,16 @@
 
   &__file-selection {
     position: relative;
+    margin-bottom: 4px;
   }
 
   &__note {
-    margin-top: 4px;
+    margin-bottom: 24px;
     font-weight: 400;
     color: $placeholder-form-color;
+    @media screen and (min-width: $tablet) and (max-width: $tablet-max) {
+      margin-bottom: 44px;
+    }
   }
 
   &__label {
@@ -49,7 +61,7 @@
   &__label {
     @include font-source-sans(16px, 20px, 400);
 
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: $desktop) {
       @include font-source-sans(18px, 20px);
     }
 
@@ -58,30 +70,34 @@
 
   &__field--position,
   &__field--position-select {
-    margin-top: 36px;
+    margin-bottom: 33px;
   }
 
-  @media screen and (max-width: 767px) {
+  &__field--position-last-select {
+    margin-bottom: 68px;
+  }
+
+  @media screen and (max-width: $mobile-max) {
     &__field--position-first {
-      margin-top: 20px;
+      margin-bottom: 33px;
     }
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1439px) {
+  @media screen and (min-width: $tablet) and (max-width: $tablet-max) {
     &__field--position-first {
-      margin-top: 26px;
+      margin-bottom: 33px;
     }
   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: $desktop) {
     &__field--position-first {
-      margin-top: 36px;
+      margin-bottom: 36px;
     }
   }
 
   &__field--position-textatea {
     position: relative;
-    margin-top: 68px;
+    // margin-top: 68px;
   }
 
   &__label--position {
@@ -145,7 +161,7 @@
     background-color: transparent;
 
     resize: none;
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: $desktop) {
       height: 199px;
       @include font-source-sans(18px, 20px);
     }
@@ -161,13 +177,13 @@
   // text-transform: uppercase;
   @include font-source-sans(16px, 20px);
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: $desktop) {
     @include font-source-sans(18px, 20px);
   }
 
   color: $placeholder-form-color;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tablet) {
   .button__form--position {
     align-self: flex-end;
   }
@@ -180,7 +196,7 @@
 
   position: relative;
   &__heder {
-    height: 32px;
+    height: 35px;
     display: flex;
     cursor: pointer;
     border-top: none;
@@ -188,13 +204,13 @@
     border-left: none;
     border-bottom: 1px solid #487996;
     padding-left: 8px;
-    padding-right: 3px;
-    padding-top: 5px;
-    padding-bottom: 7px;
+    padding-right: 22px;
+    padding-top: 4px;
+    padding-bottom: 4px;
   }
   &__current {
     @include font-source-sans(16px, 20px, 400);
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: $desktop) {
       @include font-source-sans(18px, 20px);
     }
   }
@@ -204,8 +220,15 @@
     display: flex;
     flex-shrink: 0;
     justify-content: center;
-    margin-left: auto;
+    // margin-left: auto;
+
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 4px;
   }
+
   &__icon-expand {
     width: 19px;
     height: 13px;
@@ -233,16 +256,16 @@
   }
 
   &__item {
-    // @media screen and (min-width: 768px) {
-    //   height: 32px;
+    // @media screen and (min-width: $tablet) {
+    min-height: 32px;
     // }
     cursor: pointer;
     @include font-source-sans(16px, 20px, 400);
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: $desktop) {
       @include font-source-sans(18px, 20px);
     }
     padding-left: 8px;
-    padding-right: 8px;
+    padding-right: 22px;
     padding-top: 5px;
     padding-bottom: 7px;
   }
