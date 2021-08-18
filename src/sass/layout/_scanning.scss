@@ -1,4 +1,5 @@
 .scanning-hero {
+  padding-bottom: 24px;
   &__title {
     font-family: $primary-font;
     color: $secondary-text;
@@ -6,7 +7,7 @@
     font-size: 24px;
     line-height: 1.25;
     text-transform: uppercase;
-    margin-bottom: 16px;
+    padding-bottom: 16px;
   }
   &__text {
     font-family: $primary-font;
@@ -23,9 +24,7 @@
 .scanning__picture {
   height: 200px;
 }
-.scanning-hero {
-  margin-bottom: 24px;
-}
+
 .scanning-hero_container {
   position: relative;
 }
@@ -72,6 +71,7 @@
 // scan-process
 
 .scan-process {
+  padding-bottom: 76px;
   &__title {
     font-family: $primary-font;
     color: $secondary-text;
@@ -99,6 +99,7 @@
   flex-wrap: wrap;
   margin-left: -16px;
   margin-top: -16px;
+  margin-bottom: 52px;
 }
 .scan-process__frame {
   display: inline-block;
@@ -279,8 +280,6 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 52px;
-  margin-bottom: 76px;
   width: 280px;
   @media screen and (min-width: 767px) {
     width: 277px;
@@ -290,7 +289,7 @@
 // Tablet
 @media screen and (min-width: 767px) {
   .scanning-hero {
-    margin-bottom: 52px;
+    padding-bottom: 52px;
     &__title {
       font-size: 36px;
     }
@@ -333,7 +332,6 @@
 // Desktop
 @media screen and (min-width: 1444px) {
   .scanning-hero {
-    margin-bottom: 0;
     padding-bottom: 100px;
 
     &__title {
@@ -364,6 +362,7 @@
   }
 
   .scan-process {
+    padding-bottom: 100px;
     &__title {
       font-size: 36px;
       margin-bottom: 52px;
@@ -388,8 +387,7 @@
   .scan-process__frame::before {
     top: 40%;
   }
-  .button__scanning {
-    margin-top: 100px;
+  .scan-process__list {
     margin-bottom: 100px;
   }
 }
@@ -405,11 +403,6 @@
 
   width: 73.65px;
   height: 73.65px;
-  // Desktop
-  // @media screen and (min-width: 1444px) {
-  //   width: 144px;
-  //   height: 144px;
-  // }
 
   &--tl {
     left: -29px;
