@@ -4,7 +4,6 @@ html {
 
 .hero {
   padding-bottom: 52px;
-  // height: 657px;
 
   @include respond-from-min($desktop) {
     padding-bottom: 100px;
@@ -68,22 +67,16 @@ html {
     font-family: $secondary-font;
     font-style: normal;
     font-weight: 400;
+    font-size: 16px;
     line-height: 1.16;
     text-align: center;
     color: $primary-text;
-    // margin-top: 30px;
-    //  margin-bottom: 40px;
 
-    @media screen and (max-width: 767px) {
-      font-size: 16px;
-    }
-    @media screen and (min-width: 768px) and (max-width: 1439px) {
+    @include respond-from-min($tablet) {
       font-size: 18px;
-      // margin-bottom: 55px;
     }
-    @media screen and (min-width: 1440px) {
+    @include respond-from-min($desktop) {
       font-size: 36px;
-      // margin-top: 70px;
     }
   }
 }
@@ -131,10 +124,12 @@ html {
   }
 
   &__box {
-    position: relative;
-
+  
+    @include respond-from-min($tablet) {
+      padding: 15px;
+    }
     @include respond-from-min($desktop) {
-      padding: 5px;
+      padding: 25px;
     }
   }
   &__icon {
@@ -142,6 +137,7 @@ html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+      
 
     @include respond-from-min($tablet) {
       height: 16px;

@@ -296,6 +296,7 @@
     }
     &__desc {
       width: 500px;
+      padding-bottom: 0;
     }
   }
   .scan-process__item::before {
@@ -423,7 +424,7 @@
     @media screen and (min-width: 1444px) {
       width: 144px;
       height: 144px;
-      left: 146px;
+      left: 32px;
       top: 7px;
     }
   }
@@ -436,7 +437,7 @@
       @media screen and (min-width: 1444px) {
         width: 144px;
         height: 144px;
-        left: 398px;
+        left: 293px;
         top: 7px;
       }
     }
@@ -484,9 +485,9 @@
     }
     // Desktop
     @media screen and (min-width: 1444px) {
-      left: 25px;
+      left: 20px;
       top: 230px;
-      border-radius: 0px 0px 72px 0px;
+      border-radius: 0 0 50% 0;
       width: 144px;
       height: 144px;
     }

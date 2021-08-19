@@ -16,8 +16,13 @@
 }
 .contacts__video {
   border-radius: 15px;
+  margin-bottom: 16px;
 }
-
+@include respond-from-min($tablet) {
+  .contacts__video {
+    margin-bottom: 0px;
+  }
+}
 .contacts-title {
   font-family: $primary-font;
   font-style: normal;
@@ -36,6 +41,7 @@
     color: #2b2b2b;
   }
 }
+
 .thumb-wrap iframe {
   position: absolute;
 
@@ -54,8 +60,14 @@
     margin-top: 0px;
   }
 }
+.section__text--position--fix {
+  margin-bottom: 0px;
+}
 
 //Form
+.contacts-form__field--position {
+  margin-bottom: 68px;
+}
 @media screen and (min-width: 768px) and (max-width: 1443px) {
   .contacts-take-order__section {
     padding-bottom: 76px;
@@ -74,12 +86,24 @@
     justify-content: space-between;
     margin-left: 20px;
   }
+  .contacts-margin__section {
+    margin-bottom: 8px;
+    &--email {
+      margin-bottom: 8px;
+    }
+  }
+  .work-time {
+    text-align: right;
+  }
 }
 
 @include respond-from-min($desktop) {
   .contacts__video {
     width: 515px;
     height: 315px;
+  }
+  .section-contact__text--position {
+    margin-bottom: 24px;
   }
   .contacts-hero__text {
     display: flex;
@@ -103,7 +127,10 @@
     padding-bottom: 0;
   }
   .contacts-margin__section {
-    margin-top: 0px;
+    margin-bottom: 8px;
+    &--email {
+      margin-bottom: 18px;
+    }
   }
   .contacts--position {
     display: flex;
