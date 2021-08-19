@@ -1,4 +1,9 @@
 .scanning-hero {
+  padding-top: 12px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 24px;
+  }
+
   padding-bottom: 24px;
   &__title {
     font-family: $primary-font;
