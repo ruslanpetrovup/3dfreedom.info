@@ -1,10 +1,14 @@
 // <=======printing-hero =======>
 
 .printing-hero {
+  padding-top: 12px;
   padding-bottom: 53px;
-  @media screen and (min-width: 1444px) {
+  @media screen and (min-width: $tablet) {
+    padding-top: 24px;
   }
-  padding-bottom: 0px;
+  @media screen and (min-width: 1444px) {
+    padding-bottom: 0px;
+  }
 }
 
 .printing-hero__title {
@@ -320,7 +324,7 @@
   display: block;
   width: 280px;
   height: 56px;
-  padding: 16px 32px;
+  // padding: 16px 32px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
@@ -354,4 +358,9 @@
   color: #487996;
 }
 
+.bg__item--br,
+.bg__item--bl,
+.bg__item--thr {
+  display: none;
+}
 // <=======End printing-services =======>
