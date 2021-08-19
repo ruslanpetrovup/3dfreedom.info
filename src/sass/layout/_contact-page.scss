@@ -108,7 +108,10 @@
     padding-bottom: 0;
   }
   .contacts-margin__section {
-    margin-top: 0px;
+    margin-bottom: 8px;
+    &--email {
+      margin-bottom: 18px;
+    }
   }
   .contacts--position {
     display: flex;
