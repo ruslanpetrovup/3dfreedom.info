@@ -124,7 +124,6 @@ html {
   }
 
   &__box {
-  
     @include respond-from-min($tablet) {
       padding: 15px;
     }
@@ -137,7 +136,6 @@ html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-      
 
     @include respond-from-min($tablet) {
       height: 16px;
@@ -166,7 +164,7 @@ html {
       height: 73.65px;
       left: 105.76px;
       top: 79.1px;
-      background: #ffffff;
+      background: $primary-bg;
       border-radius: 72px;
     }
     @include respond-from-min($desktop) {
@@ -185,7 +183,7 @@ html {
       left: 32.1px;
       top: 364.5px;
 
-      background: #ffffff;
+      background: $primary-bg;
       border-radius: 72px;
     }
     @include respond-from-min($desktop) {
@@ -204,7 +202,7 @@ html {
       right: 32.1px;
       top: 81.65px;
 
-      background: #ffffff;
+      background: $primary-bg;
       border-radius: 0px 0px 72px 0px;
     }
 
@@ -224,7 +222,7 @@ html {
       right: 32.1px;
       top: 302.61px;
 
-      background: #ffffff;
+      background: $primary-bg;
       border-radius: 72px 72px 0px 0px;
     }
 

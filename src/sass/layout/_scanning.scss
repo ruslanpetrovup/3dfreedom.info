@@ -39,7 +39,7 @@
     screen and (min-resolution: 2dppx) and (min-width: 280px) {
     background-image: url(../images/scanning/scanning-mob@2x.jpg);
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     background-image: url(../images/scanning/scanning-tab.jpg);
     width: 241px;
     height: 172px;
@@ -49,21 +49,21 @@
     left: 67%;
     z-index: -1;
   }
-  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-    screen and (min-resolution: 192dpi) and (min-width: 768px),
-    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: $tablet),
+    screen and (min-resolution: 192dpi) and (min-width: $tablet),
+    screen and (min-resolution: 2dppx) and (min-width: $tablet) {
     background-image: url(../images/scanning/scanning-tab@2x.jpg);
   }
-  @media screen and (min-width: 1444px) {
+  @media screen and (min-width: $desktop) {
     background-image: url(../images/scanning/scanning.jpg);
     width: 515px;
     height: 368px;
     top: 33%;
     left: 50%;
   }
-  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1444px),
-    screen and (min-resolution: 192dpi) and (min-width: 1444px),
-    screen and (min-resolution: 2dppx) and (min-width: 1444px) {
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: $desktop),
+    screen and (min-resolution: 192dpi) and (min-width: $desktop),
+    screen and (min-resolution: 2dppx) and (min-width: $desktop) {
     background-image: url(../images/scanning/scanning@2x.jpg);
   }
 }
@@ -106,10 +106,10 @@
   display: inline-block;
   width: 133px;
   height: 183px;
-  background: #ffffff;
+  background: $primary-bg;
   opacity: 0.8;
   box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8),
-    inset -1px -1px 16px #ffffff;
+    inset -1px -1px 16px $primary-bg;
   border-radius: 50px 0px;
   flex-basis: calc((100% - 32px) / 2);
   margin-left: 16px;
@@ -128,14 +128,14 @@
       width: 94px;
       height: 82px;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       background-image: url(../images/scanning/process/01-scan-tab.jpg);
       width: 108px;
       height: 94px;
     }
-    @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-      screen and (min-resolution: 192dpi) and (min-width: 768px),
-      screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: $tablet),
+      screen and (min-resolution: 192dpi) and (min-width: $tablet),
+      screen and (min-resolution: 2dppx) and (min-width: $tablet) {
       background-image: url(../images/scanning/process/01-scan-tab@2x.jpg);
       width: 108px;
       height: 94px;
@@ -145,9 +145,9 @@
       width: 177px;
       height: 154px;
     }
-    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1444px),
-      screen and (min-resolution: 192dpi) and (min-width: 1444px),
-      screen and (min-resolution: 2dppx) and (min-width: 1444px) {
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: $desktop),
+      screen and (min-resolution: 192dpi) and (min-width: $desktop),
+      screen and (min-resolution: 2dppx) and (min-width: $desktop) {
       background-image: url(../images/scanning/process/01-scan@2x.jpg);
       width: 177px;
       height: 154px;
@@ -163,14 +163,14 @@
       screen and (min-resolution: 2dppx) and (min-width: 280px) {
       background-image: url(../images/scanning/process/02-scan-mob@2x.jpg);
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       background-image: url(../images/scanning/process/02-scan-tab.jpg);
       width: 107px;
       height: 95px;
     }
-    @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-      screen and (min-resolution: 192dpi) and (min-width: 768px),
-      screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: $tablet),
+      screen and (min-resolution: 192dpi) and (min-width: $tablet),
+      screen and (min-resolution: 2dppx) and (min-width: $tablet) {
       background-image: url(../images/scanning/process/02-scan-tab@2x.jpg);
       width: 107px;
       height: 95px;
@@ -180,9 +180,9 @@
       width: 176px;
       height: 156px;
     }
-    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1444px),
-      screen and (min-resolution: 192dpi) and (min-width: 1444px),
-      screen and (min-resolution: 2dppx) and (min-width: 1444px) {
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: $desktop),
+      screen and (min-resolution: 192dpi) and (min-width: $desktop),
+      screen and (min-resolution: 2dppx) and (min-width: $desktop) {
       background-image: url(../images/scanning/process/02-scan@2x.jpg);
       width: 176px;
       height: 156px;
@@ -200,14 +200,14 @@
       width: 94px;
       height: 81px;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       background-image: url(../images/scanning/process/03-scan-tab.jpg);
       width: 108px;
       height: 93px;
     }
-    @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-      screen and (min-resolution: 192dpi) and (min-width: 768px),
-      screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: $tablet),
+      screen and (min-resolution: 192dpi) and (min-width: $tablet),
+      screen and (min-resolution: 2dppx) and (min-width: $tablet) {
       background-image: url(../images/scanning/process/03-scan-tab@2x.jpg);
       width: 108px;
       height: 93px;
@@ -217,9 +217,9 @@
       width: 177px;
       height: 152px;
     }
-    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1444px),
-      screen and (min-resolution: 192dpi) and (min-width: 1444px),
-      screen and (min-resolution: 2dppx) and (min-width: 1444px) {
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: $desktop),
+      screen and (min-resolution: 192dpi) and (min-width: $desktop),
+      screen and (min-resolution: 2dppx) and (min-width: $desktop) {
       background-image: url(../images/scanning/process/03-scan@2x.jpg);
       width: 177px;
       height: 152px;
@@ -237,14 +237,14 @@
       width: 92px;
       height: 82px;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       background-image: url(../images/scanning/process/04-scan-tab.jpg);
       width: 107px;
       height: 96px;
     }
-    @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-      screen and (min-resolution: 192dpi) and (min-width: 768px),
-      screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: $tablet),
+      screen and (min-resolution: 192dpi) and (min-width: $tablet),
+      screen and (min-resolution: 2dppx) and (min-width: $tablet) {
       background-image: url(../images/scanning/process/04-scan-tab@2x.jpg);
       width: 107px;
       height: 96px;
@@ -254,9 +254,9 @@
       width: 175px;
       height: 157px;
     }
-    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1444px),
-      screen and (min-resolution: 192dpi) and (min-width: 1444px),
-      screen and (min-resolution: 2dppx) and (min-width: 1444px) {
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: $desktop),
+      screen and (min-resolution: 192dpi) and (min-width: $desktop),
+      screen and (min-resolution: 2dppx) and (min-width: $desktop) {
       background-image: url(../images/scanning/process/04-scan@2x.jpg);
       width: 175px;
       height: 157px;
@@ -334,7 +334,7 @@
 }
 
 // Desktop
-@media screen and (min-width: 1444px) {
+@media screen and (min-width: $desktop) {
   .scanning-hero {
     padding-bottom: 100px;
 
@@ -421,7 +421,7 @@
       top: 12px;
       border-radius: 50% 0 0 0;
     }
-    @media screen and (min-width: 1444px) {
+    @media screen and (min-width: $desktop) {
       width: 144px;
       height: 144px;
       left: 32px;
@@ -434,7 +434,7 @@
       top: 12px;
       border-radius: 50% 0 0 50%;
       transform: rotate(180deg);
-      @media screen and (min-width: 1444px) {
+      @media screen and (min-width: $desktop) {
         width: 144px;
         height: 144px;
         left: 293px;
@@ -452,7 +452,7 @@
       top: 12px;
       border-radius: 50% 0px 0px 50%;
     }
-    @media screen and (min-width: 1444px) {
+    @media screen and (min-width: $desktop) {
       width: 144px;
       height: 144px;
       left: 917px;
@@ -466,7 +466,7 @@
       left: 600px;
       top: 12px;
     }
-    @media screen and (min-width: 1444px) {
+    @media screen and (min-width: $desktop) {
       width: 144px;
       height: 144px;
       left: 1060px;
@@ -484,7 +484,7 @@
       border-radius: 0 0 50% 0;
     }
     // Desktop
-    @media screen and (min-width: 1444px) {
+    @media screen and (min-width: $desktop) {
       left: 20px;
       top: 230px;
       border-radius: 0 0 50% 0;
@@ -507,7 +507,7 @@
       height: 63.42px;
     }
     // Desktop
-    @media screen and (min-width: 1444px) {
+    @media screen and (min-width: $desktop) {
       left: 1240px;
       top: 155px;
       border-radius: 0px 0px 0px 72px;
@@ -534,7 +534,7 @@
     @media screen and (min-width: 767px) {
       display: none;
     }
-    @media screen and (min-width: 1444px) {
+    @media screen and (min-width: $desktop) {
       display: block;
       left: 1319px;
       top: 667px;
@@ -552,7 +552,7 @@
     @media screen and (min-width: 767px) {
       display: none;
     }
-    @media screen and (min-width: 1444px) {
+    @media screen and (min-width: $desktop) {
       display: block;
       left: -64px;
       top: 1050px;
@@ -570,7 +570,7 @@
     @media screen and (min-width: 767px) {
       display: none;
     }
-    @media screen and (min-width: 1444px) {
+    @media screen and (min-width: $desktop) {
       display: block;
       left: 1375px;
       top: 1215px;

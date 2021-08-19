@@ -5,7 +5,7 @@
   line-height: 1.26;
   color: $primary-text;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     line-height: 1.25;
   }
 }
@@ -15,11 +15,11 @@
   text-transform: uppercase;
   color: $secondary-text;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     font-size: 24px;
     line-height: 1.26;
   }
-  @media screen and (min-width: 1444px) {
+  @media screen and (min-width: $desktop) {
     font-size: 36px;
   }
 }
@@ -27,10 +27,10 @@
 // Hero
 .modelling-hero {
   padding-bottom: 52px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     padding-bottom: 50px;
   }
-  @media screen and (min-width: 1444px) {
+  @media screen and (min-width: $desktop) {
     padding-bottom: 100px;
   }
 }
@@ -42,10 +42,10 @@
   line-height: 1.26;
   margin-bottom: 16px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     font-size: 36px;
   }
-  @media screen and (min-width: 1444px) {
+  @media screen and (min-width: $desktop) {
     font-size: 48px;
     margin-bottom: 24px;
   }
@@ -56,18 +56,18 @@
   font-size: 16px;
   line-height: 1.26;
   color: $primary-text;
-  @media screen and (min-width: 1444px) {
+  @media screen and (min-width: $desktop) {
     font-size: 18px;
   }
 }
 .modelling-hero__content {
-  @media screen and (min-width: 1444px) {
+  @media screen and (min-width: $desktop) {
     display: flex;
     justify-content: space-between;
   }
 }
 .modelling-hero__text {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     max-width: 515px;
   }
 }
@@ -82,7 +82,7 @@
   @media screen and (max-width: 1143px) {
     padding-bottom: 52px;
   }
-  @media screen and (min-width: 1444px) {
+  @media screen and (min-width: $desktop) {
     padding-bottom: 100px;
   }
 }
@@ -137,7 +137,7 @@
     screen and (min-resolution: 2dppx) and (min-width: 280px) {
     background-image: url(../images/modeling/gear-mob@2x.jpg);
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     background-image: url(../images/modeling/gear-tab.jpg);
     width: 246px;
     height: 144px;
@@ -147,13 +147,13 @@
     right: 60px;
     top: 31px;
   }
-  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-    screen and (min-resolution: 192dpi) and (min-width: 768px),
-    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: $tablet),
+    screen and (min-resolution: 192dpi) and (min-width: $tablet),
+    screen and (min-resolution: 2dppx) and (min-width: $tablet) {
     background-image: url(../images/modeling/gear-tab@2x.jpg);
     background-size: cover;
   }
-  @media screen and (min-width: 1444px) {
+  @media screen and (min-width: $desktop) {
     background-image: url(../images/modeling/gear.jpg);
     width: 515px;
     height: 301px;
@@ -164,9 +164,9 @@
     z-index: -5;
     background-size: cover;
   }
-  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1444px),
-    screen and (min-resolution: 192dpi) and (min-width: 768px),
-    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: $desktop),
+    screen and (min-resolution: 192dpi) and (min-width: $tablet),
+    screen and (min-resolution: 2dppx) and (min-width: $tablet) {
     background-image: url(../images/modeling/gear@2x.jpg);
     background-size: cover;
   }
@@ -175,7 +175,7 @@
 // We Create
 .modelling-create {
   padding-bottom: 76px;
-  @media screen and (min-width: 1444px) {
+  @media screen and (min-width: $desktop) {
     padding-bottom: 100px;
   }
 }
@@ -186,7 +186,7 @@
     font-size: 16px;
     line-height: 1.25;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     max-width: 480px;
     margin-bottom: 24px;
   }
@@ -197,7 +197,7 @@
 }
 .modelling-create__list {
   margin-bottom: 52px;
-  @media screen and (min-width: 1444px) {
+  @media screen and (min-width: $desktop) {
     margin-bottom: 100px;
   }
 }
@@ -208,7 +208,7 @@
   @media screen and (max-width: 767px) {
     flex-wrap: wrap;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     justify-content: space-between;
   }
 }
@@ -238,10 +238,11 @@
   text-align: center;
   text-transform: uppercase;
   border-radius: 31px;
-  box-shadow: -5px -5px 10px 0px #ffffff, 5px 5px 10px 0px #48799640,
-    10px 10px 20px 0px #4879961a, -10px -10px 20px 0px #ffffff;
+  box-shadow: -5px -5px 10px 0px $primary-bg,
+    5px 5px 10px 0px $secondary-text40, 10px 10px 20px 0px $secondary-text1a,
+    -10px -10px 20px 0px $primary-bg;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-left: auto;
     margin-right: auto;
     width: 277px;
@@ -254,12 +255,12 @@
   top: 303px;
   border-radius: 0 0 35px 0;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     top: 229px;
     left: 8px;
   }
 
-  @media screen and (min-width: 1444px) {
+  @media screen and (min-width: $desktop) {
     top: 280px;
     left: 13px;
     border-radius: 0 0 72px 0;
@@ -269,14 +270,14 @@
   // перевірити чи дійсно в таблет версії ширина не рівна довжині
   display: none;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: block;
     top: 90px;
     right: 9px;
     border-radius: 0 0 0 35px;
   }
 
-  @media screen and (min-width: 1444px) {
+  @media screen and (min-width: $desktop) {
     top: 159px;
     right: 13px;
     border-radius: 0 0 0 75px;
@@ -290,14 +291,14 @@
     left: -17px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     z-index: 1;
     top: 471px;
     right: 0px;
     // треба 8 але інакше перекриває картинку
   }
 
-  @media screen and (min-width: 1444px) {
+  @media screen and (min-width: $desktop) {
     z-index: -1;
     top: 667px;
     right: -23px;
@@ -309,10 +310,10 @@
   top: 588px;
   right: -15px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: none;
   }
-  @media screen and (min-width: 1444px) {
+  @media screen and (min-width: $desktop) {
     display: block;
     top: 1247px;
     right: -44px;
@@ -325,7 +326,7 @@
     right: -21px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: none;
   }
 }
@@ -336,7 +337,7 @@
     border-radius: 0 0 0 35px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: none;
   }
 }
@@ -347,14 +348,14 @@
     border-radius: 25px 0;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: none;
   }
 }
 .bg__item--8 {
   display: none;
 
-  @media screen and (min-width: 1444px) {
+  @media screen and (min-width: $desktop) {
     display: block;
     top: 1077px;
     left: -64px;

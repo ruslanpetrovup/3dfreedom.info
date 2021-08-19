@@ -12,24 +12,24 @@
 }
 
 .printing-hero__title {
-  color: #487996;
+  color: $secondary-text;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.25;
   text-transform: uppercase;
-  color: #487996;
+  color: $secondary-text;
   margin-bottom: 16px;
   @media screen and (min-width: 767px) {
     margin-bottom: 24px;
     font-size: 36px;
   }
-  @media screen and (min-width: 1444px) {
+  @media screen and (min-width: $desktop) {
     font-size: 48px;
   }
 }
 .printing-hero__container {
   @media screen and (max-width: 767px) {
-    width: 320px;
+    width: $mobile;
   }
 }
 .printing-hero__list {
@@ -41,7 +41,7 @@
     flex-wrap: nowrap;
   }
 
-  @media screen and (min-width: 1444px) {
+  @media screen and (min-width: $desktop) {
   }
 }
 .printing-hero__border {
@@ -49,10 +49,10 @@
   display: inline-block;
   width: 133px;
   height: 160px;
-  background: #ffffff;
+  background: $primary-bg;
   opacity: 0.8;
   box-shadow: inset 1px 1px 16px rgb(203 203 203 / 80%),
-    inset -1px -1px 16px #ffffff;
+    inset -1px -1px 16px $primary-bg;
   border-radius: 50px 0px;
   flex-basis: calc((100% - 30px) / 2);
   margin-left: 15px;
@@ -67,7 +67,7 @@
       margin-left: 14px;
     }
   }
-  @media screen and (min-width: 1444px) {
+  @media screen and (min-width: $desktop) {
     width: 250px;
     height: 298px;
     margin-left: 0px;
@@ -87,7 +87,7 @@
   top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
-  @media screen and (min-width: 1444px) {
+  @media screen and (min-width: $desktop) {
     top: 40%;
     width: 174px;
     height: 142px;
@@ -102,7 +102,7 @@
     width: 106px;
     height: 86px;
   }
-  @media screen and (min-width: 1444px) {
+  @media screen and (min-width: $desktop) {
     background-image: url('../images/we_create/01-item.jpg');
     width: 174px;
     height: 142px;
@@ -110,26 +110,26 @@
 }
 
 .printing-hero__border--prototype::before {
-  @media (min-device-pixel-ratio) and (min-width: 320px),
-    (min-resolution: 192dpi) and (min-width: 320px),
-    (min-resolution: 2dppx) and (min-width: 320px) {
+  @media (min-device-pixel-ratio) and (min-width: $mobile),
+    (min-resolution: 192dpi) and (min-width: $mobile),
+    (min-resolution: 2dppx) and (min-width: $mobile) {
     background-image: url('../images/we_create/01-item-mob@2x.jpg');
     background-size: cover;
   }
 }
 
 .printing-hero__border--prototype::before {
-  @media (min-device-pixel-ratio) and (min-width: 768px),
-    (min-resolution: 192dpi) and (min-width: 768px),
-    (min-resolution: 2dppx) and (min-width: 768px) {
+  @media (min-device-pixel-ratio) and (min-width: $tablet),
+    (min-resolution: 192dpi) and (min-width: $tablet),
+    (min-resolution: 2dppx) and (min-width: $tablet) {
     background-image: url('../images/we_create/01-item-tab@2x.jpg');
     background-size: cover;
   }
 }
 .printing-hero__border--prototype::before {
-  @media (min-device-pixel-ratio) and (min-width: 1444px),
-    (min-resolution: 192dpi) and (min-width: 1444px),
-    (min-resolution: 2dppx) and (min-width: 1444px) {
+  @media (min-device-pixel-ratio) and (min-width: $desktop),
+    (min-resolution: 192dpi) and (min-width: $desktop),
+    (min-resolution: 2dppx) and (min-width: $desktop) {
     background-image: url('../images/we_create/01-item@2x.jpg');
     background-size: cover;
   }
@@ -144,7 +144,7 @@
     width: 118px;
     height: 74px;
   }
-  @media screen and (min-width: 1444px) {
+  @media screen and (min-width: $desktop) {
     background-image: url('../images/we_create/02-item.jpg');
     width: 194px;
     height: 120px;
@@ -152,25 +152,25 @@
 }
 
 .printing-hero__border--layout::before {
-  @media (min-device-pixel-ratio) and (min-width: 320px),
-    (min-resolution: 192dpi) and (min-width: 320px),
-    (min-resolution: 2dppx) and (min-width: 320px) {
+  @media (min-device-pixel-ratio) and (min-width: $mobile),
+    (min-resolution: 192dpi) and (min-width: $mobile),
+    (min-resolution: 2dppx) and (min-width: $mobile) {
     background-image: url('../images/we_create/02-item-mob@2x.jpg');
     background-size: cover;
   }
 }
 .printing-hero__border--layout::before {
-  @media (min-device-pixel-ratio) and (min-width: 768px),
-    (min-resolution: 192dpi) and (min-width: 768px),
-    (min-resolution: 2dppx) and (min-width: 768px) {
+  @media (min-device-pixel-ratio) and (min-width: $tablet),
+    (min-resolution: 192dpi) and (min-width: $tablet),
+    (min-resolution: 2dppx) and (min-width: $tablet) {
     background-image: url('../images/we_create/02-item-tab@2x.jpg');
     background-size: cover;
   }
 }
 .printing-hero__border--layout::before {
-  @media (min-device-pixel-ratio) and (min-width: 1444px),
-    (min-resolution: 192dpi) and (min-width: 1444px),
-    (min-resolution: 2dppx) and (min-width: 1444px) {
+  @media (min-device-pixel-ratio) and (min-width: $desktop),
+    (min-resolution: 192dpi) and (min-width: $desktop),
+    (min-resolution: 2dppx) and (min-width: $desktop) {
     background-image: url('../images/we_create/02-item@2x.jpg');
     background-size: cover;
   }
@@ -184,7 +184,7 @@
     width: 50px;
     height: 82px;
   }
-  @media screen and (min-width: 1444px) {
+  @media screen and (min-width: $desktop) {
     background-image: url('../images/we_create/03-iem.jpg');
     width: 84px;
     height: 134px;
@@ -192,25 +192,25 @@
 }
 
 .printing-hero__border--decor::before {
-  @media (min-device-pixel-ratio) and (min-width: 320px),
-    (min-resolution: 192dpi) and (min-width: 320px),
-    (min-resolution: 2dppx) and (min-width: 320px) {
+  @media (min-device-pixel-ratio) and (min-width: $mobile),
+    (min-resolution: 192dpi) and (min-width: $mobile),
+    (min-resolution: 2dppx) and (min-width: $mobile) {
     background-image: url('../images/we_create/03-item-mob@2x.jpg');
     background-size: cover;
   }
 }
 .printing-hero__border--decor::before {
-  @media (min-device-pixel-ratio) and (min-width: 768px),
-    (min-resolution: 192dpi) and (min-width: 768px),
-    (min-resolution: 2dppx) and (min-width: 768px) {
+  @media (min-device-pixel-ratio) and (min-width: $tablet),
+    (min-resolution: 192dpi) and (min-width: $tablet),
+    (min-resolution: 2dppx) and (min-width: $tablet) {
     background-image: url('../images/we_create/03-item-tab@2x.jpg');
     background-size: cover;
   }
 }
 .printing-hero__border--decor::before {
-  @media (min-device-pixel-ratio) and (min-width: 1444px),
-    (min-resolution: 192dpi) and (min-width: 1444px),
-    (min-resolution: 2dppx) and (min-width: 1444px) {
+  @media (min-device-pixel-ratio) and (min-width: $desktop),
+    (min-resolution: 192dpi) and (min-width: $desktop),
+    (min-resolution: 2dppx) and (min-width: $desktop) {
     background-image: url('../images/we_create/03-iem@2x.jpg');
     background-size: cover;
   }
@@ -224,7 +224,7 @@
     width: 98px;
     height: 98px;
   }
-  @media screen and (min-width: 1444px) {
+  @media screen and (min-width: $desktop) {
     background-image: url('../images/we_create/04-item.jpg');
     width: 162px;
     height: 162px;
@@ -232,37 +232,37 @@
 }
 
 .printing-hero__border--design::before {
-  @media (min-device-pixel-ratio) and (min-width: 320px),
-    (min-resolution: 192dpi) and (min-width: 320px),
-    (min-resolution: 2dppx) and (min-width: 320px) {
+  @media (min-device-pixel-ratio) and (min-width: $mobile),
+    (min-resolution: 192dpi) and (min-width: $mobile),
+    (min-resolution: 2dppx) and (min-width: $mobile) {
     background-image: url('../images/we_create/04-item-mob@2x.jpg');
     background-size: cover;
   }
 }
 .printing-hero__border--design::before {
-  @media (min-device-pixel-ratio) and (min-width: 768px),
-    (min-resolution: 192dpi) and (min-width: 768px),
-    (min-resolution: 2dppx) and (min-width: 768px) {
+  @media (min-device-pixel-ratio) and (min-width: $tablet),
+    (min-resolution: 192dpi) and (min-width: $tablet),
+    (min-resolution: 2dppx) and (min-width: $tablet) {
     background-image: url('../images/we_create/04-item-tab@2x.jpg');
     background-size: cover;
   }
 }
 .printing-hero__border--design::before {
-  @media (min-device-pixel-ratio) and (min-width: 1444px),
-    (min-resolution: 192dpi) and (min-width: 1444px),
-    (min-resolution: 2dppx) and (min-width: 1444px) {
+  @media (min-device-pixel-ratio) and (min-width: $desktop),
+    (min-resolution: 192dpi) and (min-width: $desktop),
+    (min-resolution: 2dppx) and (min-width: $desktop) {
     background-image: url('../images/we_create/04-item@2x.jpg');
     background-size: cover;
   }
 }
 .printing-hero__text {
-  color: #487996;
+  color: $secondary-text;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.28;
   text-align: center;
   margin-top: 120px;
-  @media screen and (min-width: 1444px) {
+  @media screen and (min-width: $desktop) {
     margin-top: 235px;
   }
 }
@@ -273,7 +273,7 @@
   padding-top: 52px;
   padding-bottom: 76px;
 
-  @media screen and (min-width: 1444px) {
+  @media screen and (min-width: $desktop) {
     padding-top: 100px;
     padding-bottom: 100px;
   }
@@ -294,7 +294,7 @@
     width: 247px;
     height: 341px;
 
-    @media screen and (min-width: 1444px) {
+    @media screen and (min-width: $desktop) {
       width: 250px;
       height: 345px;
     }
@@ -312,7 +312,7 @@
     margin-bottom: 0px;
     width: 247px;
     height: 341px;
-    @media screen and (min-width: 1444px) {
+    @media screen and (min-width: $desktop) {
       width: 250px;
       height: 345px;
     }
@@ -329,18 +329,19 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
-  color: #487996;
-  background-color: #f5f5fa;
+  color: $secondary-text;
+  background-color: $secondary-bg;
   text-align: center;
   text-transform: uppercase;
   border-radius: 31px;
-  box-shadow: -5px -5px 10px 0px #ffffff, 5px 5px 10px 0px #48799640,
-    10px 10px 20px 0px #4879961a, -10px -10px 20px 0px #ffffff;
+  box-shadow: -5px -5px 10px 0px $primary-bg,
+    5px 5px 10px 0px $secondary-text40, 10px 10px 20px 0px $secondary-text1a,
+    -10px -10px 20px 0px $primary-bg;
 
   &:hover,
   :focus {
-    background-color: #487996;
-    color: #f5f5fa;
+    background-color: $secondary-text;
+    color: $secondary-bg;
   }
 }
 
@@ -348,7 +349,7 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 1.25;
-  color: #2b2b2b;
+  color: $primary-text;
 }
 
 .services__text:not(:last-child) {
@@ -356,7 +357,7 @@
 }
 .services__words {
   font-weight: 700;
-  color: #487996;
+  color: $secondary-text;
 }
 
 // <=======End printing-services =======>
@@ -369,16 +370,16 @@
   width: 100%;
   overflow: visible;
 
-  @media screen and (min-width: 320px) {
-    width: 320px;
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
   }
 
-  @media screen and (min-width: 768px) {
-    width: 768px;
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
   }
 
-  @media screen and (min-width: 1444px) {
-    width: 1444px;
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
   }
 
   &__block--header--left {
@@ -418,7 +419,7 @@
     position: absolute;
     width: 74px;
     height: 74px;
-    @media screen and (min-width: 1444px) {
+    @media screen and (min-width: $desktop) {
       width: 144px;
       height: 144px;
     }
@@ -432,12 +433,12 @@
     bottom: 155px;
     right: -15px;
     border-radius: 25px 0 25px 0;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       bottom: 285px;
       right: 9px;
       border-radius: 0 25px 0 25px;
     }
-    @media screen and (min-width: 1444px) {
+    @media screen and (min-width: $desktop) {
       bottom: -55px;
       right: -44px;
       border-radius: 50% 50% 50% 50%;
@@ -447,12 +448,12 @@
     bottom: 480px;
     right: -15px;
     border-radius: 0 25px 0 25px;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       bottom: -12px;
       left: -17px;
       border-radius: 50% 50% 50% 50%;
     }
-    @media screen and (min-width: 1444px) {
+    @media screen and (min-width: $desktop) {
       bottom: 309px;
       left: -64px;
       border-radius: 50% 50% 50% 50%;
@@ -462,12 +463,12 @@
     top: 520px;
     right: -15px;
     border-radius: 50% 50% 50% 50%;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       top: 9px;
       right: 9px;
       border-radius: 0 0 0 35px;
     }
-    @media screen and (min-width: 1444px) {
+    @media screen and (min-width: $desktop) {
       top: 31px;
       right: -100px;
       border-radius: 0 0 0 75px;
@@ -477,12 +478,12 @@
     top: 220px;
     left: -29px;
     border-radius: 0 0 35px 0;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       top: 147px;
       left: 13px;
       border-radius: 0 0 35px 0;
     }
-    @media screen and (min-width: 1444px) {
+    @media screen and (min-width: $desktop) {
       top: 129px;
       left: -130px;
       border-radius: 0 0 72px 0;
@@ -491,7 +492,7 @@
 
   &__block-5 {
     display: none;
-    @media screen and (min-width: 1444px) {
+    @media screen and (min-width: $desktop) {
       display: block;
       top: 975px;
       right: -60px;
