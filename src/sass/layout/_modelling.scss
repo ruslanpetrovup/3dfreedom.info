@@ -19,12 +19,22 @@
     font-size: 24px;
     line-height: 1.26;
   }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1444px) {
     font-size: 36px;
   }
 }
 
 // Hero
+.modelling-hero {
+  padding-bottom: 52px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 50px;
+  }
+  @media screen and (min-width: 1444px) {
+    padding-bottom: 100px;
+  }
+}
+
 .modelling-hero__title {
   font-weight: 700;
   font-style: normal;
@@ -37,7 +47,7 @@
   @media screen and (min-width: 768px) {
     font-size: 36px;
   }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1444px) {
     font-size: 48px;
     margin-bottom: 24px;
   }
@@ -48,19 +58,14 @@
   font-size: 16px;
   line-height: 1.26;
   color: $primary-text;
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1444px) {
     font-size: 18px;
   }
 }
 .modelling-hero__content {
-  padding-bottom: 52px;
-  @media screen and (min-width: 768px) {
-    padding-bottom: 50px;
-  }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1444px) {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 100px;
   }
 }
 .modelling-hero__text {
@@ -75,6 +80,14 @@
 }
 
 // Methods
+.modelling-methods {
+  @media screen and (max-width: 1143px) {
+    padding-bottom: 52px;
+  }
+  @media screen and (min-width: 1444px) {
+    padding-bottom: 100px;
+  }
+}
 .modelling-methods__title {
   @media screen and (max-width: 767px) {
     font-size: 18px;
@@ -82,14 +95,11 @@
   }
 }
 .modelling-methods__list {
-  padding-bottom: 32px;
-  @media screen and (min-width: 768px) {
-    padding-bottom: 52px;
-  }
-  @media screen and (min-width: 1440px) {
-    padding-bottom: 100px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
   }
 }
+
 .modelling-methods__item:not(:last-child) {
   margin-bottom: 16px;
 }
@@ -121,7 +131,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   @media screen and (max-width: 767px) {
-    margin-bottom: 52px;
+    // margin-bottom: 52px;
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 280px),
@@ -145,7 +155,7 @@
     background-image: url(../images/modeling/gear-tab@2x.jpg);
     background-size: cover;
   }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1444px) {
     background-image: url(../images/modeling/gear.jpg);
     width: 515px;
     height: 301px;
@@ -156,7 +166,7 @@
     z-index: -5;
     background-size: cover;
   }
-  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1440px),
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1444px),
     screen and (min-resolution: 192dpi) and (min-width: 768px),
     screen and (min-resolution: 2dppx) and (min-width: 768px) {
     background-image: url(../images/modeling/gear@2x.jpg);
@@ -165,9 +175,9 @@
 }
 
 // We Create
-.modelling-create__container {
+.modelling-create {
   padding-bottom: 76px;
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1444px) {
     padding-bottom: 100px;
   }
 }
@@ -189,7 +199,7 @@
 }
 .modelling-create__list {
   margin-bottom: 52px;
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1444px) {
     margin-bottom: 100px;
   }
 }
