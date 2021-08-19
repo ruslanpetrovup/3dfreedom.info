@@ -6,7 +6,7 @@
   @media screen and (min-width: $tablet) {
     padding-top: 24px;
   }
-  @media screen and (min-width: 1444px) {
+  @media screen and (min-width: $desktop) {
     padding-bottom: 0px;
   }
 }
@@ -288,6 +288,8 @@
   }
 }
 .services__img {
+  width: 100%;
+  height: 100%;
   @media screen and (min-width: 767px) {
     width: 247px;
     height: 341px;
@@ -324,7 +326,6 @@
   display: block;
   width: 280px;
   height: 56px;
-  // padding: 16px 32px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
@@ -359,3 +360,142 @@
 }
 
 // <=======End printing-services =======>
+
+// Backgroung
+
+.bg-printing {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  overflow: visible;
+
+  @media screen and (min-width: 320px) {
+    width: 320px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1444px) {
+    width: 1444px;
+  }
+
+  &__block--header--left {
+    left: 0;
+    top: 8px;
+    border-radius: 0 35px 35px 0;
+
+    @include respond-from-min($tablet) {
+      left: 233px;
+      top: 8px;
+    }
+
+    @include respond-from-min($desktop) {
+      left: 293px;
+      top: 7px;
+    }
+  }
+  &__block--header--right {
+    right: 0;
+    top: 8px;
+
+    border-radius: 35px 0px 0px 35px;
+
+    @include respond-from-min($tablet) {
+      right: 233px;
+      top: 8px;
+    }
+
+    @include respond-from-min($desktop) {
+      right: 293px;
+      top: 7px;
+    }
+  }
+
+  &__block {
+    z-index: -1;
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    @media screen and (min-width: 1444px) {
+      width: 144px;
+      height: 144px;
+    }
+
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    background-color: $primary-bg;
+  }
+
+  &__block-1 {
+    display: none;
+    bottom: 155px;
+    right: -15px;
+    border-radius: 25px 0 25px 0;
+    @media screen and (min-width: 768px) {
+      bottom: 285px;
+      right: 9px;
+      border-radius: 0 25px 0 25px;
+    }
+    @media screen and (min-width: 1444px) {
+      bottom: -55px;
+      right: -44px;
+      border-radius: 50% 50% 50% 50%;
+    }
+  }
+  &__block-2 {
+    bottom: 480px;
+    right: -15px;
+    border-radius: 0 25px 0 25px;
+    @media screen and (min-width: 768px) {
+      bottom: -12px;
+      left: -17px;
+      border-radius: 50% 50% 50% 50%;
+    }
+    @media screen and (min-width: 1444px) {
+      bottom: 309px;
+      left: -64px;
+      border-radius: 50% 50% 50% 50%;
+    }
+  }
+  &__block-3 {
+    top: 520px;
+    right: -15px;
+    border-radius: 50% 50% 50% 50%;
+    @media screen and (min-width: 768px) {
+      top: 9px;
+      right: 9px;
+      border-radius: 0 0 0 35px;
+    }
+    @media screen and (min-width: 1444px) {
+      top: 31px;
+      right: -100px;
+      border-radius: 0 0 0 75px;
+    }
+  }
+  &__block-4 {
+    top: 220px;
+    left: -29px;
+    border-radius: 0 0 35px 0;
+    @media screen and (min-width: 768px) {
+      top: 147px;
+      left: 13px;
+      border-radius: 0 0 35px 0;
+    }
+    @media screen and (min-width: 1444px) {
+      top: 129px;
+      left: -130px;
+      border-radius: 0 0 72px 0;
+    }
+  }
+
+  &__block-5 {
+    display: none;
+    @media screen and (min-width: 1444px) {
+      display: block;
+      top: 975px;
+      right: -60px;
+      border-radius: 72px 0 72px 0;
+    }
+  }
+}
