@@ -26,6 +26,11 @@
 
 // Hero
 .modelling-hero {
+  padding-top: 12px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 24px;
+  }
+
   padding-bottom: 52px;
   @media screen and (min-width: 768px) {
     padding-bottom: 50px;
