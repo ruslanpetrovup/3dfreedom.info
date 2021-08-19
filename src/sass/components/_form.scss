@@ -162,7 +162,7 @@
 
     resize: none;
     @media screen and (min-width: $desktop) {
-      // height: 199px;
+      height: 199px;
       @include font-source-sans(18px, 20px);
     }
   }
