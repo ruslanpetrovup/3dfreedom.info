@@ -18,7 +18,6 @@
 - @Serhii-P79
 - @Huk2021
 - @OlgaOnoshko
-- @Huk2021
 - @Cherviatsova
 - @julia-pro
 - @Lozikkk
