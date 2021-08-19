@@ -398,11 +398,6 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .container{
-    padding-left: 80px;
-    padding-right: 80px;
-  }
-
   .header {
     display: flex;
     align-items: center;
@@ -435,14 +430,19 @@
 
     &__link-position {
       display: flex;
-      width: 470px;
-      justify-content: space-between;
+      width: 500px;
+      justify-content: flex-end;
       position: relative;
-      margin-left: 213px;
     }
 
     &__mobile{
       margin-left: 8px;
+    }
+  }
+
+  .header-position-link{
+    &:not(:last-child){
+      margin-right: 54px;
     }
   }
 
