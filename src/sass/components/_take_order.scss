@@ -171,31 +171,31 @@
   }
 
   &__blok-1 {
-    bottom: 283px;
+    top: 1278px;
     right: -15px;
     border-radius: 25px 0 25px 0;
     @media screen and (min-width: $tablet) {
-      bottom: 285px;
+      top: 951px;
       right: 9px;
       border-radius: 0 25px 0 25px;
     }
     @media screen and (min-width: $desktop) {
-      bottom: 139px;
+      top: 1096px;
       right: -44px;
       border-radius: 50% 50% 50% 50%;
     }
   }
   &__blok-2 {
-    bottom: 590px;
+    top: 951px;
     right: -15px;
     border-radius: 0 25px 0 25px;
     @media screen and (min-width: $tablet) {
-      bottom: -12px;
+      top: 1248px;
       left: -17px;
       border-radius: 50% 50% 50% 50%;
     }
     @media screen and (min-width: $desktop) {
-      bottom: 309px;
+      top: 926px;
       left: -64px;
       border-radius: 50% 50% 50% 50%;
     }
