@@ -21,6 +21,7 @@ const modalClose = (even) => {
         return
     }
     bodyEl.setAttribute("style", "");
+     imgSrc.setAttribute('src', '');
     backdrop.removeEventListener('click', modalClose)
     backdrop.classList.remove('is-active');
 }
