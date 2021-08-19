@@ -334,9 +334,8 @@
   text-align: center;
   text-transform: uppercase;
   border-radius: 31px;
-  box-shadow: -5px -5px 10px 0px $primary-bg,
-    5px 5px 10px 0px $secondary-text40, 10px 10px 20px 0px $secondary-text1a,
-    -10px -10px 20px 0px $primary-bg;
+  box-shadow: -5px -5px 10px 0px $primary-bg, 5px 5px 10px 0px $secondary-text,
+    10px 10px 20px 0px $secondary-text, -10px -10px 20px 0px $primary-bg;
 
   &:hover,
   :focus {
