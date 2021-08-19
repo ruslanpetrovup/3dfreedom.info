@@ -13,13 +13,12 @@
     height: 144px;
   }
   // Outline for testing
-  // outline: 1px solid MistyRose;
 
   // Top Left
   &--tl {
     left: 0;
     top: 8px;
-    border-radius: 0 50% 50% 0;
+    border-radius: $round-left;
 
     @include respond-from-min($tablet) {
       left: 233px;
@@ -37,7 +36,7 @@
     right: 0;
     top: 8px;
 
-    border-radius: 50% 0px 0px 50%;
+    border-radius: $round-right;
 
     @include respond-from-min($tablet) {
       right: 233px;
@@ -55,7 +54,7 @@
     left: -29px;
     top: 302.61px;
 
-    border-radius: 0px 0px 50% 0px;
+    border-radius: $corner-br;
 
     @include respond-from-min($tablet) {
       left: 32.1px;
@@ -73,7 +72,7 @@
     left: -17px;
     top: 650.93px;
 
-    border-radius: 35% 0;
+    border-radius: $leaf-tablet;
 
     @include respond-from-min($tablet) {
       left: 32.1px;
@@ -81,7 +80,7 @@
     }
 
     @include respond-from-min($desktop) {
-      border-radius: 50% 0;
+      border-radius: $leaf-desktop;
 
       left: 32px;
       top: 1264px;
@@ -93,7 +92,7 @@
     left: -18px;
     top: 1069.83px;
 
-    border-radius: 0px 0px 0px 50%;
+    border-radius: $corner-bl;
 
     @include respond-from-min($tablet) {
       left: 32.1px;
@@ -111,7 +110,7 @@
     right: -10px;
     top: 588.53px;
 
-    border-radius: 50%;
+    border-radius: $circle;
 
     @include respond-from-min($tablet) {
       right: -17px;
@@ -129,7 +128,7 @@
     right: -20px;
     top: 1033px;
 
-    border-radius: 35% 0;
+    border-radius: $leaf-tablet;
     transform: rotate(90deg);
 
     @include respond-from-min($tablet) {
@@ -138,7 +137,7 @@
     }
 
     @include respond-from-min($desktop) {
-      border-radius: 50% 0;
+      border-radius: $leaf-desktop;
       right: 34px;
       top: 2011px;
     }
@@ -149,7 +148,7 @@
     right: -18px;
     top: 1359.84px;
 
-    border-radius: 35% 0;
+    border-radius: $leaf-tablet;
 
     @include respond-from-min($tablet) {
       right: 32.1px;
@@ -157,7 +156,7 @@
     }
 
     @include respond-from-min($desktop) {
-      border-radius: 50% 0px;
+      border-radius: $leaf-desktop;
       right: 34px;
       top: 2650px;
     }
@@ -172,7 +171,7 @@
       left: 32.1px;
       top: 8px;
 
-      border-radius: 50% 0px 0px 0px;
+      border-radius: $corner-tl;
     }
     @include respond-from-min($desktop) {
       left: 32px;
@@ -186,7 +185,7 @@
       display: block;
       left: 32.1px;
       top: 81.65px;
-      border-radius: 0px 0px 50% 0px;
+      border-radius: $corner-br;
     }
     @include respond-from-min($desktop) {
       left: 32px;
@@ -200,7 +199,7 @@
       display: block;
       left: 105.76px;
       top: 155.31px;
-      border-radius: 0px 50% 0px 0px;
+      border-radius: $corner-tr;
     }
     @include respond-from-min($desktop) {
       left: 176px;
@@ -214,7 +213,7 @@
       display: block;
       left: 32.1px;
       top: 228.96px;
-      border-radius: 0px 0px 0px 50%;
+      border-radius: $corner-bl;
     }
     @include respond-from-min($desktop) {
       left: 32px;
@@ -228,7 +227,7 @@
       display: block;
       left: 105.76px;
       top: 302.61px;
-      border-radius: 0px 0px 50% 0px;
+      border-radius: $corner-br;
     }
     @include respond-from-min($desktop) {
       left: 176px;
@@ -242,7 +241,7 @@
       display: block;
       left: 105.76px;
       top: 996.18px;
-      border-radius: 0px 50% 0px 0px;
+      border-radius: $corner-tr;
     }
     @include respond-from-min($desktop) {
       left: 176px;
@@ -256,7 +255,7 @@
       display: block;
       left: -17px;
       top: 1330.17px;
-      border-radius: 50%;
+      border-radius: $circle;
     }
     @include respond-from-min($desktop) {
       left: -64px;
@@ -285,7 +284,7 @@
       right: 105.76px;
       top: 155.31px;
 
-      border-radius: 50%;
+      border-radius: $circle;
     }
     @include respond-from-min($desktop) {
       right: 176px;
@@ -300,10 +299,10 @@
       right: 32.1px;
       top: 228.96px;
 
-      border-radius: 35% 0;
+      border-radius: $leaf-tablet;
     }
     @include respond-from-min($desktop) {
-      border-radius: 50% 0px;
+      border-radius: $leaf-desktop;
       top: 439px;
     }
   }
@@ -315,7 +314,7 @@
       right: 105.76px;
       top: 302.61px;
 
-      border-radius: 0px 0px 0px 50%;
+      border-radius: $corner-bl;
     }
     @include respond-from-min($desktop) {
       right: 176px;
@@ -330,7 +329,7 @@
       right: 32.1px;
       top: 376.27px;
 
-      border-radius: 0px 50% 0px 0px;
+      border-radius: $corner-tr;
       transform: rotate(180deg);
     }
     @include respond-from-min($desktop) {
@@ -345,7 +344,7 @@
       right: 32.1px;
       top: 588.53px;
 
-      border-radius: 0px 0px 50% 0px;
+      border-radius: $corner-br;
       transform: rotate(-180deg);
     }
     @include respond-from-min($desktop) {
@@ -360,7 +359,7 @@
       right: 105.76px;
       top: 1433.49px;
 
-      border-radius: 0px 0px 0px 50%;
+      border-radius: $corner-bl;
     }
     @include respond-from-min($desktop) {
       right: 176px;
