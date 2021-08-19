@@ -1,4 +1,7 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
+  .header__mobile-tel {
+    display: none;
+  }
   .header {
     display: flex;
     align-items: center;
@@ -34,17 +37,17 @@
     }
   }
 
-  .header-nav{
+  .header-nav {
     display: flex;
-  
   }
 
   .header-menu {
+    position: fixed;
     top: 80px;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color:  #ffffff;
+    background-color: #ffffff;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -109,12 +112,11 @@
     }
   }
 
-  .header-menu-service{
+  .header-menu-service {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
   }
 
   .header-menu-close {
@@ -138,33 +140,44 @@
     height: 30px;
   }
 
-  .submenu-lang {
-    display: none;
-    position: absolute;
-    min-width: 160px;
-    z-index: 1;
-  }
-
-  .header__lang{
-
-    &:hover .submenu-lang {
-    display: block;
-    }
-  }
-
-  .header-form-expand{
+  .header-form-expand {
     display: none;
   }
 
-  .submenu{
+  .submenu {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-
-  .header__sprite-phone:hover .header__mobile{
+  .header__mobile-tel {
+    display: none;
+  }
+  .header__sprite-phone {
+    position: relative;
+  }
+  .header__sprite-phone:hover .header__mobile-tel {
     display: block;
+    background-color: white;
+    position: absolute;
+    width: 170px;
+    padding: 15px 8px;
+    right: 50%;
+    top: 130%;
+    box-shadow: 2px 2px 11px 1px rgb(34 60 80 / 20%);
+    transform: translateX(50%);
+  }
+  .header__mobile-tel-icon {
+    width: 38px;
+    height: 26px;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    fill: white;
+  }
+  .header__mobile-tel-item:first-child {
+    margin-bottom: 10px;
   }
 
   .header-mobile-open {
@@ -173,20 +186,21 @@
     z-index: 1;
   }
 
-  .header-btn-lang{
+  .header-btn-lang {
     border: none;
     background-color: inherit;
-    color: #BDBDBD;
+    color: #bdbdbd;
   }
 
-  .header-contacts-position{
+  .header-contacts-position {
     display: none;
   }
-
-
 }
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
+  .header__mobile-tel {
+    display: none;
+  }
   .header {
     display: flex;
     align-items: center;
@@ -223,7 +237,7 @@
       background-color: #ffffff;
     }
 
-    &__mobile{
+    &__mobile {
       margin-left: 8px;
     }
   }
@@ -233,7 +247,7 @@
   }
 
   .header-phone {
-    &:last-child{
+    &:last-child {
       margin-top: 10px;
     }
     fill: #008cef;
@@ -252,6 +266,7 @@
   .header-menu {
     top: 80px;
     left: 0;
+    position: fixed;
     width: 100%;
     height: 100%;
     background-color: #ffffff;
@@ -317,7 +332,7 @@
     }
   }
 
-  .header-menu-service{
+  .header-menu-service {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -344,66 +359,58 @@
     height: 30px;
   }
 
-  .submenu-lang {
-    display: none;
-    position: absolute;
-    min-width: 160px;
-    z-index: 1;
-  }
-
-  .header__lang:hover .submenu-lang {
-    display: block;
-  }
-
-  .header-form-expand{
+  .header-form-expand {
     display: none;
   }
 
-  .data-menu-position{
+  .data-menu-position {
     position: absolute;
   }
 
-  .submenu{
+  .submenu {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .header-btn-lang{
+  .header-btn-lang {
     border: none;
     background-color: inherit;
   }
 
-  .header-nav{
+  .header-nav {
     display: flex;
     align-items: center;
   }
 
-  .header-contacts-position{
+  .header-contacts-position {
     display: flex;
     flex-direction: column;
   }
 
-  .header-mobile-open{
-    &:last-child{
+  .header-mobile-open {
+    &:last-child {
       margin-top: 10px;
     }
   }
-  .header-btn-lang{
+  .header-btn-lang {
     border: none;
     background-color: inherit;
-    color: #BDBDBD;
+    color: #bdbdbd;
   }
 }
 
 @media screen and (min-width: 1440px) {
+  .header__mobile-tel {
+    display: none;
+  }
   .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 40px;
-    padding-bottom: 36px;
+    padding-bottom: 62px;
 
     &__sprite-burger {
       display: none;
@@ -435,13 +442,13 @@
       position: relative;
     }
 
-    &__mobile{
+    &__mobile {
       margin-left: 8px;
     }
   }
 
-  .header-position-link{
-    &:not(:last-child){
+  .header-position-link {
+    &:not(:last-child) {
       margin-right: 54px;
     }
   }
@@ -458,7 +465,7 @@
   }
 
   .header-phone {
-    &:last-child{
+    &:last-child {
       margin-top: 10px;
     }
     fill: #008cef;
@@ -479,81 +486,89 @@
   }
 
   .header-form-expand {
-    position: relative;
-    top: -20px;
-    left: 60px;
-    width: 0px;
+    padding: 0;
     border: none;
     background-color: inherit;
     fill: #008cef;
-    &:hover{
-      transform: rotate(180);
-    }
   }
-
+  .header-icon-form {
+    transition: transform 250ms linear;
+  }
+  .header-menu-item:hover .header-icon-form {
+    transform: rotate(180deg);
+  }
   .header-service {
     margin-top: 6px;
-    &:first-child{
+    &:first-child {
       margin-top: 12px;
     }
   }
 
   .submenu {
-    display: none;
+    opacity: 0;
     position: absolute;
-    top: 0px;
-    left: 85px;
+    top: 0;
+    left: 50%;
     min-width: 160px;
-    padding: 12px 16px;
+    margin-top: 8px;
     z-index: 1;
+    transform: translateX(-50%);
+    transition: opacity 250ms linear;
+  }
+  .header-menu-item {
+    position: relative;
+  }
+  .header-menu-item:hover .submenu {
+    opacity: 1;
   }
 
-  .header-menu-service:hover .submenu {
-    display: block;
-    
-  }
+  // .submenu-lang {
+  //   display: none;
+  //   position: absolute;
+  //   min-width: 160px;
+  //   z-index: 1;
+  // }
 
-  .submenu-lang {
-    display: none;
-    position: absolute;
-    min-width: 160px;
-    z-index: 1;
-  }
-
-  .header__lang{
-    margin-right: 28px;
-    &:hover .submenu-lang {
-      display: block;
-    }
-  }
-
-  .header-btn-lang{
+  .header-btn-lang-item {
+    color: #bdbdbd;
     border: none;
     background-color: inherit;
   }
-
-  .header-nav{
+  .submenu-lang {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 250ms linear;
+  }
+  .header__lang:hover .submenu-lang {
+    opacity: 1;
+  }
+  .header__lang {
+    text-align: center;
+    position: relative;
+  }
+  .header__lang-title {
+    color: #bdbdbd;
+  }
+  .header-nav {
     display: flex;
     align-items: center;
   }
-
-  .header-contacts-position{
+  .header-contacts-position {
     display: flex;
     flex-direction: column;
   }
 
-  .header-mobile-open{
-    &:last-child{
+  .header-mobile-open {
+    &:last-child {
       margin-top: 10px;
     }
   }
 
-  .header-btn-lang{
+  .header-btn-lang {
     border: none;
     background-color: inherit;
-    color: #BDBDBD;
+    color: #bdbdbd;
   }
-
 }
 .is-hidden {
   display: none;

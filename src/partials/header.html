@@ -16,23 +16,25 @@
       <ul class="header__link-position header-menu" data-menu>
         <li class="header-link header-position-link active-page">
           <a href="index.html">Головна</a></li>
-        <ul class="header-menu-service">
-          <li class="header-link header-position-link">
-            <a href="#">Послуги</a></li>
-          <button class="header-form-expand" type="button">
-            <svg width="10px" height="4px">
-              <use href="./images/svg/sprites.svg#form-collapse"></use>
-            </svg>
-          </button>
-          <ul class="submenu">
-            <li class="header-link header-service">
-              <a href="modelling.html">3D Моделювання</a></li>
-            <li class="header-link header-service">
-              <a href="scanning.html">3D Сканування</a></li>
-            <li class="header-link header-service">
-              <a href="printing.html">3D Друк</a></li>
-          </ul>
-        </ul>
+          <li class="header-link header-position-link header-menu-item">
+            <a href="#" class="header-menu-service">Послуги</a>
+            <span><button class="header-form-expand" type="button">
+              <svg width="10px" height="4px" class="header-icon-form">
+                <use href="./images/svg/sprites.svg#form-collapse"></use>
+              </svg>
+            </button></span>
+            <ul class="submenu">
+              <li class="header-link header-service">
+                <a href="modelling.html">3D Моделювання</a>
+              </li>
+              <li class="header-link header-service">
+                <a href="scanning.html">3D Сканування</a>
+              </li>
+              <li class="header-link header-service">
+                <a href="printing.html">3D Друк</a>
+              </li>
+            </ul>
+          </li>
         <li class="header-link header-position-link">
           <a href="take_order.html">Замовити</a>
         </li>
@@ -43,27 +45,31 @@
     </nav>
       <div class="header__mobile-lang">
         <button class="header__sprite-phone" type="button">
+          <span class="header__mobile-tel">
+            <svg class="header__mobile-tel-icon"><use href="./images/svg/sprites.svg#form-collapse"></use></svg>
+            <ul class="header__mobile-tel-list">
+              <li class="header__mobile-tel-item">+38 (093) 643 22 88</li>
+              <li class="header__mobile-tel-item">+38 (050) 345 44 23</li>
+            </ul>
+          </span>
           <svg  width="18px" height="18px">
             <use href="./images/svg/sprites.svg#phone"></use>
           </svg>
         </button>
       <div class="header__lang">
-        <ul>
-          <li class="">
-            <button class="header-btn-lang" type="button">
-              UKR
-            </button></li>
-          <ul class="submenu-lang">
-            <li class="header__lang">
-              <button class="header-btn-lang" type="button">
-                ENG
-              </button></li>
-            <li class="header__lang">
-              <button class="header-btn-lang" type="button">
-                RUS
-              </button></li>
-          </ul>
-        </ul>
+              <p class="header__lang-title">UKR</p>
+              <ul class="submenu-lang">
+                <li class="header__lang">
+                  <button class="header-btn-lang-item" type="button">
+                    ENG
+                  </button>
+                </li>
+                <li class="header__lang">
+                  <button class="header-btn-lang-item" type="button">
+                    RUS
+                  </button>
+                </li>
+              </ul>
       </div>
       <div class="header-contacts-position">
         <svg class="header-phone" width="14px" height="14px">
