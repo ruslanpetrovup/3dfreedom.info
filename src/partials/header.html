@@ -1,8 +1,8 @@
 <header>
-  <div class="container">
-    <nav class="header">
+  <div class="container header">
+    <nav class="header-nav">
       <a href="index.html">
-        <img class="header__link" src="./images/logo/3DFREEDOM.jpg" alt="3DFREEDOM" srcset="" width="101px" height="25px"  /></a>
+        <img class="header__link" src="./images/logo/3DFREEDOM.jpg" alt="3DFREEDOM" width="101" height="25"  /></a>
       <button class="header__sprite-burger" type="button">
         <svg width="32px" height="18px">
           <use href="./images/svg/sprites.svg#burger" data-menu-open></use>
@@ -16,7 +16,7 @@
       <ul class="header__link-position header-menu" data-menu>
         <li class="header-link active-page">
           <a href="index.html">Головна</a></li>
-        <div class="header-menu-service">
+        <ul class="header-menu-service">
           <li class="header-link">
             <a href="#">Послуги</a></li>
           <button class="header-form-expand" type="button">
@@ -32,7 +32,7 @@
             <li class="header-link header-service">
               <a href="printing.html">3D Друк</a></li>
           </ul>
-        </div>
+        </ul>
         <li class="header-link">
           <a href="take_order.html">Замовити</a>
         </li>
@@ -40,6 +40,7 @@
           <a href="contacts.html">Контакти</a>
         </li>
       </ul>
+    </nav>
       <div class="header__mobile-lang">
         <button class="header__sprite-phone" type="button">
           <svg  width="18px" height="18px">
@@ -48,29 +49,41 @@
         </button>
       <div class="header__lang">
         <ul>
-          <li class="header__lang"><a href="#">UKR</a></li>
+          <li class="">
+            <button class="header-btn-lang" type="button">
+              UKR
+            </button></li>
           <ul class="submenu-lang">
-            <li class="header__lang"><a href="#">ENG</a></li>
-            <li class="header__lang"><a href="#">RUS</a></li>
+            <li class="header__lang">
+              <button class="header-btn-lang" type="button">
+                ENG
+              </button></li>
+            <li class="header__lang">
+              <button class="header-btn-lang" type="button">
+                RUS
+              </button></li>
           </ul>
         </ul>
       </div>
+      <div class="header-contacts-position">
+        <svg class="header-phone" width="14px" height="14px">
+          <use href="./images/svg/sprites.svg#phone"></use>
+        </svg>
+        <svg class="header-phone" width="14px" height="14px">
+          <use href="./images/svg/sprites.svg#phone"></use>
+        </svg>
+      </div>
         <ul class="header__mobile">
-          <li>
-            <svg class="header-phone" width="14px" height="14px">
-              <use href="./images/svg/sprites.svg#phone"></use>
-            </svg>
-            <a class="header-mobile-open" href="tel:+380936432288">+38 (093) 643 22 88</a>
-          </li>
-          <li>
-            <svg class="header-phone" width="14px" height="14px">
-              <use href="./images/svg/sprites.svg#phone"></use>
-            </svg>
-            <a class="header-mobile-open" href="tel:+380503454423">+38 (050) 345 44 23</a>
-          </li>
+          <ul class="">
+            <li>
+              <a class="header-mobile-open" href="tel:+380936432288">+38 (093) 643 22 88</a>
+            </li>
+            <li>
+              <a class="header-mobile-open" href="tel:+380503454423">+38 (050) 345 44 23</a>
+            </li>
+        </ul>
         </ul>
       </div>
-    </nav>
   </div>
 
 <!--==================MENU===========================-->
