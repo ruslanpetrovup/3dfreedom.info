@@ -1,6 +1,5 @@
-
 import './sass/main.scss';
 
 
-import './sass/font-faces.scss';
+// import './sass/font-faces.scss';
 
