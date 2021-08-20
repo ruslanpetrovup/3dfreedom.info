@@ -1,4 +1,25 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
+  .submenu-lang {
+    left: -20%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 250ms linear;
+  }
+  .header__lang:hover .submenu-lang {
+    opacity: 1;
+  }
+  .header__lang {
+    text-align: center;
+    position: relative;
+  }
+  .header__lang-title {
+    color: #bdbdbd;
+  }
+  .header-btn-lang-item {
+    color: #bdbdbd;
+    border: none;
+    background-color: inherit;
+  }
   .header__mobile-tel {
     display: none;
   }
@@ -198,6 +219,27 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
+  .submenu-lang {
+    left: -20%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 250ms linear;
+  }
+  .header__lang:hover .submenu-lang {
+    opacity: 1;
+  }
+  .header__lang {
+    text-align: center;
+    position: relative;
+  }
+  .header__lang-title {
+    color: #bdbdbd;
+  }
+  .header-btn-lang-item {
+    color: #bdbdbd;
+    border: none;
+    background-color: inherit;
+  }
   .header__mobile-tel {
     display: none;
   }
@@ -535,6 +577,7 @@
     background-color: inherit;
   }
   .submenu-lang {
+    left: -20%;
     position: absolute;
     opacity: 0;
     transition: opacity 250ms linear;
@@ -543,6 +586,7 @@
     opacity: 1;
   }
   .header__lang {
+    margin-right: 28px;
     text-align: center;
     position: relative;
   }
