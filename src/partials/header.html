@@ -1,159 +1,140 @@
-<header>
-  <div class="container header">
-    <nav class="header-nav">
-      <a href="index.html">
-        <img class="header__link" src="./images/logo/3DFREEDOM.jpg" alt="3DFREEDOM" width="101" height="25"  /></a>
-      <button class="header__sprite-burger" type="button">
-        <svg width="32px" height="18px">
-          <use href="./images/svg/sprites.svg#burger" data-menu-open></use>
-        </svg>
-      </button>
-      <button class="header-menu-close is-hidden" type="button" data-menu-close>
-        <svg width="23px" height="23px">
-          <use href="./images/svg/sprites.svg#cross"></use>
-        </svg>
-      </button>
-      <ul class="header__link-position header-menu" data-menu>
-        <li class="header-link header-position-link active-page">
-          <a href="index.html">Головна</a></li>
-          <li class="header-link header-position-link header-menu-item">
-            <a href="#" class="header-menu-service">Послуги</a>
-            <span><button class="header-form-expand" type="button">
-              <svg width="10px" height="4px" class="header-icon-form">
-                <use href="./images/svg/sprites.svg#form-collapse"></use>
-              </svg>
-            </button></span>
-            <ul class="submenu">
-              <li class="header-link header-service">
-                <a href="modelling.html">3D Моделювання</a>
-              </li>
-              <li class="header-link header-service">
-                <a href="scanning.html">3D Сканування</a>
-              </li>
-              <li class="header-link header-service">
-                <a href="printing.html">3D Друк</a>
-              </li>
-            </ul>
+<!-- Heder Background -->
+<include src="./partials/background-header.html"></include>
+
+<!-- Header -->
+<header class="container header">
+  <nav class="header-nav">
+    <!-- Logo -->
+    <a class="logo-footer" href="https://ruslanpetrovup.github.io/3dfreedom.info/">
+      <picture>
+        <source
+          media="(min-width: 1200px )"
+          srcset="
+            ./images/logo/3DFREEDOM-desktop.webp    1x,
+            ./images/logo/3DFREEDOM-desktop@2x.webp 2x
+          "
+          type="image.webp"
+        />
+
+        <source
+          media="(min-width: 1200px)"
+          srcset="./images/logo/3DFREEDOM-desktop.jpg 1x, ./images/logo/3DFREEDOM-desktop@2x.jpg 2x"
+        />
+
+        <source
+          media="(min-width: 768px )"
+          srcset="./images/logo/3DFREEDOM-tablet.webp 1x, ./images/logo/3DFREEDOM-tablet@2x.webp 2x"
+          type="image.webp"
+        />
+
+        <source
+          media="(min-width: 768px)"
+          srcset="./images/logo/3DFREEDOM-tablet.jpg 1x, ./images/logo/3DFREEDOM-tablet@2x.jpg 2x"
+        />
+
+        <source
+          media="(min-width: 220px )"
+          srcset="./images/logo/3DFREEDOM-mobile.webp 1x, ./images/logo/3DFREEDOM-mobile@2x.webp 2x"
+          type="image.webp"
+        />
+
+        <source
+          media="(min-width: 220px)"
+          srcset="./images/logo/3DFREEDOM-mobile.jpg 1x, ./images/logo/3DFREEDOM-mobile@2x.jpg 2x"
+        />
+
+        <img class="logo-footer__img" src="./images/logo/3DFREEDOM.jpg" alt="logo 3DFREEDOM" />
+      </picture>
+    </a>
+
+    <!-- Burger Buttons <<< Start -->
+    <button class="header__sprite-burger" type="button">
+      <svg width="32px" height="18px">
+        <use data-menu-open href="./images/svg/sprites.svg#burger"></use>
+      </svg>
+    </button>
+    <button class="header-menu-close is-hidden" data-menu-close type="button">
+      <svg width="23px" height="23px">
+        <use href="./images/svg/sprites.svg#cross"></use>
+      </svg>
+    </button>
+    <!-- Burger Buttons >>> End -->
+    
+    <ul class="header__link-position header-menu" data-menu>
+      <li class="header-link header-position-link active-page">
+        <a href="index.html">Головна</a>
+      </li>
+      <li class="header-link header-position-link header-menu-item">
+        <a class="header-menu-service" href="#">Послуги</a>
+        <span
+          ><button class="header-form-expand" type="button">
+            <svg class="header-icon-form" width="10px" height="4px">
+              <use href="./images/svg/sprites.svg#form-collapse"></use>
+            </svg></button
+        ></span>
+        <ul class="submenu">
+          <li class="header-link header-service">
+            <a href="modelling.html">3D Моделювання</a>
           </li>
-        <li class="header-link header-position-link">
-          <a href="take_order.html">Замовити</a>
+          <li class="header-link header-service">
+            <a href="scanning.html">3D Сканування</a>
+          </li>
+          <li class="header-link header-service">
+            <a href="printing.html">3D Друк</a>
+          </li>
+        </ul>
+      </li>
+      <li class="header-link header-position-link">
+        <a href="take_order.html">Замовити</a>
+      </li>
+      <li class="header-link header-position-link">
+        <a href="contacts.html">Контакти</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="header__mobile-lang">
+    <button class="header__sprite-phone" type="button">
+      <span class="header__mobile-tel">
+        <svg class="header__mobile-tel-icon">
+          <use href="./images/svg/sprites.svg#form-collapse"></use>
+        </svg>
+        <ul class="header__mobile-tel-list">
+          <li class="header__mobile-tel-item">+38 (093) 643 22 88</li>
+          <li class="header__mobile-tel-item">+38 (050) 345 44 23</li>
+        </ul>
+      </span>
+      <svg width="18px" height="18px">
+        <use href="./images/svg/sprites.svg#phone"></use>
+      </svg>
+    </button>
+    <div class="header__lang">
+      <p class="header__lang-title">UKR</p>
+      <ul class="submenu-lang">
+        <li class="header__lang">
+          <button class="header-btn-lang-item" type="button">ENG</button>
         </li>
-        <li class="header-link header-position-link">
-          <a href="contacts.html">Контакти</a>
+        <li class="header__lang">
+          <button class="header-btn-lang-item" type="button">RUS</button>
         </li>
       </ul>
-    </nav>
-      <div class="header__mobile-lang">
-        <button class="header__sprite-phone" type="button">
-          <span class="header__mobile-tel">
-            <svg class="header__mobile-tel-icon"><use href="./images/svg/sprites.svg#form-collapse"></use></svg>
-            <ul class="header__mobile-tel-list">
-              <li class="header__mobile-tel-item">+38 (093) 643 22 88</li>
-              <li class="header__mobile-tel-item">+38 (050) 345 44 23</li>
-            </ul>
-          </span>
-          <svg  width="18px" height="18px">
-            <use href="./images/svg/sprites.svg#phone"></use>
-          </svg>
-        </button>
-      <div class="header__lang">
-              <p class="header__lang-title">UKR</p>
-              <ul class="submenu-lang">
-                <li class="header__lang">
-                  <button class="header-btn-lang-item" type="button">
-                    ENG
-                  </button>
-                </li>
-                <li class="header__lang">
-                  <button class="header-btn-lang-item" type="button">
-                    RUS
-                  </button>
-                </li>
-              </ul>
-      </div>
-      <div class="header-contacts-position">
-        <svg class="header-phone" width="14px" height="14px">
-          <use href="./images/svg/sprites.svg#phone"></use>
-        </svg>
-        <svg class="header-phone" width="14px" height="14px">
-          <use href="./images/svg/sprites.svg#phone"></use>
-        </svg>
-      </div>
-        <ul class="header__mobile">
-          <ul class="">
-            <li>
-              <a class="header-mobile-open" href="tel:+380936432288">+38 (093) 643 22 88</a>
-            </li>
-            <li>
-              <a class="header-mobile-open" href="tel:+380503454423">+38 (050) 345 44 23</a>
-            </li>
-        </ul>
-        </ul>
-      </div>
-  </div>
-
-<!--==================MENU===========================-->
-
-  <!-- <div class="header-menu" data-menu>
-    <div class="container">
-    <nav class="header header-menu-nav">
-      <a href="http://localhost:1234/index.html">
-        <img class="header__link" src="./images/logo/3DFREEDOM.jpg" alt="3DFREEDOM" srcset="" width="101px" height="25px" />
-      </a>
-        <button class="header-menu-close" type="button" data-menu-close>
-          <svg width="23px" height="23px">
-            <use href="./images/svg/sprites.svg#cross"></use>
-          </svg>
-        </button>
-      <button class="header__sprite-burger header-menu__burger-hidden" type="button">
-        <svg width="32px" height="18px">
-          <use href="./images/svg/sprites.svg#burger"></use>
-        </svg>
-      </button>
-      <div class="header__mobile-lang">
-        <svg class="header__sprite-phone" width="18px" height="18px">
-          <use href="./images/svg/sprites.svg#phone"></use>
-        </svg>
-        <div class="header__lang">ENG</div>
-        <ul class="header__mobile">
-          <li>
-            <svg class="header-phone" width="14px" height="14px">
-              <use href="./images/svg/sprites.svg#phone"></use>
-            </svg>
-            <a href="tel:+380936432288">+38 (093) 643 22 88</a>
-          </li>
-          <li>
-            <svg class="header-phone" width="14px" height="14px">
-              <use href="./images/svg/sprites.svg#phone"></use>
-            </svg>
-            <a href="tel:+380503454423">+38 (050) 345 44 23</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-      <ul class="header__link-position header-menu__link-position">
-        <li class="header-link header-menu__link active-page">
-          <a href="./index.html">Головна</a>
+    </div>
+    <div class="header-contacts-position">
+      <svg class="header-phone" width="14px" height="14px">
+        <use href="./images/svg/sprites.svg#phone"></use>
+      </svg>
+      <svg class="header-phone" width="14px" height="14px">
+        <use href="./images/svg/sprites.svg#phone"></use>
+      </svg>
+    </div>
+    <ul class="header__mobile">
+      <ul class="">
+        <li>
+          <a class="header-mobile-open" href="tel:+380936432288">+38 (093) 643 22 88</a>
         </li>
-        <li class="header-link header-menu__link">
-          <a href="">Послуги</a>
-        </li>
-        <li class="header-link header-menu__link">
-          <a href="">3D Моделювання</a>
-        </li>
-        <li class="header-link header-menu__link">
-          <a href="">3D Сканування</a>
-        </li>
-        <li class="header-link header-menu__link">
-          <a href="">3D Друк</a>
-        </li>
-        <li class="header-link header-menu__link">
-          <a href="./take_order.html">Замовити</a>
-        </li>
-        <li class="header-link header-menu__link">
-          <a href="./contacts.html">Контакти</a>
+        <li>
+          <a class="header-mobile-open" href="tel:+380503454423">+38 (050) 345 44 23</a>
         </li>
       </ul>
+    </ul>
   </div>
-</div> -->
 </header>
