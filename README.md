@@ -23,20 +23,6 @@
 6. [Contacts](https://validator.w3.org/nu/?doc=https%3A%2F%2Fruslanpetrovup.github.io%2F3dfreedom.info%2Fcontacts.html)
    ![w3c](https://img.shields.io/w3c-validation/default?targetUrl=https%3A%2F%2Fruslanpetrovup.github.io%2F3dfreedom.info%2Fcontacts.html&style=flat-square)
 
-### Contributors
-
-- @omykhalska
-- @ruslanpetrovup
-- @Serhii-P79
-- @Huk2021
-- @OlgaOnoshko
-- @Cherviatsova
-- @julia-pro
-- @Lozikkk
-- @AlexNumo
-- @SergoosIT
-- @Searge
-
 ### Technologies
 
 - Mobile-First
@@ -48,3 +34,8 @@
 - animations for decorative elements
 - menu and gallery in Java Script
 - mixins for responsive fonts
+
+### Contributors
+
+<!-- readme: contributors -start -->
+<!-- readme: contributors -end -->
