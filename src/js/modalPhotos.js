@@ -1,22 +1,18 @@
 const btn = document.querySelector('.masonry');
+const imgPic = document.querySelectorAll('.masonry__img-task')
 const backdrop = document.querySelector('.backdrop');
 const imgSrc = document.querySelector('.modal-window__img');
 const bodyEl = document.querySelector('body');
 const btnBack = document.querySelector('.modal-window__back');
 const btnNext = document.querySelector('.modal-window__next')
+let listImg = []
 
-let listImg = [];
-listImg.push(...btn.childNodes)
+listImg.push(...imgPic)
 
-
-const listMap = listImg.filter((num) => {
-    return num.nodeName === "LI"
-})
-const listImgPicture = listMap.map((num) => {
-    return num.children[0].children[0].children[0].attributes[0].nodeValue
+const listImgPicture = listImg.map(({children}) => {
+    return children[0].src
 })
 let counter = 0;
-
 
 const modalOpen = (even) => {
     even.preventDefault()
@@ -36,7 +32,6 @@ const nextImg = () => {
         return
     }
     counter = counter + 1;
-    console.log(counter);
     imgSrc.setAttribute('src', listImgPicture[counter]);
 }
 const backImg = () => {
@@ -44,7 +39,6 @@ const backImg = () => {
         return
     }
     counter = counter - 1
-    console.log(counter)
     imgSrc.setAttribute('src', listImgPicture[counter]);
 }
 const modalClose = (even) => {
@@ -54,7 +48,7 @@ const modalClose = (even) => {
     }
     bodyEl.setAttribute("style", "");
      imgSrc.setAttribute('src', '');
-    backdrop.removeEventListener('click', modalClose)
+    backdrop.removeEventListener('click', modalClose);
     backdrop.classList.remove('is-active');
 }
 btn.addEventListener('click', modalOpen);
