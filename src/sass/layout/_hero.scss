@@ -1,7 +1,3 @@
-html {
-  scroll-behavior: smooth;
-}
-
 .hero {
   padding-bottom: 52px;
 
@@ -154,7 +150,9 @@ html {
 
   @include respond-from-min($tablet) {
     display: block;
-  }
+
+    }
+
 
   // Left decor
   &__tl {
@@ -165,7 +163,7 @@ html {
       left: 105.76px;
       top: 79.1px;
       background: $primary-bg;
-      border-radius: 72px;
+      border-radius: $circle;
     }
     @include respond-from-min($desktop) {
       width: 144px;
@@ -184,7 +182,7 @@ html {
       top: 364.5px;
 
       background: $primary-bg;
-      border-radius: 72px;
+      border-radius: $circle;
     }
     @include respond-from-min($desktop) {
       width: 144px;
@@ -203,7 +201,7 @@ html {
       top: 81.65px;
 
       background: $primary-bg;
-      border-radius: 0px 0px 72px 0px;
+      border-radius: $corner-br;
     }
 
     @include respond-from-min($desktop) {
@@ -223,7 +221,7 @@ html {
       top: 302.61px;
 
       background: $primary-bg;
-      border-radius: 72px 72px 0px 0px;
+      border-radius: 50% 50% 0 0;
     }
 
     @include respond-from-min($desktop) {
