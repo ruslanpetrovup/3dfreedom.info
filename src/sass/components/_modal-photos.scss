@@ -36,12 +36,18 @@
     height: 11px;
   }
   .modal-window__back {
+    cursor: pointer;
+    border: none;
+    background: none;
     margin-right: 9px;
     display: flex;
     align-items: center;
     fill: white;
   }
   .modal-window__next {
+    cursor: pointer;
+    border: none;
+    background: none;
     margin-left: 9px;
     display: flex;
     align-items: center;
@@ -63,12 +69,16 @@
     height: 26px;
   }
   .modal-window__back {
+    cursor: pointer;
+    border: none;
+    background: none;
     margin-right: 27px;
     display: flex;
     align-items: center;
     fill: white;
   }
   .modal-window__next {
+    cursor: pointer;
     margin-left: 27px;
     display: flex;
     align-items: center;
@@ -90,12 +100,18 @@
     height: 42px;
   }
   .modal-window__back {
+    cursor: pointer;
+    border: none;
+    background: none;
     margin-right: 36px;
     display: flex;
     align-items: center;
     fill: white;
   }
   .modal-window__next {
+    cursor: pointer;
+    border: none;
+    background: none;
     margin-left: 36px;
     display: flex;
     align-items: center;
