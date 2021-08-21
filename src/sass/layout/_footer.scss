@@ -3,8 +3,6 @@
   padding-bottom: 32px;
   background-color: $secondary-bg;
   box-shadow: 5px 2px 5px 8px rgba(72, 121, 150, 0.1);
-
-  
 }
 
 .logo-footer {
@@ -68,8 +66,9 @@
 .footer-network__link:focus {
   color: #6d6565;
 }
-.footer-contacts__list {
+.footer-contacts__list:not(:last-child) {
   display: block;
+  margin-bottom: 16px;
 }
 .footer-contacts__text {
   font-family: $primary-font;
@@ -98,10 +97,10 @@
   color: #10415e;
 }
 .footer-contacts__text {
-  margin-top: 24px;
+  margin-bottom: 8px;
 }
 .footer-contacts__item {
-  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 @media screen and (min-width: $tablet) {
