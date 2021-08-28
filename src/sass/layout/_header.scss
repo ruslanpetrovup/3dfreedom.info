@@ -177,6 +177,23 @@
   .header__sprite-phone {
     position: relative;
   }
+
+  .header-service{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::before{
+      display: block;
+      // position: relative;
+      content: "";
+      background: #487996;
+      border-radius: 3px 0px;
+      width: 7px;
+      height: 7px;
+      cursor: pointer;
+      margin-right: 15px;
+    }
+  }
   .header__sprite-phone:hover .header__mobile-tel {
     display: block;
     background-color: white;
@@ -365,7 +382,6 @@
     }
   }
 
-
   .header-link {
     font-family: $secondary-font;
     font-style: normal;
@@ -387,6 +403,23 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  .header-service{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      &::before{
+      display: block;
+      // position: relative;
+      content: "";
+      background: #487996;
+      border-radius: 3px 0px;
+      width: 7px;
+      height: 7px;
+      cursor: pointer;
+      margin-right: 15px;
+    }
   }
 
   .header-menu-close {
@@ -428,7 +461,6 @@
     border: none;
     background-color: inherit;
   }
-
   .header-nav {
     display: flex;
     align-items: center;
